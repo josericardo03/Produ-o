@@ -1,0 +1,68 @@
+2024-07-15 07:35:11;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65992330904',
+  nomeCidade: 'Várzea Grande',
+  codigoCep: '78158970',
+  numeroEndereco: '7',
+  nomeLogradouro: 'RUA DAS PAPOULAS',
+  nomeBairro: 'JARDIM TARUMA',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-15 07:35:11;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999769306',
+  nomeCidade: 'Várzea Grande',
+  codigoCep: '78110000',
+  numeroEndereco: '1348',
+  nomeLogradouro: 'Avenida 31 DE MARÇO',
+  nomeBairro: 'CRISTO REI',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-15 07:35:12;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'CPA I',
+  codigoCep: '78055075',
+  nomeLogradouro: 'MAUES',
+  numeroEndereco: '24',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65992330904',
+  codigoTipoImovel: null
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-15 07:35:12;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'BARRA DO PARI',
+  codigoCep: '78035570',
+  nomeLogradouro: 'GAVIAO REAL',
+  numeroEndereco: '14',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999769306',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-15 07:37:41;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-15 07:37:41;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}

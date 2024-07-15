@@ -1,0 +1,2117 @@
+2024-07-04 07:47:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 07:49:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 07:59:35;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@355e9853]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 07:59:35;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@719a3d49]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 07:59:35;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@229fd225]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 07:59:35;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '2 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@3549d85b]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.numeroSequencial\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])\n' +
+    '  (2\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 07:59:36;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:08:22;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@50794679]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:08:22;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@2b94e37f]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:08:22;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@53769751]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:08:22;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@5be70038]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:08:22;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:11:19;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@463da161]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:11:19;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@6a9e304c]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:11:19;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@4070f340]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:11:19;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.alterar(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@7684842e]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: alterar.arg0.codigoTipoContato\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:11:20;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:14:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:18:39;error;Erro ao enviar endereço: {
+  codigoCliente: 1039955,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RESIDENCIAL DAS PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS',
+  numeroEndereco: '3013',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999783932',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 400,
+  message: 'Endereço informado não encontrado na base de dados.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:18:39;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 08:19:58;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:02;error;Erro ao cadastrar cliente: 52 685 878 SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 09:21:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@62fb6c64]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@45afd904]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@cd99f5e]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@338bd869]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:03;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: '8219999'
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@13123b83]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 09:21:03;error;Erro ao enviar endereço: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RESIDENCIAL DAS PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS',
+  numeroEndereco: '3013',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999783932',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@65e5c43f]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:03;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.SocioDTO com.totvs.tfs.basico.cadastro.service.SocioService.incluir(com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO@464afecc]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório.\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.SocioService@2275665d\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório., payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:21:03;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: '3013',
+  nomeLogradouro: 'R DAS NOGUEIRAS',
+  nomeBairro: 'RES DAS PAL',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@5cc9c768]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:37:00;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:42:39;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 09:58:06;error;Erro ao enviar mãe: {
+  codigoCliente: 1039960,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 09:58:06;error;Erro ao enviar Pai: {
+  codigoCliente: 1039960,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 09:58:06;error;Erro ao enviar Pai: {
+  codigoCliente: 1039960,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 09:58:07;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: 1039960,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 400,
+  message: 'O primeiro endereço do cliente informado deve ser o endereço principal.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:01:36;error;Erro ao enviar mãe: {
+  codigoCliente: 1039961,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:01:36;error;Erro ao enviar Pai: {
+  codigoCliente: 1039961,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:01:36;error;Erro ao enviar Pai: {
+  codigoCliente: 1039961,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:01:36;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: 1039961,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 400,
+  message: 'O primeiro endereço do cliente informado deve ser o endereço principal.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:01:36;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: 1039961,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 400,
+  message: 'Endereço informado não encontrado na base de dados.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:02:38;error;Erro ao enviar mãe: {
+  codigoCliente: 1039962,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:02:38;error;Erro ao enviar Pai: {
+  codigoCliente: 1039962,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:02:38;error;Erro ao enviar Pai: {
+  codigoCliente: 1039962,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:07:18;error;Erro ao enviar mãe: {
+  codigoCliente: 1039963,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:07:19;error;Erro ao enviar Pai: {
+  codigoCliente: 1039963,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:07:19;error;Erro ao enviar Pai: {
+  codigoCliente: 1039963,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@5dba4465]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@5939d9d3]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@e74a88b]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@44b95137]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@29910406]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@252063b0]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:09:58;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@4d98d11]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:21;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@174534a4]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@120f6481]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@567a289b]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@508512c0]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@6c268925]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@23a0066f]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:22;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@5acbfa93]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@6b754994]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@1b6f4b32]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@5dc35a7e]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@4f38fe7e]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@66020d85]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@7059bb31]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:38;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@74a1041e]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@7fc955df]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@1d9bf24b]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@52e1282a]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@66eb8afa]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@460403a3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@642aa8d6]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:10:57;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@650473b5]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:11:21;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 10:11:21;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@5f0e24e8]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:11:21;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@203be584]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:11:22;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@3dc66ec8]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:11:22;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@75c86c28]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:11:22;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@709e078d]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:11:22;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@7535c1f0]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:11:22;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@461f83fa]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:12:09;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 10:12:09;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@1a8c626]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:12:09;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@3f6c0c82]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:12:09;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@5b8dbb8]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:12:10;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@355510f7]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 10:12:10;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@6343781f]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:12:10;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@ee044f3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 10:12:10;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@18332f6]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:23:47;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@2d80a5dd]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@76bedeec]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@7a3e3e71]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@69bfd9e5]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@42946a8e]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@448313cd]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@34d78c19]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@57440ad]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:41:02;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@49e46ff6]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:44:01;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@628e5a72]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@47e4acdd]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@6620eb30\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@111edc3f]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@50238c73]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@693e55ee]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@4eb68e97]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@3dd90467]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@1c344804]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:44:02;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@4d5ccb1c]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:10;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:10;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:10;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:10;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:11;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:45:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:08;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:08;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:08;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:08;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:09;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:46:10;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:02;error;Erro ao cadastrar cliente: 34.252.912 DOUGLAS STUMPF JACYNTHO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao cadastrar cliente: 14.379.859 ANDREA BORGES DOS SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao cadastrar cliente: 49.324.467 ADRIANA CRISTINA ALVARENGA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@351a9b60]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@3171ebd9]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@5879c3b2]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@4e4bfedb]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@7be735d3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:03;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@5a821ccf]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@678e3da8]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@160e78bf]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@63526b63]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@cbd909]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@1a1e19d3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@b101837]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@3a23dce8]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@3cf8e863]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@7abf1529]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@7b341416]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@793e1aff]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@1e22f724]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@6082686f]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@2cf4c5a3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.FormaContatoDTO com.totvs.tfs.basico.cadastro.service.FormaContatoService.incluir(com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.FormaContatoDetalheDTO@1c89d5a3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    '      mensagem: must not be null\n' +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.FormaContatoService@17e2d95f\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    '      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])'
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: '5611203'
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@2388095a]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: '9602501'
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@356b26a5]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: '5223100'
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@11be2824]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-04 12:47:05;error;Erro ao enviar endereço: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'Jardim Florianópolis',
+  codigoCep: '78055834',
+  nomeLogradouro: 'Rua Vinte',
+  numeroEndereco: 'Rua 10 ',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65984457689',
+  codigoTipoImovel: 4
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@607ac86c]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar endereço: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Rondonópolis',
+  nomeBairro: 'Jardim Atlântico',
+  codigoCep: '78735687',
+  nomeLogradouro: 'Rua Laurindo Rabelo',
+  numeroEndereco: '72',
+  idenTipoEndereco: true,
+  telefoneCompleto: '66999875080',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@4c032ee8]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar endereço: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cáceres',
+  nomeBairro: 'Jardim Guanabara',
+  codigoCep: '78206097',
+  nomeLogradouro: 'Rua Cerejeiras',
+  numeroEndereco: '58',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65993470356',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.incluir(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@63f68ac2]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.SocioDTO com.totvs.tfs.basico.cadastro.service.SocioService.incluir(com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO@1548aab5]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório.\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.SocioService@25631369\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório., payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.SocioDTO com.totvs.tfs.basico.cadastro.service.SocioService.incluir(com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO@6e23253]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório.\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.SocioService@25631369\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório., payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.SocioDTO com.totvs.tfs.basico.cadastro.service.SocioService.incluir(com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.SocioDetalheDTO@5e7454f3]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório.\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.SocioService@25631369\n' +
+    '      caminho da propriedade: incluir.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório., payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78055834',
+  numeroEndereco: '10',
+  nomeLogradouro: ' RUA VINTE',
+  nomeBairro: 'JARDIM FLORIANOPOLIS',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@39ec46a9]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Rondonópolis',
+  codigoCep: '78735687',
+  numeroEndereco: '72',
+  nomeLogradouro: ' RUA LAURINDO RABELO',
+  nomeBairro: 'JARDIM ATLANTICO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@6af31e0b]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-04 12:47:06;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cáceres',
+  codigoCep: '78206097',
+  numeroEndereco: '58',
+  nomeLogradouro: ' R CEREJEIRAS',
+  nomeBairro: 'JARDIM GUANABARA',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@5fb162b9]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}

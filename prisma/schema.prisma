@@ -1,0 +1,2325 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model administradors {
+  id               Int                 @id @default(autoincrement())
+  name             String              @db.VarChar(255)
+  document         String              @db.VarChar(255)
+  type             administradors_type
+  cargo            String              @db.VarChar(255)
+  telefoneFixo     String?             @db.VarChar(255)
+  telefoneCelular  String?             @db.VarChar(255)
+  telefoneWhatsApp String?             @db.VarChar(255)
+  email            String?             @db.VarChar(255)
+  nacionalidade    String?             @db.VarChar(255)
+  dataEntrada      DateTime?           @db.DateTime(0)
+  pep              administradors_pep? @default(nao_enquadra)
+  clientId         Int
+  createdAt        DateTime            @db.DateTime(0)
+  updatedAt        DateTime            @db.DateTime(0)
+  clients          clients             @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "administradors_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model analista {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model analysts {
+  id        Int      @id @default(autoincrement())
+  name      String?  @db.VarChar(255)
+  email     String?  @unique(map: "email") @db.VarChar(255)
+  password  String?  @db.VarChar(255)
+  roles     String?  @db.VarChar(255)
+  active    Boolean  @default(true)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model atendente1s {
+  id                         Int                   @id @default(autoincrement())
+  name                       String?               @db.VarChar(255)
+  email                      String?               @unique(map: "email") @db.VarChar(255)
+  password                   String?               @db.VarChar(255)
+  roles                      String?               @db.VarChar(255)
+  active                     Boolean               @default(true)
+  analiseSolicitacaoOnline   Boolean?              @default(false)
+  coringaNaSolicitacaoOnline Boolean?              @default(false)
+  createdAt                  DateTime              @db.DateTime(0)
+  updatedAt                  DateTime              @db.DateTime(0)
+  permissionInfomais         Boolean?              @default(false)
+  clienteInteressados        clienteInteressados[]
+}
+
+model atendente2s {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model attendants {
+  id        Int      @id @default(autoincrement())
+  name      String?  @db.VarChar(255)
+  email     String?  @unique(map: "email") @db.VarChar(255)
+  password  String?  @db.VarChar(255)
+  roles     String?  @db.VarChar(255)
+  active    Boolean  @default(true)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model avalistaPreCadastros {
+  id                                 Int                                    @id @default(autoincrement())
+  name                               String                                 @db.VarChar(255)
+  document                           String?                                @db.VarChar(255)
+  type                               avalistaPreCadastros_type?             @default(fisica)
+  telefoneFixo                       String?                                @db.VarChar(255)
+  telefoneCelular                    String?                                @db.VarChar(255)
+  telefoneWhatsApp                   String?                                @db.VarChar(255)
+  email                              String                                 @db.VarChar(255)
+  nacionalidade                      String?                                @db.VarChar(255)
+  profissao                          String?                                @db.VarChar(255)
+  dataEntrada                        DateTime?                              @db.DateTime(0)
+  pep                                avalistaPreCadastros_pep?              @default(nao_enquadra)
+  pepDeclarado                       avalistaPreCadastros_pepDeclarado?     @default(nao)
+  pepDeclaradoTipo                   avalistaPreCadastros_pepDeclaradoTipo?
+  dataNascimento                     DateTime?                              @db.DateTime(0)
+  tipoIdentificacao                  String?                                @db.VarChar(255)
+  numeroIdentificacao                String?                                @db.VarChar(255)
+  dataEmissaoDocumento               DateTime?                              @db.DateTime(0)
+  orgaoExpeditor                     String?                                @db.VarChar(255)
+  ufExpeditor                        String?                                @db.VarChar(255)
+  estadoCivil                        avalistaPreCadastros_estadoCivil?
+  estadoCivilCasadoNome              String?                                @db.VarChar(255)
+  estadoCivilCasadoCpf               String?                                @db.VarChar(255)
+  estadoCivilCasadoDataNascimento    DateTime?                              @db.DateTime(0)
+  estadoCivilUniaoNome               String?                                @db.VarChar(255)
+  estadoCivilUniaoCpf                String?                                @db.VarChar(255)
+  estadoCivilUniaoDataNascimento     DateTime?                              @db.DateTime(0)
+  sexo                               String?                                @db.VarChar(255)
+  escolaridade                       String?                                @db.VarChar(255)
+  endereco                           String?                                @db.VarChar(255)
+  enderecoBairro                     String?                                @db.VarChar(255)
+  enderecoCidade                     String?                                @db.VarChar(255)
+  enderecoUf                         String?                                @db.VarChar(2)
+  enderecoCep                        String?                                @db.VarChar(255)
+  enderecoNumero                     String?                                @db.VarChar(255)
+  enderecoComplemento                String?                                @db.VarChar(255)
+  nomePai                            String?                                @db.VarChar(255)
+  nomeMae                            String?                                @db.VarChar(255)
+  documentoOficialComFotoUrl         String?                                @db.VarChar(255)
+  documentoComprovanteResidenciaUrl  String?                                @db.VarChar(255)
+  documentoComprovanteRendaUrl       String?                                @db.VarChar(255)
+  documentoComprovanteEstadoCivilUrl String?                                @db.VarChar(255)
+  documentoOficialComFotoConjugeUrl  String?                                @db.VarChar(255)
+  preCadastroId                      Int
+  confirmouOCadastro                 Boolean                                @default(false)
+  aguardandoAceite                   Boolean?                               @default(false)
+  dadosConfirmados                   Boolean?                               @default(false)
+  createdAt                          DateTime                               @db.DateTime(0)
+  updatedAt                          DateTime                               @db.DateTime(0)
+}
+
+model bancos {
+  id          Int      @id @default(autoincrement())
+  code        String   @db.VarChar(255)
+  description String   @db.VarChar(255)
+  createdAt   DateTime @db.DateTime(0)
+  updatedAt   DateTime @db.DateTime(0)
+}
+
+model campoAdicionalProdutoSolicitacaoOnlines {
+  id             Int      @id @default(autoincrement())
+  nome           String   @db.VarChar(255)
+  textoValidacao String?  @db.Text
+  referencia     String   @db.VarChar(255)
+  produtoId      Int
+  createdAt      DateTime @default(dbgenerated("('2020-05-06 15:44:18')")) @db.DateTime(0)
+  updatedAt      DateTime @default(dbgenerated("('2020-05-06 15:44:18')")) @db.DateTime(0)
+  produtos       produtos @relation(fields: [produtoId], references: [id], onDelete: NoAction, map: "campoAdicionalProdutoSolicitacaoOnlines_ibfk_1")
+
+  @@index([produtoId], map: "produtoId")
+}
+
+model capacidadePagamentoRelatorios {
+  id                                             Int       @id @default(autoincrement())
+  relatorioId                                    Int
+  ano                                            String    @db.VarChar(255)
+  capacidadeDePagamentoFaturamento               Float?    @db.Float
+  capacidadeDePagamentoCaixaDasOperacoes         Float?    @db.Float
+  capacidadeDePagamentoEndividamentoExistente    Float?    @db.Float
+  capacidadeDePagamentoCaixaLivreAntesDaOperacao Float?    @db.Float
+  capacidadeDePagamentoDesembolsoComAOperacao    Float?    @db.Float
+  capacidadeDePagamentoCaixaLivreAposAOperacao   Float?    @db.Float
+  capacidadeDePagamentoICSD                      Float?    @db.Float
+  capacidadeDePagamentoICSDMedio                 Float?    @db.Float
+  createdAt                                      DateTime? @db.DateTime(0)
+  updatedAt                                      DateTime? @db.DateTime(0)
+}
+
+model capacidadePagamentos {
+  id                     Int       @id @default(autoincrement())
+  propostaId             Float
+  capacidade             String?   @db.VarChar(255)
+  codigo                 String?   @db.VarChar(255)
+  cpValor                String?   @db.VarChar(255)
+  cpValorFlt             Float?
+  cpManifestacaoAnalista String?   @db.Text
+  registro               String?   @db.VarChar(255)
+  createdAt              DateTime? @db.DateTime(0)
+  updatedAt              DateTime? @db.DateTime(0)
+}
+
+model cidades {
+  id           Int            @id @default(autoincrement())
+  nome         String         @db.VarChar(255)
+  estadoId     Int
+  createdAt    DateTime       @default(dbgenerated("('2018-12-06 18:23:15')")) @db.DateTime(0)
+  updatedAt    DateTime       @default(dbgenerated("('2018-12-06 18:23:15')")) @db.DateTime(0)
+  estados      estados        @relation(fields: [estadoId], references: [id], onDelete: Cascade, map: "cidades_ibfk_1")
+  preCadastros preCadastros[]
+
+  @@index([estadoId], map: "estadoId")
+}
+
+model cidadesBiomaAmazonia {
+  id        Int      @id @default(autoincrement())
+  cidadeId  Int
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model clientCnaes {
+  id        Int      @id @default(autoincrement())
+  clientId  Int
+  cnaeId    Int
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+  clients   clients  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "clientCnaes_ibfk_1")
+  cnaes     cnaes    @relation(fields: [cnaeId], references: [id], onDelete: NoAction, map: "clientCnaes_ibfk_2")
+
+  @@index([clientId], map: "clientId")
+  @@index([cnaeId], map: "cnaeId")
+}
+
+model clienteInteressados {
+  id                       Int                                 @id @default(autoincrement())
+  nome                     String                              @db.VarChar(255)
+  razaoSocial              String                              @db.VarChar(255)
+  cnpj                     String                              @db.VarChar(255)
+  email                    String                              @db.VarChar(255)
+  telefone                 String?                             @default("") @db.VarChar(255)
+  whatsapp                 String?                             @db.VarChar(255)
+  produtoId                Int
+  atendenteId              Int?
+  valorCredito             Float                               @db.Float
+  prazoPagamento           Int
+  prazoCarencia            Int
+  status                   clienteInteressados_status          @default(nao_iniciado)
+  dataAbertura             DateTime?                           @db.DateTime(0)
+  createdAt                DateTime                            @db.DateTime(0)
+  updatedAt                DateTime                            @db.DateTime(0)
+  estadoId                 Int?
+  cidadeId                 Int?
+  motivoDaRecusa           clienteInteressados_motivoDaRecusa?
+  garantias                String?                             @db.VarChar(255)
+  dadosDoVeiculoAno        String?                             @db.VarChar(4)
+  dadosDoVeiculoPlaca      String?                             @db.VarChar(10)
+  dadosDoAvalistaCpf       String?                             @db.VarChar(20)
+  dadosDoAvalistaNome      String?                             @db.VarChar(255)
+  camposExtras             String?                             @db.Text
+  motivosDaRecusaNaAnalise String?                             @db.VarChar(255)
+  tipoCliente              clienteInteressados_tipoCliente?    @default(juridica)
+  origem                   clienteInteressados_origem?         @default(solicitacao_online)
+  produtos                 produtos                            @relation(fields: [produtoId], references: [id], onDelete: NoAction, map: "clienteInteressados_ibfk_1")
+  atendente1s              atendente1s?                        @relation(fields: [atendenteId], references: [id], map: "clienteInteressados_ibfk_2")
+  preCadastros             preCadastros[]
+
+  @@index([atendenteId], map: "atendenteId")
+  @@index([produtoId], map: "produtoId")
+}
+
+model clients {
+  id                                       Int                              @id @default(autoincrement())
+  name                                     String?                          @db.VarChar(255)
+  email                                    String?                          @db.VarChar(255)
+  password                                 String?                          @db.VarChar(255)
+  roles                                    String?                          @db.VarChar(255)
+  active                                   Boolean                          @default(true)
+  cnpj                                     String                           @unique(map: "cnpj") @db.VarChar(255)
+  razaoSocial                              String                           @db.VarChar(255)
+  nomeFantasia                             String                           @db.VarChar(255)
+  telefone                                 String?                          @db.VarChar(255)
+  site                                     String?                          @db.VarChar(255)
+  facebook                                 String?                          @db.VarChar(255)
+  instagram                                String?                          @db.VarChar(255)
+  porte                                    clients_porte?
+  numeroDeFiliais                          Int?
+  franquia                                 clients_franquia?                @default(nao)
+  cnpjFranquia                             String?                          @db.VarChar(255)
+  nomeFranqueador                          String?                          @db.VarChar(255)
+  dataAbertura                             DateTime?                        @db.DateTime(0)
+  situacaoCadastral                        clients_situacaoCadastral?
+  dataSituacaoCadastral                    DateTime?                        @db.DateTime(0)
+  motivoSituacaoCadastral                  String?                          @db.VarChar(255)
+  cep                                      String?                          @db.VarChar(255)
+  cidade                                   Int?
+  bairro                                   String?                          @db.VarChar(255)
+  estado                                   Int?
+  logradouro                               String?                          @db.VarChar(255)
+  numeroEndereco                           String?                          @db.VarChar(255)
+  complementoEndereco                      String?                          @db.VarChar(255)
+  cepComercial                             String?                          @db.VarChar(255)
+  estadoComercial                          String?                          @db.VarChar(255)
+  cidadeComercial                          String?                          @db.VarChar(255)
+  bairroComercial                          String?                          @db.VarChar(255)
+  logradouroComercial                      String?                          @db.VarChar(255)
+  numeroEnderecoComercial                  String?                          @db.VarChar(255)
+  complementoEnderecoComercial             String?                          @db.VarChar(255)
+  capitalSocial                            Float?
+  inscricaoEstadual                        String?                          @db.VarChar(255)
+  inscricaoMunicipal                       String?                          @db.VarChar(255)
+  nomeResponsavelFinanceiro                String?                          @db.VarChar(255)
+  telefoneResponsavelFinanceiro            String?                          @db.VarChar(255)
+  sede                                     clients_sede?
+  sedeValorAluguel                         Float?
+  sedeValorPrestacao                       Float?
+  sedeCredor                               String?                          @db.VarChar(255)
+  sedeOutros                               String?                          @db.VarChar(255)
+  entrevistaFinanceiraProdutosAtividades   String?                          @db.Text
+  entrevistaFinanceiraPontosFortes         String?                          @db.Text
+  entrevistaFinanceiraClientelaPulverizada Boolean?
+  entrevistaFinanceiraCliente1Nome         String?                          @db.VarChar(255)
+  entrevistaFinanceiraCliente1Localizacao  String?                          @db.VarChar(255)
+  entrevistaFinanceiraCliente2Nome         String?                          @db.VarChar(255)
+  entrevistaFinanceiraCliente2Localizacao  String?                          @db.VarChar(255)
+  entrevistaFinanceiraCliente3Nome         String?                          @db.VarChar(255)
+  entrevistaFinanceiraCliente3Localizacao  String?                          @db.VarChar(255)
+  enquadramentoTributario                  clients_enquadramentoTributario?
+  statusCadastro                           clients_statusCadastro?          @default(pendente)
+  faturamentoMes1UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  temPendencias                            clients_temPendencias?
+  faturamentoMes1UltimosMesesValor         Float?
+  faturamentoMes2UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes2UltimosMesesValor         Float?
+  faturamentoMes3UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes3UltimosMesesValor         Float?
+  faturamentoMes4UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes4UltimosMesesValor         Float?
+  faturamentoMes5UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes5UltimosMesesValor         Float?
+  faturamentoMes6UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes6UltimosMesesValor         Float?
+  faturamentoMes7UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes7UltimosMesesValor         Float?
+  faturamentoMes8UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes8UltimosMesesValor         Float?
+  faturamentoMes9UltimosMesesMes           DateTime?                        @db.DateTime(0)
+  faturamentoMes9UltimosMesesValor         Float?
+  faturamentoMes10UltimosMesesMes          DateTime?                        @db.DateTime(0)
+  faturamentoMes10UltimosMesesValor        Float?
+  faturamentoMes11UltimosMesesMes          DateTime?                        @db.DateTime(0)
+  faturamentoMes11UltimosMesesValor        Float?
+  faturamentoMes12UltimosMesesMes          DateTime?                        @db.DateTime(0)
+  faturamentoMes12UltimosMesesValor        Float?
+  faturamentoTotalUltimosMeses             Float?
+  cnaeId                                   Int?
+  interviewDate                            DateTime?                        @db.DateTime(0)
+  naturezaJuridicaId                       Int?
+  createdAt                                DateTime                         @db.DateTime(0)
+  updatedAt                                DateTime                         @db.DateTime(0)
+  empresaEmImplantacao                     clients_empresaEmImplantacao?
+  tipoCliente                              clients_tipoCliente?             @default(juridica)
+  dataNascimento                           String?                          @db.VarChar(20)
+  sexo                                     String?                          @db.Char(1)
+  naturalidade                             String?                          @db.VarChar(255)
+  escolaridade                             String?                          @db.VarChar(255)
+  tipoIdentificacao                        String?                          @db.VarChar(255)
+  numeroIdentificacao                      String?                          @db.VarChar(255)
+  dataEmissaoDocumento                     String?                          @db.VarChar(20)
+  orgaoExpeditor                           String?                          @db.VarChar(255)
+  ufExpeditor                              String?                          @db.VarChar(2)
+  estadoCivil                              String?                          @db.VarChar(255)
+  nomePai                                  String?                          @db.VarChar(255)
+  nomeMae                                  String?                          @db.VarChar(255)
+  naturezaOcupacao                         String?                          @db.VarChar(255)
+  profissao                                String?                          @db.VarChar(255)
+  dataAdmissao                             String?                          @db.VarChar(255)
+  cargo                                    String?                          @db.VarChar(255)
+  rendaMensal                              String?                          @db.VarChar(255)
+  empresaEmprego                           String?                          @db.VarChar(255)
+  cnpjEmprego                              String?                          @db.VarChar(255)
+  referenciaBancariaBanco                  String?                          @db.VarChar(255)
+  referenciaBancariaAgenciaConta           String?                          @db.VarChar(255)
+  referenciaBancariaFone                   String?                          @db.VarChar(255)
+  referenciaBancariaContato                String?                          @db.VarChar(255)
+  estadoCivilUniaoNome                     String?                          @db.VarChar(255)
+  estadoCivilUniaoCpf                      String?                          @db.VarChar(30)
+  estadoCivilUniaoDataNascimento           String?                          @db.VarChar(20)
+  estadoCivilCasadoNome                    String?                          @db.VarChar(255)
+  estadoCivilCasadoCpf                     String?                          @db.VarChar(30)
+  estadoCivilCasadoDataNascimento          String?                          @db.VarChar(20)
+  despesaMediaMensalDeclarada              String?                          @db.VarChar(255)
+  conjugeNome                              String?                          @db.VarChar(255)
+  conjugeCpf                               String?                          @db.VarChar(30)
+  conjugeDataNascimento                    String?                          @db.VarChar(20)
+  conjugeNaturezaOcupacao                  String?                          @db.VarChar(255)
+  conjugeEmpresaNome                       String?                          @db.VarChar(255)
+  conjugeEmpresaCnpj                       String?                          @db.VarChar(255)
+  conjugeEmpresaCargo                      String?                          @db.VarChar(255)
+  conjugeEmpresaDataAdmissao               String?                          @db.VarChar(255)
+  conjugeRendaMensal                       String?                          @db.VarChar(255)
+  conjugeEnderecoCompleto                  String?                          @db.VarChar(255)
+  atividadeEmpreendedora                   String?                          @db.VarChar(255)
+  valorAtividadeEmpreendedora              String?                          @db.VarChar(255)
+  profissionalLiberal                      String?                          @db.VarChar(255)
+  profissaoProfissionalLiberal             String?                          @db.VarChar(255)
+  valorProfissionalLiberal                 String?                          @db.VarChar(255)
+  produtorRural                            String?                          @db.VarChar(255)
+  valorProdutorRural                       String?                          @db.VarChar(255)
+  outrasRendas                             String?                          @db.VarChar(255)
+  outrasRendasTipo                         String?                          @db.VarChar(255)
+  outrasRendasValor                        String?                          @db.VarChar(255)
+  cnaeAtividadeEmpreendedoraId             Int?
+  rendaSocioPJValor                        String?                          @db.VarChar(255)
+  rendaDoConjuge                           String?                          @db.VarChar(255)
+  pep                                      clients_pep?
+  pepDeclarado                             clients_pepDeclarado?
+  pepDeclaradoTipo                         clients_pepDeclaradoTipo?
+  faturamentoPresumido                     String?                          @db.VarChar(255)
+  faturamentoPresumidoNmr                  Float?
+  rendaPrincipal                           String?                          @db.VarChar(255)
+  rendaPrincipalValor                      String?                          @db.VarChar(255)
+  administradors                           administradors[]
+  clientCnaes                              clientCnaes[]
+  cnaes                                    cnaes?                           @relation(fields: [cnaeId], references: [id], map: "clients_ibfk_1")
+  naturezaJuridicas                        naturezaJuridicas?               @relation(fields: [naturezaJuridicaId], references: [id], map: "clients_ibfk_2")
+  companies                                companies[]
+  concorrentes                             concorrentes[]
+  contaBancaria                            contaBancaria[]
+  creditRequests                           creditRequests[]
+  documentos                               documentos[]
+  fornecedors                              fornecedors[]
+  imovels                                  imovels[]
+  pesquisaExternas                         pesquisaExternas[]
+  pesquisaInternas                         pesquisaInternas[]
+  proposta                                 proposta[]
+  socios                                   socios[]
+  veiculos                                 veiculos[]
+
+  @@index([cnaeId], map: "cnaeId")
+  @@index([naturezaJuridicaId], map: "naturezaJuridicaId")
+}
+
+model cnaeAtividadeEmpreendedoras {
+  id        Int      @id @default(autoincrement())
+  cnaeId    Int
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model cnaeImpedidos {
+  id        Int      @id @default(autoincrement())
+  cnaeId    Int
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+  cnaes     cnaes    @relation(fields: [cnaeId], references: [id], onDelete: NoAction, map: "cnaeImpedidos_ibfk_1")
+
+  @@index([cnaeId], map: "cnaeId")
+}
+
+model cnaeRestritos {
+  id                              Int                               @id @default(autoincrement())
+  cnaeId                          Int
+  createdAt                       DateTime                          @db.DateTime(0)
+  updatedAt                       DateTime                          @db.DateTime(0)
+  cnaes                           cnaes                             @relation(fields: [cnaeId], references: [id], onDelete: NoAction, map: "cnaeRestritos_ibfk_1")
+  documentoAdicionalCnaeRestritos documentoAdicionalCnaeRestritos[]
+
+  @@index([cnaeId], map: "cnaeId")
+}
+
+model cnaes {
+  id            Int             @id @default(autoincrement())
+  code          String          @db.VarChar(255)
+  description   String          @db.VarChar(255)
+  codSecao      String          @db.VarChar(255)
+  descSecao     String          @db.VarChar(255)
+  codDivisao    String          @db.VarChar(255)
+  descDivisao   String          @db.VarChar(255)
+  codGrupo      String          @db.VarChar(255)
+  descGrupo     String          @db.VarChar(255)
+  codClasse     String          @db.VarChar(255)
+  descClasse    String          @db.VarChar(255)
+  createdAt     DateTime        @default(dbgenerated("('2018-10-04 16:56:27')")) @db.DateTime(0)
+  updatedAt     DateTime        @default(dbgenerated("('2018-10-04 16:56:27')")) @db.DateTime(0)
+  clientCnaes   clientCnaes[]
+  clients       clients[]
+  cnaeImpedidos cnaeImpedidos[]
+  cnaeRestritos cnaeRestritos[]
+  preCadastros  preCadastros[]
+}
+
+model companies {
+  id                         Int      @id @default(autoincrement())
+  cnpj                       String   @db.VarChar(255)
+  nomeFantasia               String   @db.VarChar(255)
+  capitalSocial              Float?
+  faturamentoUltimoExercicio Float?
+  participacao               Float    @db.Float
+  clientId                   Int
+  createdAt                  DateTime @db.DateTime(0)
+  updatedAt                  DateTime @db.DateTime(0)
+  clients                    clients  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "companies_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model concorrentes {
+  id          Int      @id @default(autoincrement())
+  nome        String   @db.VarChar(255)
+  localizacao String   @db.VarChar(255)
+  clientId    Int
+  createdAt   DateTime @db.DateTime(0)
+  updatedAt   DateTime @db.DateTime(0)
+  clients     clients  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "concorrentes_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model configuracaoMelhoraNivelDoRatings {
+  id                      Int                                                        @id @default(autoincrement())
+  possuiRecursosPropriosA configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosA  @default(nao)
+  repasseA                configuracaoMelhoraNivelDoRatings_repasseA                 @default(nao)
+  possuiRecursosPropriosB configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosB  @default(nao)
+  repasseB                configuracaoMelhoraNivelDoRatings_repasseB                 @default(nao)
+  possuiRecursosPropriosC configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosC  @default(nao)
+  repasseC                configuracaoMelhoraNivelDoRatings_repasseC                 @default(nao)
+  possuiRecursosPropriosD configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosD  @default(nao)
+  repasseD                configuracaoMelhoraNivelDoRatings_repasseD                 @default(nao)
+  createdAt               DateTime                                                   @default(dbgenerated("('2019-02-15 19:31:59')")) @db.DateTime(0)
+  updatedAt               DateTime                                                   @default(dbgenerated("('2019-02-15 19:31:59')")) @db.DateTime(0)
+  possuiRecursosPropriosE configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosE?
+  repasseE                configuracaoMelhoraNivelDoRatings_repasseE?
+  possuiRecursosPropriosG configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosG?
+  repasseG                configuracaoMelhoraNivelDoRatings_repasseG?
+  possuiRecursosPropriosF configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosF?
+  repasseF                configuracaoMelhoraNivelDoRatings_repasseF?
+  possuiRecursosPropriosH configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosH?
+  repasseH                configuracaoMelhoraNivelDoRatings_repasseH?
+}
+
+model configuracaoSimuladorProdutos {
+  id                          Int                                @id @default(autoincrement())
+  tipo                        configuracaoSimuladorProdutos_tipo @default(sac)
+  taxaDeJuros                 Float                              @default(0) @db.Float
+  taxaDeJurosParaApresentacao String?                            @default("0") @db.VarChar(255)
+  indexador                   Float                              @default(0) @db.Float
+  creditoMinimo               Float                              @default(0) @db.Float
+  creditoMaximo               Float                              @default(100000) @db.Float
+  prazoMinimo                 Int                                @default(0)
+  prazoMaximo                 Int                                @default(72)
+  carenciaMinima              Int                                @default(0)
+  carenciaMaxima              Int                                @default(72)
+  produtoId                   Int
+  descricao                   String?                            @db.LongText
+  createdAt                   DateTime                           @default(dbgenerated("('2019-09-22 16:08:30')")) @db.DateTime(0)
+  updatedAt                   DateTime                           @default(dbgenerated("('2019-09-22 16:08:30')")) @db.DateTime(0)
+  produtos                    produtos                           @relation(fields: [produtoId], references: [id], onDelete: Cascade, map: "configuracaoSimuladorProdutos_ibfk_1")
+
+  @@index([produtoId], map: "produtoId")
+}
+
+model contaBancaria {
+  id            Int      @id @default(autoincrement())
+  agencia       String   @db.VarChar(255)
+  contaCorrente String   @db.VarChar(255)
+  gerente       String   @db.VarChar(255)
+  telefone      String   @db.VarChar(255)
+  clientId      Int
+  banco         String?  @db.VarChar(255)
+  createdAt     DateTime @db.DateTime(0)
+  updatedAt     DateTime @db.DateTime(0)
+  clients       clients  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "contaBancaria_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model contratoProposta {
+  id         Int      @id @default(autoincrement())
+  nome       String   @db.VarChar(255)
+  url        String   @db.VarChar(255)
+  referencia String   @db.VarChar(255)
+  propostaId Int
+  createdAt  DateTime @db.DateTime(0)
+  updatedAt  DateTime @db.DateTime(0)
+}
+
+model creditManagers {
+  id        Int      @id @default(autoincrement())
+  name      String?  @db.VarChar(255)
+  email     String?  @unique(map: "email") @db.VarChar(255)
+  password  String?  @db.VarChar(255)
+  roles     String?  @db.VarChar(255)
+  active    Boolean  @default(true)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model creditRequests {
+  id        Int      @id @default(autoincrement())
+  amount    Float    @default(0)
+  clientId  Int
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+  clients   clients  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "creditRequests_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model dadosFinanceirosProposta {
+  id                   Int                               @id @default(autoincrement())
+  propostaId           Int
+  projecao             dadosFinanceirosProposta_projecao
+  taxaCrescimento      Float?                            @db.Float
+  manifestacaoAnalista String?                           @db.Text
+  createdAt            DateTime                          @default(dbgenerated("('2019-01-18 01:03:11')")) @db.DateTime(0)
+  updatedAt            DateTime                          @default(dbgenerated("('2019-01-18 01:03:11')")) @db.DateTime(0)
+  proposta             proposta                          @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "dadosFinanceirosProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model despesaFixaProposta {
+  id         Int      @id @default(autoincrement())
+  propostaId Int
+  descricao  String   @db.VarChar(255)
+  custos     Float    @db.Float
+  createdAt  DateTime @default(dbgenerated("('2019-01-18 01:03:07')")) @db.DateTime(0)
+  updatedAt  DateTime @default(dbgenerated("('2019-01-18 01:03:07')")) @db.DateTime(0)
+  proposta   proposta @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "despesaFixaProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model despesaMaoDeObraProposta {
+  id         Int      @id @default(autoincrement())
+  propostaId Int
+  funcao     String   @db.VarChar(255)
+  quantidade Int
+  salario    Float    @db.Float
+  encargos   Float    @db.Float
+  createdAt  DateTime @default(dbgenerated("('2019-01-18 01:03:03')")) @db.DateTime(0)
+  updatedAt  DateTime @default(dbgenerated("('2019-01-18 01:03:03')")) @db.DateTime(0)
+  proposta   proposta @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "despesaMaoDeObraProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model despesaVariavelProposta {
+  id         Int      @id @default(autoincrement())
+  propostaId Int
+  descricao  String   @db.VarChar(255)
+  percentual Float    @db.Float
+  createdAt  DateTime @default(dbgenerated("('2019-01-18 01:02:56')")) @db.DateTime(0)
+  updatedAt  DateTime @default(dbgenerated("('2019-01-18 01:02:56')")) @db.DateTime(0)
+  proposta   proposta @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "despesaVariavelProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model directors {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model diretoriaDeCreditos {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model documentoAdicionalCnaeRestritos {
+  id                Int           @id @default(autoincrement())
+  cnaeRestritoId    Int
+  descricaoResumida String        @db.VarChar(255)
+  descricao         String        @db.VarChar(255)
+  createdAt         DateTime      @db.DateTime(0)
+  updatedAt         DateTime      @db.DateTime(0)
+  cnaeRestritos     cnaeRestritos @relation(fields: [cnaeRestritoId], references: [id], onDelete: Cascade, map: "documentoAdicionalCnaeRestritos_ibfk_1")
+
+  @@index([cnaeRestritoId], map: "cnaeRestritoId")
+}
+
+model documentoComplementarProposta {
+  id           Int       @id @default(autoincrement())
+  propostaId   Int
+  nome         String    @db.VarChar(255)
+  referencia   String    @db.VarChar(255)
+  url          String?   @db.VarChar(255)
+  isAdicionado Boolean?  @default(false)
+  adicionadoEm DateTime? @db.DateTime(0)
+  createdAt    DateTime  @default(dbgenerated("('2019-02-09 18:44:50')")) @db.DateTime(0)
+  updatedAt    DateTime  @default(dbgenerated("('2019-02-09 18:44:50')")) @db.DateTime(0)
+}
+
+model documentoProdutoProposta {
+  id                Int               @id @default(autoincrement())
+  propostaId        Int
+  documentoId       Int
+  produtoId         Int
+  url               String            @db.VarChar(255)
+  isAdicionado      Boolean           @default(false)
+  createdAt         DateTime          @default(dbgenerated("('2019-02-14 20:24:48')")) @db.DateTime(0)
+  updatedAt         DateTime          @default(dbgenerated("('2019-02-14 20:24:48')")) @db.DateTime(0)
+  proposta          proposta          @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "documentoProdutoProposta_ibfk_1")
+  documentoProdutos documentoProdutos @relation(fields: [documentoId], references: [id], onDelete: Cascade, map: "documentoProdutoProposta_ibfk_2")
+  produtos          produtos          @relation(fields: [produtoId], references: [id], onDelete: NoAction, map: "documentoProdutoProposta_ibfk_3")
+
+  @@index([documentoId], map: "documentoId")
+  @@index([produtoId], map: "produtoId")
+  @@index([propostaId], map: "propostaId")
+}
+
+model documentoProdutos {
+  id                       Int                            @id @default(autoincrement())
+  nome                     String                         @db.VarChar(255)
+  eObrigatorio             documentoProdutos_eObrigatorio
+  referencia               String                         @db.VarChar(255)
+  produtoId                Int
+  solicitarParaCliente     Boolean?                       @default(false)
+  createdAt                DateTime                       @default(dbgenerated("('2019-02-14 19:38:43')")) @db.DateTime(0)
+  updatedAt                DateTime                       @default(dbgenerated("('2019-02-14 19:38:43')")) @db.DateTime(0)
+  removedAt                DateTime?                      @db.DateTime(0)
+  documentoProdutoProposta documentoProdutoProposta[]
+  produtos                 produtos                       @relation(fields: [produtoId], references: [id], onDelete: Cascade, map: "documentoProdutos_ibfk_1")
+
+  @@index([produtoId], map: "produtoId")
+}
+
+model documentos {
+  id            BigInt           @id @default(autoincrement())
+  descricao     String           @db.VarChar(255)
+  url           String           @db.VarChar(255)
+  type          String           @db.VarChar(255)
+  validade      DateTime?        @db.DateTime(0)
+  clientId      Int?
+  tipo          documentos_tipo? @default(cadastro)
+  createdAt     DateTime         @db.DateTime(0)
+  updatedAt     DateTime         @db.DateTime(0)
+  preCadastroId Int?
+  publicUserId  Int?
+  genericId     Int?
+  clients       clients?         @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "documentos_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model documentosNecessarios {
+  id                               Int      @id @default(autoincrement())
+  descricao                        String   @db.VarChar(255)
+  mei                              Boolean? @default(false)
+  eirelli_optante_simples          Boolean? @default(false)
+  eirelli_lucro_presumido_real     Boolean? @default(false)
+  ltda_optante_simples             Boolean? @default(false)
+  ltda_lucro_presumido_real        Boolean? @default(false)
+  cooperativa_lucro_presumido_real Boolean? @default(false)
+  createdAt                        DateTime @db.DateTime(0)
+  updatedAt                        DateTime @db.DateTime(0)
+}
+
+model documentosNecessariosDeGarantias {
+  id        Int      @id @default(autoincrement())
+  descricao String   @db.VarChar(255)
+  aval      Boolean? @default(false)
+  veiculo   Boolean? @default(false)
+  imovel    Boolean? @default(false)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model endividamentoProposta {
+  id                  Int      @id @default(autoincrement())
+  propostaId          Int
+  credor              String   @db.VarChar(255)
+  valorPrestacao      Float    @db.Float
+  dataUltimaPrestacao DateTime @db.DateTime(0)
+  createdAt           DateTime @default(dbgenerated("('2019-01-18 01:02:36')")) @db.DateTime(0)
+  updatedAt           DateTime @default(dbgenerated("('2019-01-18 01:02:36')")) @db.DateTime(0)
+  proposta            proposta @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "endividamentoProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model estados {
+  id           Int            @id @default(autoincrement())
+  nome         String         @db.VarChar(255)
+  uf           String         @db.VarChar(255)
+  paisId       Int
+  createdAt    DateTime       @default(dbgenerated("('2018-12-06 18:22:53')")) @db.DateTime(0)
+  updatedAt    DateTime       @default(dbgenerated("('2018-12-06 18:22:53')")) @db.DateTime(0)
+  paiId        Int            @default(0)
+  cidades      cidades[]
+  preCadastros preCadastros[]
+}
+
+model fornecedors {
+  id                Int      @id @default(autoincrement())
+  nome              String   @db.VarChar(255)
+  nomePessoaContato String   @db.VarChar(255)
+  telefone          String   @db.VarChar(255)
+  clientId          Int
+  createdAt         DateTime @db.DateTime(0)
+  updatedAt         DateTime @db.DateTime(0)
+  clients           clients  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "fornecedors_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model garantia {
+  id                  Int            @id @default(autoincrement())
+  descricao           String         @db.VarChar(255)
+  tipo                garantia_tipo?
+  valor               Float          @db.Float
+  propostaId          Int
+  propostumId         Int
+  createdAt           DateTime       @default(dbgenerated("('2019-01-13 17:47:11')")) @db.DateTime(0)
+  updatedAt           DateTime       @default(dbgenerated("('2019-01-13 17:47:11')")) @db.DateTime(0)
+  documentName        String?        @db.VarChar(255)
+  documentUrl         String?        @db.VarChar(255)
+  nota                String?        @db.VarChar(10)
+  documentBoaVistaUrl String?        @db.VarChar(255)
+  proposta            proposta       @relation(fields: [propostumId], references: [id], onDelete: Cascade, map: "garantia_ibfk_1")
+
+  @@index([propostumId], map: "propostumId")
+}
+
+model gerentes {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model gestorDeRiscos {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @default("gestor-de-risco") @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model historicoContratos {
+  id                            Int      @id @default(autoincrement())
+  eRenegociacao                 String   @db.VarChar(255)
+  numeroContrato                String   @db.VarChar(255)
+  dataEmissao                   DateTime @db.DateTime(0)
+  quantidadeDeParcelas          Int
+  quantidadeDeParcelasComAtraso Int
+  clientId                      Int
+  createdAt                     DateTime @db.DateTime(0)
+  updatedAt                     DateTime @db.DateTime(0)
+}
+
+model icsdMinimos {
+  id               Int      @id @default(autoincrement())
+  tomador          String   @db.Char(255)
+  recursosProprios Float    @default(0) @db.Float
+  repasse          Float    @default(0) @db.Float
+  createdAt        DateTime @default(dbgenerated("('2019-01-21 20:26:56')")) @db.DateTime(0)
+  updatedAt        DateTime @default(dbgenerated("('2019-01-21 20:26:56')")) @db.DateTime(0)
+}
+
+model imovel_pre_cadastros {
+  id             Int                                  @id @default(autoincrement())
+  code           String?                              @db.VarChar(255)
+  tipo           imovel_pre_cadastros_tipo
+  uf             String                               @db.VarChar(255)
+  cidade         String                               @db.VarChar(255)
+  area           Float?                               @db.Float
+  unidadeArea    imovel_pre_cadastros_unidadeArea?
+  possuiRegistro imovel_pre_cadastros_possuiRegistro?
+  matricula      String?                              @db.VarChar(255)
+  nomeCartorio   String?                              @db.VarChar(255)
+  preCadastroId  Int
+  createdAt      DateTime                             @db.DateTime(0)
+  updatedAt      DateTime                             @db.DateTime(0)
+  preCadastros   preCadastros                         @relation(fields: [preCadastroId], references: [id], onDelete: Cascade, map: "imovel-pre-cadastros_ibfk_1")
+
+  @@index([preCadastroId], map: "preCadastroId")
+  @@map("imovel-pre-cadastros")
+}
+
+model imovels {
+  id             Int                     @id @default(autoincrement())
+  code           String?                 @db.VarChar(255)
+  tipo           imovels_tipo
+  uf             String                  @db.VarChar(255)
+  cidade         String                  @db.VarChar(255)
+  area           Float?                  @db.Float
+  unidadeArea    imovels_unidadeArea?
+  possuiRegistro imovels_possuiRegistro?
+  matricula      String?                 @db.VarChar(255)
+  nomeCartorio   String?                 @db.VarChar(255)
+  clientId       Int
+  createdAt      DateTime                @db.DateTime(0)
+  updatedAt      DateTime                @db.DateTime(0)
+  clients        clients                 @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "imovels_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model limiteDeMargems {
+  id        Int      @id @default(autoincrement())
+  secao     String   @db.VarChar(255)
+  limite    Float    @default(0) @db.Float
+  createdAt DateTime @default(dbgenerated("('2019-01-21 15:22:20')")) @db.DateTime(0)
+  updatedAt DateTime @default(dbgenerated("('2019-01-21 15:22:20')")) @db.DateTime(0)
+}
+
+model logs {
+  id          BigInt   @id @default(autoincrement())
+  dataHora    DateTime @db.DateTime(0)
+  proposta    Int?
+  cliente     Int?
+  tipoUsuario String   @db.VarChar(255)
+  usuario     Int
+  registro    String   @db.VarChar(255)
+  createdAt   DateTime @default(dbgenerated("('2019-02-19 21:15:54')")) @db.DateTime(0)
+  updatedAt   DateTime @default(dbgenerated("('2019-02-19 21:15:54')")) @db.DateTime(0)
+}
+
+model masterUsers {
+  id        Int      @id @default(autoincrement())
+  name      String?  @db.VarChar(255)
+  email     String?  @unique(map: "email") @db.VarChar(255)
+  password  String?  @db.VarChar(255)
+  roles     String?  @db.VarChar(255)
+  active    Boolean  @default(true)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model message_notifications {
+  id           Int      @id @default(autoincrement())
+  title        String   @db.VarChar(255)
+  content      String   @db.Text
+  publicUserId Int?
+  createdAt    DateTime @db.DateTime(0)
+  updatedAt    DateTime @db.DateTime(0)
+
+  @@map("message-notifications")
+}
+
+model naturezaJuridicaImpedidas {
+  id                 Int               @id @default(autoincrement())
+  naturezaJuridicaId Int
+  createdAt          DateTime          @db.DateTime(0)
+  updatedAt          DateTime          @db.DateTime(0)
+  naturezaJuridicas  naturezaJuridicas @relation(fields: [naturezaJuridicaId], references: [id], onDelete: NoAction, map: "naturezaJuridicaImpedidas_ibfk_1")
+
+  @@index([naturezaJuridicaId], map: "naturezaJuridicaId")
+}
+
+model naturezaJuridicas {
+  id                        Int                         @id @default(autoincrement())
+  code                      String                      @db.VarChar(255)
+  description               String                      @db.VarChar(255)
+  representante             String                      @db.VarChar(255)
+  createdAt                 DateTime                    @db.DateTime(0)
+  updatedAt                 DateTime                    @db.DateTime(0)
+  clients                   clients[]
+  naturezaJuridicaImpedidas naturezaJuridicaImpedidas[]
+  preCadastros              preCadastros[]
+}
+
+model pais {
+  id        Int      @id @default(autoincrement())
+  nome      String   @db.VarChar(255)
+  sigla     String   @db.VarChar(255)
+  createdAt DateTime @default(dbgenerated("('2018-12-06 18:23:03')")) @db.DateTime(0)
+  updatedAt DateTime @default(dbgenerated("('2018-12-06 18:23:03')")) @db.DateTime(0)
+}
+
+model parcelaProposta {
+  id         Int      @id @default(autoincrement())
+  propostaId Int
+  data       DateTime @db.DateTime(0)
+  valor      Float    @db.Float
+  createdAt  DateTime @default(dbgenerated("('2019-01-18 01:02:30')")) @db.DateTime(0)
+  updatedAt  DateTime @default(dbgenerated("('2019-01-18 01:02:30')")) @db.DateTime(0)
+  proposta   proposta @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "parcelaProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model parecerAnalistaProposta {
+  id            Int                             @id @default(autoincrement())
+  propostaId    Int
+  parecer       parecerAnalistaProposta_parecer
+  justificativa String?                         @db.Text
+  motivos       String?                         @db.VarChar(255)
+  createdAt     DateTime                        @default(dbgenerated("('2019-02-16 00:40:36')")) @db.DateTime(0)
+  updatedAt     DateTime                        @default(dbgenerated("('2019-02-16 00:40:36')")) @db.DateTime(0)
+}
+
+model permittedDupPublicEmails {
+  id        Int      @id @default(autoincrement())
+  email     String   @db.VarChar(255)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model pesquisaExternaBacens {
+  id                       Int       @id @default(autoincrement())
+  clientId                 Int
+  dataBase                 DateTime? @db.DateTime(0)
+  aVencer                  Float?    @db.Float
+  vencido                  Float?    @db.Float
+  prejuizo                 Float?    @db.Float
+  carteiraDeCredito        Float?    @db.Float
+  repassesInterfinanceiros Float?    @db.Float
+  coobrigacoes             Float?    @db.Float
+  responsabilidadeTotal    Float?    @db.Float
+  creditosALiberar         Float?    @db.Float
+  limitesDeCredito         Float?    @db.Float
+  riscoIndireto            Float?    @db.Float
+  riscoTotal               Float?    @db.Float
+  atualizadaEm             DateTime  @default(dbgenerated("('2019-06-13 13:09:21')")) @db.DateTime(0)
+  createdAt                DateTime  @db.DateTime(0)
+  updatedAt                DateTime  @db.DateTime(0)
+  possuiDividaVencida      Boolean?
+}
+
+model pesquisaExternaSocios {
+  id           Int      @id @default(autoincrement())
+  socioId      Int
+  retorno      String   @db.Text
+  atualizadaEm DateTime @default(dbgenerated("('2019-01-30 13:39:57')")) @db.DateTime(0)
+  createdAt    DateTime @db.DateTime(0)
+  updatedAt    DateTime @db.DateTime(0)
+}
+
+model pesquisaExternas {
+  id                                Int                   @id @default(autoincrement())
+  clientId                          Int
+  tipo                              pesquisaExternas_tipo
+  retorno                           String                @db.Text
+  cnpjDaIFSolicitante               String?               @default("") @db.VarChar(255)
+  codigoDoCliente                   String?               @default("") @db.VarChar(255)
+  coobrigacaoAssumida               String?               @default("") @db.VarChar(255)
+  coobrigacaoRecebida               String?               @default("") @db.VarChar(255)
+  dataBaseConsultada                String?               @default("") @db.VarChar(255)
+  dataInicioRelacionamento          String?               @default("") @db.VarChar(255)
+  percentualDocumentosProcessados   String?               @default("") @db.VarChar(255)
+  percentualVolumeProcessado        String?               @default("") @db.VarChar(255)
+  quantidadeDeInstituicoes          String?               @default("") @db.VarChar(255)
+  quantidadeDeOperacoes             String?               @default("") @db.VarChar(255)
+  quantidadeOperacoesDiscordancia   String?               @default("") @db.VarChar(255)
+  quantidadeOperacoesSubJudice      String?               @default("") @db.VarChar(255)
+  responsabilidadeTotalDiscordancia String?               @default("") @db.VarChar(255)
+  responsabilidadeTotalSubJudice    String?               @default("") @db.VarChar(255)
+  riscoIndiretoVendor               String?               @default("") @db.VarChar(255)
+  atualizadaEm                      DateTime              @default(dbgenerated("('2019-01-10 17:45:47')")) @db.DateTime(0)
+  createdAt                         DateTime              @db.DateTime(0)
+  updatedAt                         DateTime              @db.DateTime(0)
+  clients                           clients               @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "pesquisaExternas_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model pesquisaInternas {
+  id                              Int                                  @id @default(autoincrement())
+  clientId                        Int
+  trabalhoEscravo                 String?                              @db.VarChar(255)
+  renegociacaoRecente             String?                              @db.VarChar(255)
+  demandaJudicial                 String?                              @db.VarChar(255)
+  membrosEmConselho               String?                              @db.VarChar(255)
+  socioEmpregadoDaDesenvolve      String?                              @db.VarChar(255)
+  escritaNoCadin                  String?                              @db.VarChar(255)
+  socioDirigentePublico           String?                              @db.VarChar(255)
+  listaOriundaDasResolucoesDoCsnu String?                              @db.VarChar(255)
+  dividaVencidaBacen              pesquisaInternas_dividaVencidaBacen?
+  atualizadaEm                    DateTime                             @default(dbgenerated("('2019-01-13 18:09:00')")) @db.DateTime(0)
+  restricaoAbsolutaNaSerasa       String?                              @db.VarChar(255)
+  createdAt                       DateTime                             @db.DateTime(0)
+  updatedAt                       DateTime                             @db.DateTime(0)
+  cadastroEmConformidade          String?                              @db.VarChar(255)
+  clients                         clients                              @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "pesquisaInternas_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model preCadastros {
+  id                             Int                                   @id @default(autoincrement())
+  cnpj                           String                                @db.VarChar(255)
+  razaoSocial                    String                                @db.VarChar(255)
+  porte                          preCadastros_porte?
+  enquadramentoTributario        preCadastros_enquadramentoTributario?
+  cnaeId                         Int?
+  naturezaJuridicaId             Int?
+  empresaEmImplantacao           preCadastros_empresaEmImplantacao?
+  estadoId                       Int?
+  cidadeId                       Int?
+  garantias                      String?                               @db.VarChar(255)
+  produtoId                      Int
+  clienteInteressadoId           Int?
+  status                         preCadastros_status                   @default(pendente)
+  ultimoMesFaturamento           String?                               @db.VarChar(255)
+  faturamento                    String?                               @db.Text
+  isFromApp                      Boolean?                              @default(false)
+  valor                          Decimal?                              @default(0) @db.Decimal(10, 0)
+  declaracaoFiscalFaturamentoUrl String?                               @db.VarChar(255)
+  createdAt                      DateTime                              @db.DateTime(0)
+  updatedAt                      DateTime                              @db.DateTime(0)
+  sedeEmpresa                    String?                               @db.VarChar(255)
+  userPublicId                   Int?
+  despesaCmv                     Float?
+  despesaImpostos                Float?
+  despesaProLabore               Float?
+  despesaSalarioDeTerceiros      Float?
+  despesaComissoesSobreVendas    Float?
+  despesaAlugueis                Float?
+  despesaEnergiaEletrica         Float?
+  despesaTelefone                Float?
+  despesaAgua                    Float?
+  despesaPublicidade             Float?
+  despesaServicosDeTerceiros     Float?
+  despesaOutros                  Float?
+  pessoalQntFuncionarios         String?                               @db.VarChar(255)
+  pessoalFolhaPagamento          Float?
+  tipoCliente                    preCadastros_tipoCliente?             @default(juridica)
+  capitalDeGiro                  Float?
+  capitalDeGiroAssociado         Float?
+  maquinasEquipamentos           Float?
+  obraCivil                      Float?
+  outros                         Float?
+  veiculo                        Float?
+  opcaoParaDataPagamento         String?                               @db.VarChar(10)
+  imovel_pre_cadastros           imovel_pre_cadastros[]
+  cnaes                          cnaes?                                @relation(fields: [cnaeId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_1")
+  naturezaJuridicas              naturezaJuridicas?                    @relation(fields: [naturezaJuridicaId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_2")
+  estados                        estados?                              @relation(fields: [estadoId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_3")
+  cidades                        cidades?                              @relation(fields: [cidadeId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_4")
+  produtos                       produtos                              @relation(fields: [produtoId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_5")
+  clienteInteressados            clienteInteressados?                  @relation(fields: [clienteInteressadoId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_6")
+  user_publics                   user_publics?                         @relation(fields: [userPublicId], references: [id], onDelete: Cascade, map: "preCadastros_ibfk_7")
+  socioPreCadastros              socioPreCadastros[]
+  veiculo_pre_cadastros          veiculo_pre_cadastros[]
+
+  @@index([cidadeId], map: "cidadeId")
+  @@index([clienteInteressadoId], map: "clienteInteressadoId")
+  @@index([cnaeId], map: "cnaeId")
+  @@index([estadoId], map: "estadoId")
+  @@index([naturezaJuridicaId], map: "naturezaJuridicaId")
+  @@index([userPublicId], map: "preCadastros_ibfk_7")
+  @@index([produtoId], map: "produtoId")
+}
+
+model produtoCreditoDigitals {
+  id        Int      @id @default(autoincrement())
+  produtoId Int
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+  produtos  produtos @relation(fields: [produtoId], references: [id], onDelete: Cascade, map: "produtoCreditoDigitals_ibfk_1")
+
+  @@index([produtoId], map: "produtoId")
+}
+
+model produtos {
+  id                                      Int                                       @id @default(autoincrement())
+  nome                                    String                                    @db.VarChar(255)
+  vaiParaSimulador                        Boolean?                                  @default(false)
+  solicitacaoOnline                       Boolean?                                  @default(false)
+  capitalizacaoTrimestral                 Boolean?                                  @default(false)
+  enviarPropostaDeCredito                 Boolean?                                  @default(false)
+  createdAt                               DateTime                                  @default(dbgenerated("('2019-02-14 18:20:05')")) @db.DateTime(0)
+  updatedAt                               DateTime                                  @default(dbgenerated("('2019-02-14 18:20:05')")) @db.DateTime(0)
+  tipoPessoa                              produtos_tipoPessoa?                      @default(juridica)
+  tipoCredito                             produtos_tipoCredito?
+  valorCorteInvestimento                  Float?
+  restringirParaEnquadramento             String?                                   @db.Text
+  restringirParaCnaes                     String?                                   @db.Text
+  ratingMaximo                            Int?
+  campoAdicionalProdutoSolicitacaoOnlines campoAdicionalProdutoSolicitacaoOnlines[]
+  clienteInteressados                     clienteInteressados[]
+  configuracaoSimuladorProdutos           configuracaoSimuladorProdutos[]
+  documentoProdutoProposta                documentoProdutoProposta[]
+  documentoProdutos                       documentoProdutos[]
+  preCadastros                            preCadastros[]
+  produtoCreditoDigitals                  produtoCreditoDigitals[]
+}
+
+model proposta {
+  id                          Int                                @id @default(autoincrement())
+  status                      proposta_status                    @default(pendente)
+  valor                       Float
+  aplicacaoRecursos           String                             @db.Text
+  prazoPagamento              String                             @db.VarChar(255)
+  carencia                    proposta_carencia
+  carenciaMeses               String?                            @default("") @db.VarChar(255)
+  clientId                    Int
+  createdAt                   DateTime                           @db.DateTime(0)
+  updatedAt                   DateTime                           @db.DateTime(0)
+  quantidadeDeParcelas        Int?
+  dataInicioPagamento         DateTime?                          @db.DateTime(0)
+  origemDosRecursos           proposta_origemDosRecursos?
+  produtoId                   Int?
+  isFinalizada                Boolean?                           @default(false)
+  validaAte                   DateTime?                          @db.DateTime(0)
+  finalizadaEm                DateTime?                          @db.DateTime(0)
+  possuiDividaVencidaBacen    proposta_possuiDividaVencidaBacen?
+  creditoDigital              Boolean?                           @default(false)
+  atendeAosRequisitosDoMn     Boolean?                           @default(false)
+  parecer                     proposta_parecer?
+  justificativa               String?                            @db.Text
+  motivos                     String?                            @db.VarChar(255)
+  comPendenciaParaAnalise     Boolean?
+  origem                      proposta_origem?                   @default(fisica)
+  idUsuarioPublicoSolicitante Int?
+  objetivosDoInvestimento     String?                            @db.LongText
+  itensAFinanciar             String?                            @db.LongText
+  tributosProjetados          String?                            @db.LongText
+  analiseMercado              String?                            @db.LongText
+  principaisConcorrentes      String?                            @db.LongText
+  pontosFortesConcorrencia    String?                            @db.LongText
+  faturamentoProjetadoAno1    String?                            @db.VarChar(255)
+  faturamentoProjetadoAno2    String?                            @db.VarChar(255)
+  faturamentoProjetadoAno3    String?                            @db.VarChar(255)
+  faturamentoProjetadoAno4    String?                            @db.VarChar(255)
+  faturamentoProjetadoAno5    String?                            @db.VarChar(255)
+  empregosAtualDiretos        Int?
+  empregosAtualIndiretos      Int?
+  empregosAGerarDiretos       Int?
+  empregosAGerarIndiretos     Int?
+  outrasInformacoes           String?                            @db.LongText
+  dadosFinanceirosProposta    dadosFinanceirosProposta[]
+  despesaFixaProposta         despesaFixaProposta[]
+  despesaMaoDeObraProposta    despesaMaoDeObraProposta[]
+  despesaVariavelProposta     despesaVariavelProposta[]
+  documentoProdutoProposta    documentoProdutoProposta[]
+  endividamentoProposta       endividamentoProposta[]
+  garantia                    garantia[]
+  parcelaProposta             parcelaProposta[]
+  clients                     clients                            @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "proposta_ibfk_1")
+  quadroFinanceiroProposta    quadroFinanceiroProposta[]
+  relatorios                  relatorios[]
+  riscoOperacaos              riscoOperacaos[]
+  riscoTomadors               riscoTomadors[]
+
+  @@index([clientId], map: "clientId")
+}
+
+model quadroFinanceiroProposta {
+  id                   Int      @id @default(autoincrement())
+  propostaId           Int
+  mesAno               DateTime @db.DateTime(0)
+  faturamentoDeclarado Float
+  faturamentoFiscal    Float?
+  faturamentoAjustado  Float
+  createdAt            DateTime @default(dbgenerated("('2019-01-18 00:05:19')")) @db.DateTime(0)
+  updatedAt            DateTime @default(dbgenerated("('2019-01-18 00:05:19')")) @db.DateTime(0)
+  proposta             proposta @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "quadroFinanceiroProposta_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model relatorios {
+  id                                     Int                                  @id @default(autoincrement())
+  propostaId                             Int
+  dataEmissao                            DateTime?                            @db.DateTime(0)
+  dataValidade                           DateTime?                            @db.DateTime(0)
+  cnpj                                   String                               @db.VarChar(255)
+  razaoSocial                            String?                              @db.VarChar(255)
+  nomeFantasia                           String?                              @db.VarChar(255)
+  porteDaEmpresa                         String?                              @db.VarChar(255)
+  enquadramentoTributario                String?                              @db.VarChar(255)
+  visitaTecnicaForcas                    String?                              @db.Text
+  visitaTecnicaOportunidades             String?                              @db.Text
+  visitaTecnicaFraquezas                 String?                              @db.Text
+  visitaTecnicaAmeacas                   String?                              @db.Text
+  visitaTecnicaOutrosComentarios         String?                              @db.Text
+  propostaValor                          Float?                               @db.Float
+  propostaProduto                        String?                              @db.VarChar(255)
+  propostaQuantidadeDeParcelas           Int?
+  propostaAplicacaoDosRecursos           String?                              @db.Text
+  propostaRelatoSobreGarantias           String?                              @db.Text
+  riscoTomadorData                       DateTime?                            @db.DateTime(0)
+  riscoTomadorClasse                     String?                              @db.VarChar(255)
+  riscoTomadorInadimplencia              Float?                               @db.Float
+  riscoTomadorRiskscoring                Int?
+  riscoTomadorRating                     String?                              @db.Char(255)
+  riscoTomadorInicialBgColor             String?                              @db.VarChar(255)
+  riscoTomadorInicialFontColor           String?                              @db.VarChar(255)
+  riscoTomadorInicialGrupo               String?                              @db.Char(255)
+  riscoTomadorFinalBgColor               String?                              @db.VarChar(255)
+  riscoTomadorFinalFontColor             String?                              @db.VarChar(255)
+  riscoTomadorFinalGrupo                 String?                              @db.Char(255)
+  riscoOperacaoInicialBgColor            String?                              @db.VarChar(255)
+  riscoOperacaoInicialFontColor          String?                              @db.VarChar(255)
+  riscoOperacaoInicialGrupo              String?                              @db.Char(255)
+  riscoOperacaoImpactoICSDBgColor        String?                              @db.VarChar(255)
+  riscoOperacaoImpactoICSDFontColor      String?                              @db.VarChar(255)
+  riscoOperacaoImpactoICSDGrupo          String?                              @db.Char(255)
+  riscoOperacaoImpactoGarantiasBgColor   String?                              @db.VarChar(255)
+  riscoOperacaoImpactoGarantiasFontColor String?                              @db.VarChar(255)
+  riscoOperacaoImpactoGarantiasGrupo     String?                              @db.Char(255)
+  riscoOperacaoFinalBgColor              String?                              @db.VarChar(255)
+  riscoOperacaoFinalFontColor            String?                              @db.VarChar(255)
+  riscoOperacaoFinalGrupo                String?                              @db.Char(255)
+  parecerDoAnalistaParecer               relatorios_parecerDoAnalistaParecer?
+  parecerDoAnalistaJustificativa         String?                              @db.Text
+  apresentaCapacidadeDePagamento         Boolean?
+  createdAt                              DateTime?                            @db.DateTime(0)
+  updatedAt                              DateTime?                            @db.DateTime(0)
+  proposta                               proposta                             @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "relatorios_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model retornoCreditBureaus {
+  id        Int      @id @default(autoincrement())
+  cpf       String?  @db.VarChar(255)
+  retorno   String   @db.Text
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model retornoDadosCadastraisSerasaInfomais {
+  id        Int      @id @default(autoincrement())
+  cnpj      String?  @default("") @db.VarChar(255)
+  cpf       String?  @db.VarChar(255)
+  retorno   String   @db.Text
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model retornoDadosCadastraisSerasas {
+  id        Int      @id @default(autoincrement())
+  cnpj      String   @db.VarChar(255)
+  retorno   String   @db.Text
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model riscManagers {
+  id        Int      @id @default(autoincrement())
+  name      String?  @db.VarChar(255)
+  email     String?  @unique(map: "email") @db.VarChar(255)
+  password  String?  @db.VarChar(255)
+  roles     String?  @db.VarChar(255)
+  active    Boolean  @default(true)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model riscParams {
+  id        Int      @id @default(autoincrement())
+  active    Boolean  @default(true)
+  createdAt DateTime @db.DateTime(0)
+  updatedAt DateTime @db.DateTime(0)
+}
+
+model riscoOperacaos {
+  id                     Int                                  @id @default(autoincrement())
+  propostaId             Int
+  relatoSobreAsGarantias String                               @db.Text
+  melhorarClassificacao  riscoOperacaos_melhorarClassificacao @default(nao_se_aplica)
+  possuiRequisitos       riscoOperacaos_possuiRequisitos      @default(nao)
+  createdAt              DateTime                             @default(dbgenerated("('2019-02-02 18:55:40')")) @db.DateTime(0)
+  updatedAt              DateTime                             @default(dbgenerated("('2019-02-02 18:55:40')")) @db.DateTime(0)
+  proposta               proposta                             @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "riscoOperacaos_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model riscoTomadors {
+  id                         Int                                       @id @default(autoincrement())
+  propostaId                 Int
+  bureauDeCredito            Int?                                      @default(0)
+  dataDaPesquisa             DateTime?                                 @db.DateTime(0)
+  fonte                      riscoTomadors_fonte
+  classificacaoSofreMelhoria riscoTomadors_classificacaoSofreMelhoria?
+  classe                     String?                                   @db.VarChar(255)
+  ponteiro                   String?                                   @db.VarChar(255)
+  fatorRiskscoring           String?                                   @db.VarChar(255)
+  frase                      String?                                   @db.Text
+  dataPesquisaAutomatica     DateTime?                                 @db.DateTime(0)
+  createdAt                  DateTime                                  @default(dbgenerated("('2019-02-06 18:13:26')")) @db.DateTime(0)
+  updatedAt                  DateTime                                  @default(dbgenerated("('2019-02-06 18:13:26')")) @db.DateTime(0)
+  classificacaoFinal         String?                                   @db.VarChar(20)
+  proposta                   proposta                                  @relation(fields: [propostaId], references: [id], onDelete: Cascade, map: "riscoTomadors_ibfk_1")
+
+  @@index([propostaId], map: "propostaId")
+}
+
+model socioPreCadastros {
+  id                                 Int                                 @id @default(autoincrement())
+  name                               String                              @db.VarChar(255)
+  document                           String                              @db.VarChar(255)
+  type                               socioPreCadastros_type
+  participacao                       Float                               @db.Float
+  isGerente                          Boolean
+  telefoneFixo                       String?                             @db.VarChar(255)
+  telefoneCelular                    String?                             @db.VarChar(255)
+  telefoneWhatsApp                   String?                             @db.VarChar(255)
+  email                              String?                             @db.VarChar(255)
+  nacionalidade                      String?                             @db.VarChar(255)
+  profissao                          String?                             @db.VarChar(255)
+  dataEntrada                        DateTime?                           @db.DateTime(0)
+  pep                                socioPreCadastros_pep?              @default(nao_enquadra)
+  pepDeclarado                       socioPreCadastros_pepDeclarado?     @default(nao)
+  dataNascimento                     DateTime?                           @db.DateTime(0)
+  tipoIdentificacao                  String?                             @db.VarChar(255)
+  numeroIdentificacao                String?                             @db.VarChar(255)
+  dataEmissaoDocumento               DateTime?                           @db.DateTime(0)
+  orgaoExpeditor                     String?                             @db.VarChar(255)
+  ufExpeditor                        String?                             @db.VarChar(255)
+  estadoCivil                        socioPreCadastros_estadoCivil?
+  estadoCivilCasadoNome              String?                             @db.VarChar(255)
+  estadoCivilCasadoCpf               String?                             @db.VarChar(255)
+  estadoCivilCasadoDataNascimento    DateTime?                           @db.DateTime(0)
+  estadoCivilUniaoNome               String?                             @db.VarChar(255)
+  estadoCivilUniaoCpf                String?                             @db.VarChar(255)
+  estadoCivilUniaoDataNascimento     DateTime?                           @db.DateTime(0)
+  sexo                               String?                             @db.VarChar(255)
+  escolaridade                       String?                             @db.VarChar(255)
+  endereco                           String?                             @db.VarChar(255)
+  enderecoBairro                     String?                             @db.VarChar(255)
+  enderecoCidade                     String?                             @db.VarChar(255)
+  enderecoUf                         String?                             @db.VarChar(2)
+  enderecoCep                        String?                             @db.VarChar(255)
+  enderecoNumero                     String?                             @db.VarChar(255)
+  enderecoComplemento                String?                             @db.VarChar(255)
+  nomePai                            String?                             @db.VarChar(255)
+  nomeMae                            String?                             @db.VarChar(255)
+  documentoOficialComFotoUrl         String?                             @db.VarChar(255)
+  documentoComprovanteResidenciaUrl  String?                             @db.VarChar(255)
+  documentoComprovanteRendaUrl       String?                             @db.VarChar(255)
+  preCadastroId                      Int
+  confirmouOCadastro                 Boolean                             @default(false)
+  aguardandoAceite                   Boolean?                            @default(false)
+  createdAt                          DateTime                            @db.DateTime(0)
+  updatedAt                          DateTime                            @db.DateTime(0)
+  dadosConfirmados                   Boolean?
+  pepDeclaradoTipo                   socioPreCadastros_pepDeclaradoTipo?
+  documentoComprovanteEstadoCivilUrl String?                             @db.VarChar(255)
+  documentoOficialComFotoConjugeUrl  String?                             @db.VarChar(255)
+  preCadastros                       preCadastros                        @relation(fields: [preCadastroId], references: [id], onDelete: Cascade, map: "socioPreCadastros_ibfk_1")
+
+  @@index([preCadastroId], map: "preCadastroId")
+}
+
+model socios {
+  id                                 Int                      @id @default(autoincrement())
+  name                               String                   @db.VarChar(255)
+  document                           String                   @db.VarChar(255)
+  type                               socios_type
+  participacao                       Float                    @db.Float
+  isGerente                          Boolean
+  telefoneFixo                       String?                  @db.VarChar(255)
+  telefoneCelular                    String?                  @db.VarChar(255)
+  telefoneWhatsApp                   String?                  @db.VarChar(255)
+  email                              String?                  @db.VarChar(255)
+  nacionalidade                      String?                  @db.VarChar(255)
+  profissao                          String?                  @db.VarChar(255)
+  dataEntrada                        DateTime?                @db.DateTime(0)
+  pep                                socios_pep?              @default(nao_enquadra)
+  pepDeclarado                       socios_pepDeclarado?     @default(nao)
+  pepDeclaradoTipo                   socios_pepDeclaradoTipo?
+  dataNascimento                     DateTime?                @db.DateTime(0)
+  tipoIdentificacao                  String?                  @db.VarChar(255)
+  numeroIdentificacao                String?                  @db.VarChar(255)
+  dataEmissaoDocumento               DateTime?                @db.DateTime(0)
+  orgaoExpeditor                     String?                  @db.VarChar(255)
+  ufExpeditor                        String?                  @db.VarChar(255)
+  estadoCivil                        socios_estadoCivil?
+  estadoCivilCasadoNome              String?                  @db.VarChar(255)
+  estadoCivilCasadoCpf               String?                  @db.VarChar(255)
+  estadoCivilCasadoDataNascimento    DateTime?                @db.DateTime(0)
+  estadoCivilUniaoNome               String?                  @db.VarChar(255)
+  estadoCivilUniaoCpf                String?                  @db.VarChar(255)
+  estadoCivilUniaoDataNascimento     DateTime?                @db.DateTime(0)
+  sexo                               String?                  @db.VarChar(255)
+  escolaridade                       String?                  @db.VarChar(255)
+  endereco                           String?                  @db.VarChar(255)
+  enderecoBairro                     String?                  @db.VarChar(255)
+  enderecoCidade                     String?                  @db.VarChar(255)
+  enderecoUf                         String?                  @db.VarChar(255)
+  enderecoCep                        String?                  @db.VarChar(255)
+  enderecoNumero                     String?                  @db.VarChar(255)
+  enderecoComplemento                String?                  @db.VarChar(255)
+  nomePai                            String?                  @db.VarChar(255)
+  nomeMae                            String?                  @db.VarChar(255)
+  documentoOficialComFotoUrl         String?                  @db.VarChar(255)
+  documentoComprovanteResidenciaUrl  String?                  @db.VarChar(255)
+  documentoComprovanteRendaUrl       String?                  @db.VarChar(255)
+  documentoComprovanteEstadoCivilUrl String?                  @db.VarChar(255)
+  documentoOficialComFotoConjugeUrl  String?                  @db.VarChar(255)
+  confirmouOCadastro                 Boolean                  @default(false)
+  aguardandoAceite                   Boolean?                 @default(false)
+  dadosConfirmados                   Boolean?                 @default(false)
+  clientId                           Int
+  createdAt                          DateTime                 @db.DateTime(0)
+  updatedAt                          DateTime                 @db.DateTime(0)
+  naturalidade                       String?                  @db.VarChar(255)
+  sede                               String?                  @db.VarChar(255)
+  sedeValorAluguel                   Float?
+  sedeValorPrestacao                 Float?
+  sedeCredor                         String?                  @db.VarChar(255)
+  sedeOutros                         String?                  @db.VarChar(255)
+  outrasRendas                       String?                  @db.VarChar(255)
+  outrasRendasTipo                   String?                  @db.VarChar(255)
+  outrasRendasValor                  String?                  @db.VarChar(255)
+  rendaSocioPJValor                  String?                  @db.VarChar(255)
+  rendaDoConjuge                     String?                  @db.VarChar(255)
+  rendaPrincipal                     String?                  @db.VarChar(255)
+  rendaPrincipalValor                String?                  @db.VarChar(255)
+  clients                            clients                  @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "socios_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model tabelaClasseRiscoPFs {
+  id          Int      @id @default(autoincrement())
+  classe      String   @default("") @db.VarChar(255)
+  de          String   @default("") @db.VarChar(255)
+  ate         String   @default("") @db.VarChar(255)
+  letra       String   @default("") @db.Char(255)
+  informativo String   @db.Text
+  createdAt   DateTime @default(dbgenerated("('2021-06-26 14:57:44')")) @db.DateTime(0)
+  updatedAt   DateTime @default(dbgenerated("('2021-06-26 14:57:44')")) @db.DateTime(0)
+}
+
+model tabelaClasseRiscos {
+  id          Int      @id @default(autoincrement())
+  classe      String   @default("") @db.VarChar(255)
+  classeExtra String?  @db.VarChar(255)
+  de          String   @default("") @db.VarChar(255)
+  ate         String   @default("") @db.VarChar(255)
+  letra       String   @default("") @db.Char(255)
+  informativo String   @db.Text
+  createdAt   DateTime @default(dbgenerated("('2021-06-26 14:57:02')")) @db.DateTime(0)
+  updatedAt   DateTime @default(dbgenerated("('2021-06-26 14:57:02')")) @db.DateTime(0)
+}
+
+model tecnologia {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @db.VarChar(255)
+  active             Boolean  @default(true)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+  permissionInfomais Boolean? @default(false)
+}
+
+model user_publics {
+  id                                 Int                                    @id @default(autoincrement())
+  name                               String?                                @db.VarChar(255)
+  email                              String?                                @db.VarChar(255)
+  tipoPessoa                         user_publics_tipoPessoa
+  documento                          String                                 @unique(map: "documento") @db.VarChar(255)
+  password                           String?                                @db.VarChar(255)
+  confirmedEmail                     Boolean                                @default(false)
+  phone                              String?                                @default("(65) 99999-9999") @db.VarChar(15)
+  pendingPassword                    Boolean?                               @default(false)
+  dadosCompletos                     Boolean?                               @default(false)
+  roles                              String?                                @default("p-user") @db.VarChar(255)
+  active                             Boolean                                @default(true)
+  documentoIdentificacaoUrl          String?                                @db.VarChar(255)
+  inscricaoEstadual                  String?                                @db.VarChar(255)
+  inscricaoMunicipal                 String?                                @db.VarChar(255)
+  isFranquia                         user_publics_isFranquia?
+  cnpjFranqueador                    String?                                @db.VarChar(20)
+  nomeFranqueador                    String?                                @db.VarChar(255)
+  numeroFiliais                      Int?
+  porteEmpresa                       user_publics_porteEmpresa?
+  enquadramentoTributario            user_publics_enquadramentoTributario?
+  cepFiscal                          String?                                @db.VarChar(15)
+  ufFiscal                           String?                                @db.VarChar(2)
+  cidadeFiscal                       String?                                @db.VarChar(255)
+  bairroFiscal                       String?                                @db.VarChar(255)
+  enderecoFiscal                     String?                                @db.VarChar(255)
+  numeroFiscal                       String?                                @db.VarChar(255)
+  complementoFiscal                  String?                                @db.VarChar(255)
+  cepComercial                       String?                                @db.VarChar(15)
+  ufComercial                        String?                                @db.VarChar(2)
+  cidadeComercial                    String?                                @db.VarChar(255)
+  bairroComercial                    String?                                @db.VarChar(255)
+  enderecoComercial                  String?                                @default("") @db.VarChar(255)
+  numeroComercial                    String?                                @db.VarChar(255)
+  complementoComercial               String?                                @db.VarChar(255)
+  site                               String?                                @db.VarChar(255)
+  facebook                           String?                                @db.VarChar(255)
+  instagram                          String?                                @db.VarChar(255)
+  createdAt                          DateTime                               @db.DateTime(0)
+  updatedAt                          DateTime                               @db.DateTime(0)
+  comprovanteEndereco                String?                                @db.Text
+  flags                              String?                                @db.VarChar(255)
+  cpfUsadoNoCadastro                 String?                                @db.VarChar(255)
+  possuiInscricaoMunicipal           user_publics_possuiInscricaoMunicipal?
+  possuiInscricaoEstadual            user_publics_possuiInscricaoEstadual?
+  possuiFiliais                      user_publics_possuiFiliais?
+  dataNascimento                     String?                                @db.VarChar(20)
+  tipoIdentificacao                  String?                                @db.VarChar(255)
+  numeroIdentificacao                String?                                @db.VarChar(255)
+  dataEmissaoDocumento               String?                                @db.VarChar(20)
+  orgaoExpeditor                     String?                                @db.VarChar(255)
+  ufExpeditor                        String?                                @db.VarChar(2)
+  estadoCivil                        String?                                @db.VarChar(255)
+  nomePai                            String?                                @db.VarChar(255)
+  estadoCivilUniaoNome               String?                                @db.VarChar(255)
+  estadoCivilUniaoCpf                String?                                @db.VarChar(30)
+  estadoCivilUniaoDataNascimento     String?                                @db.VarChar(20)
+  estadoCivilCasadoNome              String?                                @db.VarChar(255)
+  estadoCivilCasadoCpf               String?                                @db.VarChar(30)
+  estadoCivilCasadoDataNascimento    String?                                @db.VarChar(20)
+  documentoOficialComFotoUrl         String?                                @default("") @db.VarChar(255)
+  documentoComprovanteEstadoCivilUrl String?                                @db.VarChar(255)
+  documentoOficialComFotoConjugeUrl  String?                                @db.VarChar(255)
+  documentoComprovanteResidenciaUrl  String?                                @db.VarChar(255)
+  documentoComprovanteRendaUrl       String?                                @db.VarChar(255)
+  despesaCmv                         Float?
+  despesaImpostos                    Float?
+  deviceToken                        String?                                @db.Text
+  status                             user_publics_status?                   @default(email_nao_confirmado)
+  motivoImpedimento                  String?                                @db.Text
+  nameResponsavel                    String?                                @db.VarChar(255)
+  nomeSocial                         String?                                @db.VarChar(255)
+  declaracaoFiscalFaturamentoUrl     String?                                @db.VarChar(255)
+  despesaProLabore                   Float?
+  despesaSalarioDeTerceiros          Float?
+  despesaComissoesSobreVendas        Float?
+  despesaAlugueis                    Float?
+  despesaEnergiaEletrica             Float?
+  despesaTelefone                    Float?
+  despesaAgua                        Float?
+  despesaPublicidade                 Float?
+  despesaServicosDeTerceiros         Float?
+  despesaOutros                      Float?
+  pessoalQntFuncionarios             String?                                @db.VarChar(255)
+  pessoalFolhaPagamento              Float?
+  avatar                             String?                                @db.LongText
+  naturezaJuridica                   String?                                @db.Text
+  creditoSetorial                    String?                                @db.Text
+  authLoginUnico                     Boolean?                               @default(false)
+  usuarioGovVinculado                String?                                @db.VarChar(255)
+  cidadeNascimento                   String?                                @db.VarChar(150)
+  ufNascimento                       String?                                @db.VarChar(2)
+  preCadastros                       preCadastros[]
+
+  @@map("user-publics")
+}
+
+model userAuditoria {
+  id                 Int      @id @default(autoincrement())
+  name               String?  @db.VarChar(255)
+  email              String?  @unique(map: "email") @db.VarChar(255)
+  password           String?  @db.VarChar(255)
+  roles              String?  @default("userAuditoria") @db.VarChar(255)
+  active             Boolean  @default(true)
+  permissionInfomais Boolean  @default(false)
+  createdAt          DateTime @db.DateTime(0)
+  updatedAt          DateTime @db.DateTime(0)
+}
+
+model veiculo_pre_cadastros {
+  id             Int                            @id @default(autoincrement())
+  code           String?                        @db.VarChar(255)
+  marca          String                         @db.VarChar(255)
+  modelo         String                         @db.VarChar(255)
+  placa          String                         @db.VarChar(255)
+  renavam        String?                        @db.VarChar(255)
+  anoFabricacao  Int
+  anoModelo      Int
+  valorMercado   Float
+  alienado       veiculo_pre_cadastros_alienado @default(nao)
+  credor         String?                        @db.VarChar(255)
+  valorPrestacao Float?
+  preCadastroId  Int
+  createdAt      DateTime                       @db.DateTime(0)
+  updatedAt      DateTime                       @db.DateTime(0)
+  preCadastros   preCadastros                   @relation(fields: [preCadastroId], references: [id], onDelete: Cascade, map: "veiculo-pre-cadastros_ibfk_1")
+
+  @@index([preCadastroId], map: "preCadastroId")
+  @@map("veiculo-pre-cadastros")
+}
+
+model veiculos {
+  id             Int               @id @default(autoincrement())
+  code           String?           @db.VarChar(255)
+  marca          String            @db.VarChar(255)
+  modelo         String            @db.VarChar(255)
+  placa          String            @db.VarChar(255)
+  renavam        String?           @db.VarChar(255)
+  anoFabricacao  Int
+  anoModelo      Int
+  valorMercado   Float
+  alienado       veiculos_alienado @default(nao)
+  credor         String?           @db.VarChar(255)
+  valorPrestacao Float?
+  clientId       Int
+  createdAt      DateTime          @db.DateTime(0)
+  updatedAt      DateTime          @db.DateTime(0)
+  clients        clients           @relation(fields: [clientId], references: [id], onDelete: Cascade, map: "veiculos_ibfk_1")
+
+  @@index([clientId], map: "clientId")
+}
+
+model visitaTecnicaProposta {
+  id                Int      @id @default(autoincrement())
+  propostaId        Int
+  ameacas           String?  @db.Text
+  forcas            String?  @db.Text
+  fraquezas         String?  @db.Text
+  oportunidades     String?  @db.Text
+  outrosComentarios String?  @db.Text
+  createdAt         DateTime @default(dbgenerated("('2019-02-16 00:36:33')")) @db.DateTime(0)
+  updatedAt         DateTime @default(dbgenerated("('2019-02-16 00:36:33')")) @db.DateTime(0)
+}
+
+enum proposta_status {
+  pendente
+  em_analise
+  deferido
+  indeferido
+  desistente
+  pendencias_analise @map("pendencias-analise")
+  garantias
+  vencida
+  proposta_inicial
+}
+
+enum configuracaoSimuladorProdutos_tipo {
+  sac
+  price
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosA {
+  sim
+  nao
+}
+
+enum pesquisaExternas_tipo {
+  bacen
+  serasa
+}
+
+enum imovels_tipo {
+  apartamento
+  casa
+  terreno
+  imovel_rural  @map("imovel-rural")
+  sala_conjunto @map("sala-conjunto")
+  construcao
+  loja
+  outros
+}
+
+enum imovel_pre_cadastros_tipo {
+  apartamento
+  casa
+  terreno
+  imovel_rural  @map("imovel-rural")
+  sala_conjunto @map("sala-conjunto")
+  construcao
+  loja
+  outros
+
+  @@map("imovel-pre-cadastros_tipo")
+}
+
+enum parecerAnalistaProposta_parecer {
+  favoravel
+  desfavoravel
+}
+
+enum dadosFinanceirosProposta_projecao {
+  taxa_constante  @map("taxa-constante")
+  sem_crescimento @map("sem-crescimento")
+}
+
+enum documentoProdutos_eObrigatorio {
+  sim
+  nao
+}
+
+enum garantia_tipo {
+  imovel
+  veiculo
+  fiador
+  fampe
+  outro
+  aval
+  fianca
+  maquinas_e_equipamentos @map("maquinas-e-equipamentos")
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseA {
+  sim
+  nao
+}
+
+enum socios_type {
+  fisica
+  juridica
+}
+
+enum preCadastros_porte {
+  microempresa
+  pequena_empresa @map("pequena-empresa")
+  media_empresa   @map("media-empresa")
+  grande_empresa  @map("grande-empresa")
+}
+
+enum avalistaPreCadastros_type {
+  fisica
+  juridica
+}
+
+enum riscoOperacaos_melhorarClassificacao {
+  nao_se_aplica         @map("nao-se-aplica")
+  fianca
+  alienacao_de_veiculos @map("alienacao-de-veiculos")
+  alienacao_de_imoveis  @map("alienacao-de-imoveis")
+}
+
+enum administradors_type {
+  fisica
+  juridica
+}
+
+enum user_publics_tipoPessoa {
+  pessoa_juridica @map("pessoa-juridica")
+  pessoa_fisica   @map("pessoa-fisica")
+
+  @@map("user-publics_tipoPessoa")
+}
+
+enum socioPreCadastros_type {
+  fisica
+  juridica
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosB {
+  sim
+  nao
+}
+
+enum preCadastros_enquadramentoTributario {
+  microempreendedor_individual @map("microempreendedor-individual")
+  simples_nacional             @map("simples-nacional")
+  lucro_presumido              @map("lucro-presumido")
+  lucro_real                   @map("lucro-real")
+}
+
+enum riscoOperacaos_possuiRequisitos {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseB {
+  sim
+  nao
+}
+
+enum riscoTomadors_fonte {
+  serasa
+  boa_vista @map("boa-vista")
+}
+
+enum proposta_carencia {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosC {
+  sim
+  nao
+}
+
+enum riscoTomadors_classificacaoSofreMelhoria {
+  sim
+  nao
+}
+
+enum imovels_unidadeArea {
+  metro
+  hectare
+}
+
+enum imovel_pre_cadastros_unidadeArea {
+  metro
+  hectare
+
+  @@map("imovel-pre-cadastros_unidadeArea")
+}
+
+enum documentos_tipo {
+  certidao
+  cadastro
+  outro
+  pre_cadastro @map("pre-cadastro")
+  user_public  @map("user-public")
+  proposta
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseC {
+  sim
+  nao
+}
+
+enum imovels_possuiRegistro {
+  sim
+  nao
+}
+
+enum imovel_pre_cadastros_possuiRegistro {
+  sim
+  nao
+
+  @@map("imovel-pre-cadastros_possuiRegistro")
+}
+
+enum preCadastros_empresaEmImplantacao {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosD {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseD {
+  sim
+  nao
+}
+
+enum produtos_tipoPessoa {
+  fisica
+  juridica
+}
+
+enum veiculos_alienado {
+  sim
+  nao
+}
+
+enum veiculo_pre_cadastros_alienado {
+  sim
+  nao
+
+  @@map("veiculo-pre-cadastros_alienado")
+}
+
+enum produtos_tipoCredito {
+  capital_giro @map("capital-giro")
+  investimento
+}
+
+enum pesquisaInternas_dividaVencidaBacen {
+  sim
+  nao
+}
+
+enum avalistaPreCadastros_pep {
+  nao_enquadra @map("nao-enquadra")
+  em_exercicio @map("em-exercicio")
+  afastado
+  inativo
+  parente
+}
+
+enum administradors_pep {
+  nao_enquadra @map("nao-enquadra")
+  em_exercicio @map("em-exercicio")
+  afastado
+  inativo
+  parente
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosE {
+  sim
+  nao
+}
+
+enum avalistaPreCadastros_pepDeclarado {
+  sim
+  nao
+}
+
+enum proposta_origemDosRecursos {
+  EMPTY_ENUM_VALUE  @map("")
+  recursos_proprios @map("recursos-proprios")
+  repasse
+}
+
+enum clienteInteressados_status {
+  nao_iniciado
+  em_atendimento
+  concluido_com_sucesso
+  sem_prosseguimento
+  aguardando_documentacao_cadastro
+  cadastro_elaboracao
+  cadastro_concluido
+  em_analise
+  credito_aprovado
+  proposta_indeferida
+  documentacao_entrega_parcial
+  em_fase_comite_credito
+  comite_realizado
+  aguardando_elaboracao_contrato
+  contrato_finalizado
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseE {
+  sim
+  nao
+}
+
+enum socios_pep {
+  nao_enquadra      @map("nao-enquadra")
+  em_exercicio      @map("em-exercicio")
+  afastado
+  inativo
+  parente
+  consta_pep_serasa @map("consta-pep-serasa")
+}
+
+enum clients_porte {
+  mei
+  microempresa
+  pequena_empresa @map("pequena-empresa")
+  media_empresa   @map("media-empresa")
+  grande_empresa  @map("grande-empresa")
+}
+
+enum preCadastros_status {
+  pendente
+  em_andamento             @map("em-andamento")
+  aprovado
+  reprovado
+  cadastro_socios          @map("cadastro-socios")
+  faturamento
+  informacoes_patrimoniais @map("informacoes-patrimoniais")
+  garantias
+  desistente
+}
+
+enum avalistaPreCadastros_pepDeclaradoTipo {
+  em_exercicio @map("em-exercicio")
+  afastado
+  inativo
+  parente
+}
+
+enum socioPreCadastros_pep {
+  nao_enquadra @map("nao-enquadra")
+  em_exercicio @map("em-exercicio")
+  afastado
+  inativo
+  parente
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosG {
+  sim
+  nao
+}
+
+enum socios_pepDeclarado {
+  sim
+  nao
+}
+
+enum socioPreCadastros_pepDeclarado {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseG {
+  sim
+  nao
+}
+
+enum socios_pepDeclaradoTipo {
+  em_exercicio      @map("em-exercicio")
+  afastado
+  inativo
+  parente
+  consta_pep_serasa @map("consta-pep-serasa")
+}
+
+enum clients_franquia {
+  sim
+  nao
+}
+
+enum user_publics_isFranquia {
+  sim
+  nao
+
+  @@map("user-publics_isFranquia")
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosF {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseF {
+  sim
+  nao
+}
+
+enum proposta_possuiDividaVencidaBacen {
+  sim
+  nao
+}
+
+enum configuracaoMelhoraNivelDoRatings_possuiRecursosPropriosH {
+  sim
+  nao
+}
+
+enum clienteInteressados_motivoDaRecusa {
+  menos_12_meses
+  cnae_nao_enquadra
+  empresa_inativa
+  desistencia_cliente
+  outros_estados
+}
+
+enum configuracaoMelhoraNivelDoRatings_repasseH {
+  sim
+  nao
+}
+
+enum clients_situacaoCadastral {
+  ativo
+  inativo
+  baixada
+}
+
+enum user_publics_porteEmpresa {
+  microempresa
+  pequena_empresa @map("pequena-empresa")
+  media_empresa   @map("media-empresa")
+  grande_empresa  @map("grande-empresa")
+  mei
+
+  @@map("user-publics_porteEmpresa")
+}
+
+enum avalistaPreCadastros_estadoCivil {
+  solteiro
+  casado
+  uniao_estavel @map("uniao-estavel")
+  viuvo
+  divorciado
+  separado
+}
+
+enum proposta_parecer {
+  favoravel
+  desfavoravel
+}
+
+enum user_publics_enquadramentoTributario {
+  microempreendedor_individual @map("microempreendedor-individual")
+  simples_nacional             @map("simples-nacional")
+  lucro_presumido              @map("lucro-presumido")
+  lucro_real                   @map("lucro-real")
+
+  @@map("user-publics_enquadramentoTributario")
+}
+
+enum socioPreCadastros_estadoCivil {
+  solteiro
+  casado
+  uniao_estavel @map("uniao-estavel")
+  viuvo
+  divorciado
+  separado
+}
+
+enum socios_estadoCivil {
+  solteiro
+  casado
+  uniao_estavel @map("uniao-estavel")
+  viuvo
+  divorciado
+  separado
+}
+
+enum proposta_origem {
+  digital
+  fisica
+}
+
+enum clienteInteressados_tipoCliente {
+  fisica
+  juridica
+}
+
+enum clienteInteressados_origem {
+  solicitacao_online @map("solicitacao-online")
+  webapp
+}
+
+enum preCadastros_tipoCliente {
+  fisica
+  juridica
+}
+
+enum clients_sede {
+  propria
+  alugada
+  financiada
+  outros
+}
+
+enum relatorios_parecerDoAnalistaParecer {
+  favoravel
+  desfavoravel
+}
+
+enum user_publics_possuiInscricaoMunicipal {
+  sim
+  nao
+
+  @@map("user-publics_possuiInscricaoMunicipal")
+}
+
+enum user_publics_possuiInscricaoEstadual {
+  sim
+  nao
+
+  @@map("user-publics_possuiInscricaoEstadual")
+}
+
+enum user_publics_possuiFiliais {
+  sim
+  nao
+
+  @@map("user-publics_possuiFiliais")
+}
+
+enum socioPreCadastros_pepDeclaradoTipo {
+  em_exercicio @map("em-exercicio")
+  afastado
+  inativo
+  parente
+}
+
+enum clients_enquadramentoTributario {
+  microempreendedor_individual @map("microempreendedor-individual")
+  simples_nacional             @map("simples-nacional")
+  lucro_presumido              @map("lucro-presumido")
+  lucro_real                   @map("lucro-real")
+}
+
+enum clients_statusCadastro {
+  ativo
+  pendente
+}
+
+enum clients_temPendencias {
+  nenhuma
+  absoluta
+  relativa
+}
+
+enum user_publics_status {
+  nao_se_enquadra_na_politica   @map("nao-se-enquadra-na-politica")
+  email_nao_confirmado          @map("email-nao-confirmado")
+  conta_criada                  @map("conta-criada")
+  cadastrando_socios            @map("cadastrando-socios")
+  restricao_serasa              @map("restricao-serasa")
+  escolhendo_credito            @map("escolhendo-credito")
+  adicionando_documentos        @map("adicionando-documentos")
+  informando_faturamento        @map("informando-faturamento")
+  informando_dados_patrimoniais @map("informando-dados-patrimoniais")
+  em_analise_cadastral          @map("em-analise-cadastral")
+  restricao_pesquisa_interna    @map("restricao-pesquisa-interna")
+  cadastro_inconforme           @map("cadastro-inconforme")
+
+  @@map("user-publics_status")
+}
+
+enum clients_empresaEmImplantacao {
+  sim
+  nao
+}
+
+enum clients_tipoCliente {
+  fisica
+  juridica
+}
+
+enum clients_pep {
+  nao_enquadra      @map("nao-enquadra")
+  em_exercicio      @map("em-exercicio")
+  afastado
+  inativo
+  parente
+  consta_pep_serasa @map("consta-pep-serasa")
+}
+
+enum clients_pepDeclarado {
+  sim
+  nao
+}
+
+enum clients_pepDeclaradoTipo {
+  em_exercicio      @map("em-exercicio")
+  afastado
+  inativo
+  parente
+  consta_pep_serasa @map("consta-pep-serasa")
+}

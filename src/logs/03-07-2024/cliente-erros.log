@@ -1,0 +1,317 @@
+2024-07-03 08:08:03;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:04;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:04;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:28;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:29;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:29;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao cadastrar cliente: SIMONE ALVES CHAVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao enviar ramo: {
+  codigoCliente: undefined,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDTO com.totvs.tfs.basico.cadastro.service.AtividadeClienteService.incluir(com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.AtividadeClienteDetalheDTO@729ae95f]
+Violações de restrição: 
+  (1
+      mensagem: Atributo 'codigoCliente' é obrigatório!
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.AtividadeClienteService@6b685f90
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao enviar mãe: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'MARIA ROSICLER DA CUNHA CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@7c4563ac]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MARIO ALVES CHAVES',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@b870a7a]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao enviar Pai: {
+  codigoCliente: undefined,
+  cpfParente: '03426863138',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: 'JOCIMAR DOS SANTOS',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: 1 violação(ões) de restrição ocorrida durante a invocação do método
+Método: public com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO com.totvs.tfs.basico.cadastro.service.ParentescoService.incluir(com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO)
+Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.ParentescoDetalheDTO@44f1a3cd]
+Violações de restrição: 
+  (1
+      mensagem: must not be null
+      objeto raíz: com.totvs.tfs.basico.cadastro.service.ParentescoService@28c1cb2
+      caminho da propriedade: incluir.arg0.codigoCliente
+      restrição: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck]);{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@581b65a2]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:58;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@1a825b9]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:08:59;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  status: 422,
+  message: '1 violação(ões) de restrição ocorrida durante a invocação do método\n' +
+    'Método: public com.totvs.tfs.basico.cadastro.dto.EnderecoDTO com.totvs.tfs.basico.cadastro.service.EnderecoService.alterar(com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO)\n' +
+    'Valores de argumento: [com.totvs.tfs.basico.cadastro.dto.EnderecoDetalheDTO@1a859980]\n' +
+    'Violações de restrição: \n' +
+    '  (1\n' +
+    "      mensagem: Atributo 'codigoCliente' é obrigatório!\n" +
+    '      objeto raíz: com.totvs.tfs.basico.cadastro.service.EnderecoService@6998f828\n' +
+    '      caminho da propriedade: alterar.arg0.codigoCliente\n' +
+    "      restrição: @javax.validation.constraints.NotNull(message=Atributo 'codigoCliente' é obrigatório!, payload=[], groups=[interface com.totvs.tfs.framework.validator.InsertCheck, interface com.totvs.tfs.framework.validator.UpdateCheck, interface com.totvs.tfs.framework.validator.DeleteCheck])"
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:11:18;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:11:18;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:11:19;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:12:51;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65999086604',
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:12:51;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Nova Mutum',
+  nomeBairro: 'RES PALMEIRAS',
+  codigoCep: '78450000',
+  nomeLogradouro: 'DOS TUCANOS',
+  numeroEndereco: '3140',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999086604',
+  codigoTipoImovel: 3
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 08:12:51;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  telefoneCompleto: '65999086604',
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78450000',
+  numeroEndereco: 'SN',
+  nomeLogradouro: 'RUA DAS NOGUEIRAS ',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-03 09:09:20;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-03 09:21:03;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-03 09:47:08;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}

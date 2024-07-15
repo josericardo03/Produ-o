@@ -1,0 +1,10 @@
+2024-07-06 12:46:32;error;Erro ao cadastrar cliente: CLEITON FABRICIO DA SILVA => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:46:48;error;Erro ao cadastrar cliente: SERGIANE DE LARA PINTO => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:47:03;error;Erro ao cadastrar cliente: STELLA PAULA OLIVEIRA DA SILVA => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:47:18;error;Erro ao enviar Contato: => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:47:31;error;Erro ao cadastrar cliente: CLEITON FABRICIO DA SILVA 01983100137 => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:47:33;error;Erro ao enviar Contato: => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:47:46;error;Erro ao cadastrar cliente: S L CONFECCOES E BIJOUTERIAS LTDA => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:47:49;error;Erro ao enviar Contato: => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:48:02;error;Erro ao cadastrar cliente: SP GESTAO DE PESSOAS LTDA => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
+2024-07-06 12:48:04;error;Erro ao enviar Contato: => Resultado do cadastro { error: 'unknown_error' };{"service":"IntegracaoBancos"}
