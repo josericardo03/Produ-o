@@ -133,7 +133,9 @@ ORDER BY
             codigoCliente: "",
             numeroSequencial: i + 1,
 
-            numeroCicSocio: socios.document.replace(/[./ -]/g, ""),
+            numeroCicSocio: socios.document
+              ? socios.document.replace(/[./ -]/g, "")
+              : "",
             quantidadeCota: socios.participacao,
             percentualParticipacaoCapitalTotal: socios.participacao,
             representanteLegal: socios.isGerente,
@@ -152,7 +154,9 @@ ORDER BY
               nomeBairro: socios.enderecoBairro,
               // descricaoComplementoEndereco: socios.enderecoComplemento,
               nomeCidade: socios.enderecoCidade,
-              codigoCep: socios.enderecoCep.replace(/[./ -]/g, ""),
+              codigoCep: socios.enderecoCep
+                ? socios.enderecoCep.replace(/[./ -]/g, "")
+                : "",
             },
           };
           sociosCliente.push(dadosSocios);
@@ -163,7 +167,7 @@ ORDER BY
         // console.log("----------------------------------------------");
 
         const resultadoContatos: any[] = await prisma.$queryRaw`
-       SELECT
+    SELECT DISTINCT
     c.email AS cliente_email,
     c.telefone,
     s.telefoneFixo,
@@ -204,7 +208,7 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: telefoneCliente === 10 ? "FNE" : "CEL",
               telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+                ? contact.telefone.replace(/[/ - - ()]/g, "")
                 : "",
               numeroSequencial: camposPreenchidos,
             };
@@ -219,8 +223,8 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: "FNE",
               numeroSequencial: camposPreenchidos,
-              telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+              telefoneCompleto: contact.telefoneFixo
+                ? contact.telefoneFixo.replace(/[/ - - ()]/g, "")
                 : "",
             };
             contatosArray.push(dadosContatos);
@@ -234,8 +238,8 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: "CEL",
               numeroSequencial: camposPreenchidos,
-              telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+              telefoneCompleto: contact.telefoneCelular
+                ? contact.telefoneCelular.replace(/[/ - - ()]/g, "")
                 : "",
             };
             contatosArray.push(dadosContatos);
@@ -250,8 +254,8 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: "CEL",
               numeroSequencial: camposPreenchidos,
-              telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+              telefoneCompleto: contact.telefoneWhatsApp
+                ? contact.telefoneWhatsApp.replace(/[/ - - ()]/g, "")
                 : "",
             };
             contatosArray.push(dadosContatos);
@@ -330,7 +334,9 @@ WHERE
               ? v
               : mapearCodigoPorte(cliente.porte),
             descricaoRazaoSocialAnterior: cliente.razaoSocial,
-            campoCnaeBndes: cliente.cnae_code.replace(/[./ -]/g, ""),
+            campoCnaeBndes: cliente.cnae_code
+              ? cliente.cnae_code.replace(/[./ -]/g, "")
+              : "",
             codigoUnidadeResponsavel: 1,
             tipoPessoa: cliente.tipoCliente
               ? cliente.tipoCliente.charAt(0).toUpperCase()
@@ -398,7 +404,9 @@ WHERE
           siglaUf: cliente.estadoComercio,
           nomeCidade: cliente.cidadeComercio,
           nomeBairro: cliente.bairroComercial,
-          codigoCep: cliente.cepComercial.replace(/[./ -]/g, ""),
+          codigoCep: cliente.cepComercial
+            ? cliente.cepComercial.replace(/[./ -]/g, "")
+            : "",
           nomeLogradouro: cliente.logradouroComercial,
           numeroEndereco: cliente.numeroEnderecoComercial,
 
@@ -416,7 +424,7 @@ WHERE
           codigoCliente: "",
           codigoUnidade: 1,
           nomeCidade: cliente.cidadepessoal,
-          codigoCep: cliente.cep.replace(/[./ -]/g, ""),
+          codigoCep: cliente.cep ? cliente.cep.replace(/[./ -]/g, "") : "",
           numeroEndereco: cliente.numeroEndereco,
           nomeLogradouro: cliente.logradouro,
           nomeBairro: cliente.bairro,
@@ -443,7 +451,7 @@ WHERE
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -506,7 +514,7 @@ WHERE
             dadosContacts.codigoCliente = codigoCliente;
 
             const responseContatos = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
               dadosContacts,
               {
                 headers: {
@@ -538,7 +546,7 @@ WHERE
           ramo.codigoCliente = codigoCliente;
 
           const responseRamo = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
             ramo,
             {
               headers: {
@@ -567,7 +575,7 @@ WHERE
           const codigoCliente = codCli[i];
           enderecoCliente.codigoCliente = codigoCliente;
           const responseEndereco = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             enderecoCliente,
             {
               headers: {
@@ -597,7 +605,7 @@ WHERE
             dadosSocio.codigoCliente = codigoCliente;
             console.log(dadosSocio);
             const responseSocios = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
               dadosSocio,
               {
                 headers: {
@@ -628,7 +636,7 @@ WHERE
           endereco.codigoCliente = codigoCliente;
           console.log(codigoCliente);
           const responseEndereco = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             endereco,
             {
               headers: {
@@ -661,7 +669,7 @@ WHERE
       try {
         const mailOptions = {
           from: "ti@desenvolve.mt.gov.br",
-          to: "borges2001jose@gmail.com",
+          to: "josesilva@desenvolve.mt.gov.br",
           subject: "Arquivo ZIP com logs",
           text: "Segue anexo o arquivo ZIP com os logs.",
           attachments: [

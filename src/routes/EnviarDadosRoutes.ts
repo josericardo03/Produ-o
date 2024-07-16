@@ -3,7 +3,7 @@ import EnviarDadosController from "../controllers/EnviarDadosController";
 
 const envio = express.Router();
 
-envio.get("/enviar-dados", EnviarDadosController.enviarDados);
+envio.get("/enviar-dados-producao", EnviarDadosController.enviarDados);
 
 export default envio;
 

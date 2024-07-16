@@ -63,7 +63,7 @@ INNER JOIN (
     INNER JOIN 
         proposta AS p ON c.id = p.clientId 
     WHERE 
-        p.status = 'deferido'  AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 25 DAY)
+        p.status = 'deferido'  AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
     ORDER BY 
         p.createdAt DESC 
     
@@ -165,7 +165,9 @@ WHERE
             const dadosContatos = {
               codigoCliente: "",
               codigoTipoContato: telefoneCliente === 10 ? "FNE" : "CEL",
-              telefoneCompleto: contact.telefone.replace(/[/ - - ()]/g, ""),
+              telefoneCompleto: contact.telefone
+                ? contact.telefone.replace(/[/ - - ()]/g, "")
+                : "",
               numeroSequencial: camposPreenchidos,
             };
             contatosArray.push(dadosContatos);
@@ -179,8 +181,8 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: "FNE",
               numeroSequencial: camposPreenchidos,
-              telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+              telefoneCompleto: contact.telefoneFixo
+                ? contact.telefoneFixo.replace(/[/ - - ()]/g, "")
                 : "",
             };
             contatosArray.push(dadosContatos);
@@ -194,8 +196,8 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: "CEL",
               numeroSequencial: camposPreenchidos,
-              telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+              telefoneCompleto: contact.telefoneCelular
+                ? contact.telefoneCelular.replace(/[/ - - ()]/g, "")
                 : "",
             };
             contatosArray.push(dadosContatos);
@@ -210,8 +212,8 @@ WHERE
               codigoCliente: "",
               codigoTipoContato: "CEL",
               numeroSequencial: camposPreenchidos,
-              telefoneCompleto: cliente.telefone
-                ? cliente.telefone.replace(/[/ - - ()]/g, "")
+              telefoneCompleto: contact.telefoneWhatsApp
+                ? contact.telefoneWhatsApp.replace(/[/ - - ()]/g, "")
                 : "",
             };
             contatosArray.push(dadosContatos);
@@ -449,7 +451,7 @@ WHERE
             ? cliente.telefone.replace(/[/ - - ()]/g, "")
             : "",
           nomeCidade: cliente.cidadeNome,
-          codigoCep: cliente.cep.replace(/[./ -]/g, ""),
+          codigoCep: cliente.cep ? cliente.cep.replace(/[./ -]/g, "") : "",
           numeroEndereco: cliente.numeroEndereco,
           nomeLogradouro: cliente.logradouro,
           nomeBairro: cliente.bairro,
@@ -497,7 +499,7 @@ WHERE
             : "",
           codigoUnidade: 1,
           nomeCidade: cliente.cidadeNome,
-          codigoCep: cliente.cep.replace(/[./ -]/g, ""),
+          codigoCep: cliente.cep ? cliente.cep.replace(/[./ -]/g, "") : "",
           numeroEndereco: cliente.numeroEndereco,
           nomeLogradouro: cliente.logradouro,
           nomeBairro: cliente.bairro,
@@ -538,7 +540,7 @@ WHERE
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -609,7 +611,7 @@ WHERE
             dadosContacts.codigoCliente = codigoCliente;
 
             const responseContatos = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
               dadosContacts,
               {
                 headers: {
@@ -641,7 +643,7 @@ WHERE
           ramo.codigoCliente = codigoCliente;
 
           const responseRamo = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
             ramo,
             {
               headers: {
@@ -670,7 +672,7 @@ WHERE
           maes.codigoCliente = codigoCliente;
 
           const responseMae = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
             maes,
             {
               headers: {
@@ -698,7 +700,7 @@ WHERE
           pais.codigoCliente = codigoCliente;
 
           const responsePai = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
             pais,
             {
               headers: {
@@ -726,7 +728,7 @@ WHERE
           conjug.codigoCliente = codigoCliente;
 
           const responseConjuge = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
             conjug,
             {
               headers: {
@@ -754,7 +756,7 @@ WHERE
           const codigoCliente = codCli[i];
           enderecoCliente.codigoCliente = codigoCliente;
           const responseEndereco = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             enderecoCliente,
             {
               headers: {
@@ -782,7 +784,7 @@ WHERE
           const codigoCliente = codCli[i];
           enderecoEmpre.codigoCliente = codigoCliente;
           const responseEnderecoEmpresa = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             enderecoEmpre,
             {
               headers: {
@@ -812,7 +814,7 @@ WHERE
           endereco.codigoCliente = codigoCliente;
           console.log(codigoCliente);
           const responseEndereco = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             endereco,
             {
               headers: {

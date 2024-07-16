@@ -23,7 +23,7 @@ class TesteController {
       await this.obterToken();
 
       const response: AxiosResponse<any> = await axios.get(
-        "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/1037663",
+        "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/1040157",
         {
           headers: {
             Accept: "*/*",
@@ -44,8 +44,8 @@ class TesteController {
   async obterToken() {
     try {
       const response: AxiosResponse<any> = await axios.post(
-        "https://amtf-pp.app.dimensa.com.br/keycloakcorebank/auth/realms/master/protocol/openid-connect/token",
-        "client_id=portal-admin-web&grant_type=password&username=superusuario&password=dmt%402024",
+        "https://amtf.app.dimensa.com.br/keycloakcorebank/auth/realms/master/protocol/openid-connect/token",
+        "client_id=portal-admin-web&grant_type=password&username=superusuario&password=dmt%4020242",
         {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -76,7 +76,7 @@ class TesteController {
     try {
       const mailOptions = {
         from: "ti@desenvolve.mt.gov.br",
-        to: "borges2001jose@gmail.com,rafaelmattos@desenvolve.mt.gov.br",
+        to: "josesilva@desenvolve.mt.gov.br",
         subject: `Erro no servidor - ${tipoErro}`,
         text: `O seguinte erro ocorreu no servidor:\n\n${JSON.stringify(
           mensagemErro,

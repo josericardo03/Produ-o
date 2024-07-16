@@ -6,7 +6,7 @@ let access_token = "";
 const obterToken = async (res: Response) => {
   try {
     const response: AxiosResponse<any> = await axios.post(
-      "https://amtf-pp.app.dimensa.com.br/keycloakcorebank/auth/realms/master/protocol/openid-connect/token",
+      "https://amtf.app.dimensa.com.br/keycloakcorebank/auth/realms/master/protocol/openid-connect/token",
       "client_id=portal-admin-web&grant_type=password&username=superusuario&password=dmt%4020242",
       {
         headers: {

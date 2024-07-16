@@ -1,68 +1,21 @@
-2024-07-15 07:35:11;error;Erro ao enviar endereço: {
-  siglaTipoEndereco: 'RESIDENCIAL',
-  codigoCliente: undefined,
-  codigoUnidade: 1,
-  telefoneCompleto: '65992330904',
-  nomeCidade: 'Várzea Grande',
-  codigoCep: '78158970',
-  numeroEndereco: '7',
-  nomeLogradouro: 'RUA DAS PAPOULAS',
-  nomeBairro: 'JARDIM TARUMA',
-  siglaUf: 'MT'
-} => Resultado do cadastro {
-  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
-};{"service":"IntegracaoBancos"}
-2024-07-15 07:35:11;error;Erro ao enviar endereço: {
-  siglaTipoEndereco: 'RESIDENCIAL',
-  codigoCliente: undefined,
-  codigoUnidade: 1,
-  telefoneCompleto: '65999769306',
-  nomeCidade: 'Várzea Grande',
-  codigoCep: '78110000',
-  numeroEndereco: '1348',
-  nomeLogradouro: 'Avenida 31 DE MARÇO',
-  nomeBairro: 'CRISTO REI',
-  siglaUf: 'MT'
-} => Resultado do cadastro {
-  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
-};{"service":"IntegracaoBancos"}
-2024-07-15 07:35:12;error;Erro ao enviar Endereço da empresa: {
-  codigoCliente: undefined,
-  codigoUnidade: 1,
-  siglaTipoEndereco: 'EMPRESA',
-  siglaUf: 'MT',
-  nomeCidade: 'Cuiabá',
-  nomeBairro: 'CPA I',
-  codigoCep: '78055075',
-  nomeLogradouro: 'MAUES',
-  numeroEndereco: '24',
-  idenTipoEndereco: true,
-  telefoneCompleto: '65992330904',
-  codigoTipoImovel: null
-} => Resultado do cadastro {
-  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
-};{"service":"IntegracaoBancos"}
-2024-07-15 07:35:12;error;Erro ao enviar Endereço da empresa: {
-  codigoCliente: undefined,
-  codigoUnidade: 1,
-  siglaTipoEndereco: 'EMPRESA',
-  siglaUf: 'MT',
-  nomeCidade: 'Cuiabá',
-  nomeBairro: 'BARRA DO PARI',
-  codigoCep: '78035570',
-  nomeLogradouro: 'GAVIAO REAL',
-  numeroEndereco: '14',
-  idenTipoEndereco: true,
-  telefoneCompleto: '65999769306',
-  codigoTipoImovel: 1
-} => Resultado do cadastro {
-  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
-};{"service":"IntegracaoBancos"}
-2024-07-15 07:37:41;error;Erro ao enviar socios: => Resultado do cadastro {
+2024-07-15 11:41:49;error;Erro ao cadastrar cliente: WELTON MEDEIROS DOS SANTOS 04634958104 com o cnpj 40333937000101 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:41:49;error;Erro ao cadastrar cliente: VITALINA RODRIGUES 03770331974 com o cnpj 17501155000104 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:41:49;error;Erro ao cadastrar cliente: 54.704.892 NILO RESENDE SAUSEN com o cnpj 54704892000130 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:41:49;error;Erro ao cadastrar cliente: 11.830.559 RENATA APARECIDA GRANDINI com o cnpj 11830559000165 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:41:50;error;Erro ao cadastrar cliente: 07.109.816 MARINEIDE FRANCISCA DE MORAES com o cnpj 07109816000105 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:41:50;error;Erro ao enviar socios: => Resultado do cadastro {
   status: 500,
   message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
 };{"service":"IntegracaoBancos"}
-2024-07-15 07:37:41;error;Erro ao enviar socios: => Resultado do cadastro {
+2024-07-15 11:45:00;error;Erro ao cadastrar cliente: BLENDDON BRAINER MORAIS ASSIS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:45:00;error;Erro ao cadastrar cliente: JORGE ELIANDRO BEZERRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:45:21;error;Erro ao cadastrar cliente: BARBEARIA JORGE BEZERRA LTDA com o cnpj 18236231000164 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:45:24;error;Erro ao cadastrar cliente: EXCELER SISTEMAS ELETRICOS LTDA com o cnpj 21607407000151 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-15 11:45:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-15 11:45:25;error;Erro ao enviar socios: => Resultado do cadastro {
   status: 500,
   message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
 };{"service":"IntegracaoBancos"}

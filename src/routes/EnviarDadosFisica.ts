@@ -4,7 +4,7 @@ import EnviarDadosFisicaController from "../controllers/EnviarDadosFisicaControl
 const envioFisico = express.Router();
 
 envioFisico.get(
-  "/enviar-dados-fisicos",
+  "/enviar-dados-fisicos-producao",
   EnviarDadosFisicaController.enviarDadosFisica
 );
 

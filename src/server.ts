@@ -9,39 +9,39 @@ const app = express();
 
 app.use(router);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
-cron.schedule("45 12 * * *", async () => {
+cron.schedule("21 10 * * *", async () => {
   try {
-    await axios.get("http://localhost:4000/teste");
+    await axios.get("http://localhost:4001/teste-producao");
     console.log("Rota de envio de dados executada com sucesso");
   } catch (error) {
     console.error("Erro ao executar rota de envio de dados:", error);
   }
 });
 
-cron.schedule("46 12 * * *", async () => {
+cron.schedule("22 10 * * *", async () => {
   try {
-    await axios.get("http://localhost:4000/cadastroSocios");
+    await axios.get("http://localhost:4001/cadastroSocios-producao");
     console.log("Rota de envio de dados executada com sucesso");
   } catch (error) {
     console.error("Erro ao executar rota de envio de dados:", error);
   }
 });
 
-cron.schedule("48 12 * * *", async () => {
+cron.schedule("23 10 * * *", async () => {
   try {
-    await axios.get("http://localhost:4000/enviar-dados-fisicos");
+    await axios.get("http://localhost:4001/enviar-dados-fisicos-producao");
     console.log("Rota de envio de dados executada com sucesso");
   } catch (error) {
     console.error("Erro ao executar rota de envio de dados:", error);
   }
 });
-cron.schedule("11 13 * * *", async () => {
+cron.schedule("24 10 * * *", async () => {
   try {
-    await axios.get("http://localhost:4000/enviar-dados");
+    await axios.get("http://localhost:4001/enviar-dados-producao");
     console.log("Rota de envio de dados executada com sucesso");
   } catch (error) {
     console.error("Erro ao executar rota de envio de dados:", error);

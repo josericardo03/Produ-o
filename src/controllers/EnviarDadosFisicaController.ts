@@ -18,7 +18,7 @@ const EnviarDadosFisicaController = {
       const resultado: any[] = await prisma.$queryRaw`
         
       
-SELECT 
+SELECT DISTINCT
       p.*, 
       c.*, 
       es.uf as estadoUf,
@@ -62,13 +62,14 @@ SELECT
       const hoje = new Date().toISOString().slice(0, 10);
       console.log(hoje);
       const dadosParaEnviar = [];
-      const enderecoParaEnviar = [];
-      const enderecoPessoal = [];
-      const ramoAtividade = [];
+      let enderecoParaEnviar = [];
+      let enderecoPessoal = [];
+      let ramoAtividade = [];
       const codCli = [];
-      const maeEnvio = [];
-      const paiEnvio = [];
-      const conjugeEnvio = [];
+      let maeEnvio = [];
+      let paiEnvio = [];
+      let conjugeEnvio = [];
+      let contatosEnvio = [];
 
       for (const cliente of resultado) {
         const formatarData = (data: Date | null) => {
@@ -135,6 +136,117 @@ SELECT
             default:
               return null;
           }
+        }
+        const resultadoContatos: any[] = await prisma.$queryRaw`
+      SELECT
+    c.email AS cliente_email,
+    c.telefone,
+    s.telefoneFixo,
+    s.telefoneCelular,
+    s.telefoneWhatsApp,
+    s.email AS socio_email
+FROM
+    clients c
+JOIN
+    socios s ON c.id = s.clientId
+WHERE
+    s.name=${cliente.razaoSocial} 
+    limit 1
+      `;
+        const contatosArray = [];
+
+        for (let i = 0; i < resultadoContatos.length; i++) {
+          const contact = resultadoContatos[i];
+          console.log(contact);
+          let camposPreenchidos = 0;
+          if (contact.cliente_email) {
+            camposPreenchidos++;
+            const dadosContatos = {
+              codigoCliente: "",
+              codigoTipoContato: "EML",
+              numeroSequencial: camposPreenchidos,
+              descricaoEmail: contact.cliente_email,
+            };
+            contatosArray.push(dadosContatos);
+          }
+
+          if (contact.telefone) {
+            camposPreenchidos++;
+            let telefoneCliente = contact.telefone.replace(
+              /[/ - - ()]/g,
+              ""
+            ).length;
+            const dadosContatos = {
+              codigoCliente: "",
+              codigoTipoContato: telefoneCliente === 10 ? "FNE" : "CEL",
+              telefoneCompleto: contact.telefone
+                ? contact.telefone.replace(/[/ - - ()]/g, "")
+                : "",
+              numeroSequencial: camposPreenchidos,
+            };
+            contatosArray.push(dadosContatos);
+          }
+          if (
+            contact.telefoneFixo &&
+            contact.telefoneFixo !== contact.telefone
+          ) {
+            camposPreenchidos++;
+            const dadosContatos = {
+              codigoCliente: "",
+              codigoTipoContato: "FNE",
+              numeroSequencial: camposPreenchidos,
+              telefoneCompleto: contact.telefoneFixo
+                ? contact.telefoneFixo.replace(/[/ - - ()]/g, "")
+                : "",
+            };
+            contatosArray.push(dadosContatos);
+          }
+          if (
+            contact.telefoneCelular &&
+            contact.telefoneCelular !== contact.telefone
+          ) {
+            camposPreenchidos++;
+            const dadosContatos = {
+              codigoCliente: "",
+              codigoTipoContato: "CEL",
+              numeroSequencial: camposPreenchidos,
+              telefoneCompleto: contact.telefoneCelular
+                ? contact.telefoneCelular.replace(/[/ - - ()]/g, "")
+                : "",
+            };
+            contatosArray.push(dadosContatos);
+          }
+          if (
+            contact.telefoneWhatsApp &&
+            contact.telefoneWhatsApp !== contact.telefone &&
+            contact.telefoneWhatsApp !== contact.telefoneCelular
+          ) {
+            camposPreenchidos++;
+            const dadosContatos = {
+              codigoCliente: "",
+              codigoTipoContato: "CEL",
+              numeroSequencial: camposPreenchidos,
+              telefoneCompleto: contact.telefoneWhatsApp
+                ? contact.telefoneWhatsApp.replace(/[/ - - ()]/g, "")
+                : "",
+            };
+            contatosArray.push(dadosContatos);
+          }
+          if (
+            contact.socio_email &&
+            contact.socio_email !== contact.cliente_email
+          ) {
+            camposPreenchidos++;
+            const dadosContatos = {
+              codigoCliente: "",
+              codigoTipoContato: "EML",
+              numeroSequencial: camposPreenchidos,
+              descricaoEmail: contact.socio_email,
+            };
+            contatosArray.push(dadosContatos);
+          }
+
+          contatosEnvio.push(contatosArray);
         }
 
         let dadosCliente;
@@ -223,7 +335,9 @@ SELECT
             ? cliente.telefone.replace(/[/ - - ()]/g, "")
             : "",
           nomeCidade: cliente.cidadeNome,
-          codigoCep: cliente.cep.replace(/[./ -]/g, ""),
+          codigoCep: cliente.cep
+            ? cliente.cep.replace(/[./ -]/g, "")
+            : cliente.cep,
           numeroEndereco: cliente.numeroEndereco,
           nomeLogradouro: cliente.logradouro,
           nomeBairro: cliente.bairro,
@@ -269,7 +383,7 @@ SELECT
             : "",
           codigoUnidade: 1,
           nomeCidade: cliente.cidadeNome,
-          codigoCep: cliente.cep.replace(/[./ -]/g, ""),
+          codigoCep: cliente.cep ? cliente.cep.replace(/[./ -]/g, "") : "",
           numeroEndereco: cliente.numeroEndereco,
           nomeLogradouro: cliente.logradouro,
           nomeBairro: cliente.bairro,
@@ -294,12 +408,14 @@ SELECT
       }
 
       let problems: any[] = [];
-      for (const cliente of dadosParaEnviar) {
+      let indicesParaRemover = [];
+      for (let i = 0; i < dadosParaEnviar.length; i++) {
+        const cliente = dadosParaEnviar[i];
         try {
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -319,24 +435,12 @@ SELECT
             response.data
           );
         } catch (error: any) {
-          const existingIndex = problems.findIndex(
-            (problem) => problem.numeroCic === cliente?.numeroCic
-          );
-          if (existingIndex === -1) {
-            const problem = {
-              nomePessoa: cliente?.nomePessoa,
-              numeroCic: cliente?.numeroCic,
-              dataClienteDesde: cliente?.dataClienteDesde,
-              erro: "",
-            };
-            problem.erro = error.response.data;
-            problems.push(problem);
-          }
           loggerErros.error(
             "Erro ao cadastrar cliente: %s => Resultado do cadastro %s",
             cliente ? cliente.nomePessoa : "Cliente não encontrado",
             error.response.data
           );
+          indicesParaRemover.push(i);
           if (error.response && error.response.status === 400) {
             console.error(
               "Erro 400 - Bad Request. Pulando para o próximo cliente.",
@@ -345,6 +449,59 @@ SELECT
             );
           } else {
             console.error("Erro durante a solicitação:", error.response.data);
+          }
+        }
+      }
+      contatosEnvio = contatosEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+
+      ramoAtividade = ramoAtividade.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      enderecoParaEnviar = enderecoParaEnviar.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+
+      enderecoPessoal = enderecoPessoal.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      maeEnvio = maeEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      paiEnvio = paiEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      conjugeEnvio = conjugeEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      for (let i = 0; i < contatosEnvio.length; i++) {
+        const codigoCliente = codCli[i];
+        for (let j = 0; j < contatosEnvio[i].length; j++) {
+          try {
+            const dadosContacts = contatosEnvio[i][j];
+            dadosContacts.codigoCliente = codigoCliente;
+
+            const responseContatos = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+              dadosContacts,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Contato enviado com sucesso:", dadosContacts);
+            console.log("Resposta do servidor:", responseContatos.data);
+          } catch (error: any) {
+            loggerErros.error(
+              "Erro ao enviar Contato: => Resultado do cadastro %s",
+
+              error.response.data
+            );
+            console.error("Erro ao enviar dados:", error.response.data);
           }
         }
       }
@@ -358,7 +515,7 @@ SELECT
           ramo.codigoCliente = codigoCliente;
 
           const responseRamo = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
             ramo,
             {
               headers: {
@@ -387,7 +544,7 @@ SELECT
           maes.codigoCliente = codigoCliente;
 
           const responseMae = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
             maes,
             {
               headers: {
@@ -415,7 +572,7 @@ SELECT
           pais.codigoCliente = codigoCliente;
 
           const responsePai = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
             pais,
             {
               headers: {
@@ -443,7 +600,7 @@ SELECT
           conjug.codigoCliente = codigoCliente;
 
           const responseConjuge = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
             conjug,
             {
               headers: {
@@ -471,7 +628,7 @@ SELECT
           const codigoCliente = codCli[i];
           enderecoCliente.codigoCliente = codigoCliente;
           const responseEndereco = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             enderecoCliente,
             {
               headers: {
@@ -501,7 +658,7 @@ SELECT
           endereco.codigoCliente = codigoCliente;
           console.log(codigoCliente);
           const responseEndereco = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             endereco,
             {
               headers: {

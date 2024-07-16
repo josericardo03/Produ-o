@@ -4,6 +4,6 @@ import TesteController from "../controllers/TesteController";
 
 const envioTeste = express.Router();
 
-envioTeste.get("/teste", TesteController.fetchDados);
+envioTeste.get("/teste-producao", TesteController.fetchDados);
 
 export default envioTeste;

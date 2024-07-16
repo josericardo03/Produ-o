@@ -3,6 +3,6 @@ import SociosController from "../controllers/SociosController";
 
 const envios = express.Router();
 
-envios.get("/cadastroSocios", SociosController.sociosDados);
+envios.get("/cadastroSocios-producao", SociosController.sociosDados);
 
 export default envios;
