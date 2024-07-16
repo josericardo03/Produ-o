@@ -7,12 +7,13 @@ import nodemailer from "nodemailer";
 const fs = require("fs");
 const path = require("path");
 const AdmZip = require("adm-zip");
+require("dotenv").config();
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "ti@desenvolve.mt.gov.br",
-    pass: "dmt@2024",
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 

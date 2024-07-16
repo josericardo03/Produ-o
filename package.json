@@ -24,6 +24,7 @@
     "@prisma/client": "^5.15.0",
     "adm-zip": "^0.5.14",
     "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "fastify": "^4.27.0",
     "install": "^0.13.0",
     "mysql2": "^3.10.0",

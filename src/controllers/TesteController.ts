@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import axios, { AxiosResponse } from "axios";
 import nodemailer from "nodemailer";
+require("dotenv").config();
 
 let access_token = "";
 
@@ -8,7 +9,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "ti@desenvolve.mt.gov.br",
-    pass: "dmt@2024",
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
@@ -45,7 +46,7 @@ class TesteController {
     try {
       const response: AxiosResponse<any> = await axios.post(
         "https://amtf.app.dimensa.com.br/keycloakcorebank/auth/realms/master/protocol/openid-connect/token",
-        "client_id=portal-admin-web&grant_type=password&username=superusuario&password=dmt%4020242",
+        `client_id=portal-admin-web&grant_type=password&username=${process.env.USER}&password=${process.env.PASSWORD}`,
         {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
