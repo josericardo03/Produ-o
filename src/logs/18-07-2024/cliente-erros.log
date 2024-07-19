@@ -1,0 +1,101 @@
+2024-07-18 08:49:21;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-18 08:50:42;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-18 08:52:33;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-18 08:53:09;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-18 08:55:55;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-18 08:56:30;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 08:56:42;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:06:44;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:11:29;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:13:02;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:19:38;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:20:01;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:20:27;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:21:13;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:22:28;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:25:43;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:28:27;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:28:49;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:32:23;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:32:44;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:33:19;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:33:51;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:37:09;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:39:31;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:40:14;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:41:13;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:41:51;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:45:38;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:46:04;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:48:40;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:49:32;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 09:49:44;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 12:29:01;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 12:29:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-18 12:29:02;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-18 12:29:02;error;Erro ao enviar ramo: {
+  codigoCliente: 1040341,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: '4742300'
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: Atividade já cadastrada.;{"service":"IntegracaoBancos"}
+2024-07-18 12:29:02;error;Erro ao enviar endereço: {
+  codigoCliente: 1040341,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Itiquira',
+  nomeBairro: 'OURO BRANCO DO SUL',
+  codigoCep: '78790000',
+  nomeLogradouro: 'AV JOSE AVELINO BURITI DOS SANTOS LOTE 03 QUADRA 24',
+  numeroEndereco: '03',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999436165',
+  codigoTipoImovel: 1
+} => Resultado do cadastro { status: 400, message: 'Endereço já existe na base de dados.' };{"service":"IntegracaoBancos"}
+2024-07-18 12:29:02;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-18 12:29:55;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS com o cnpj 17631388000121 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-18 12:29:55;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-18 12:29:55;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-18 12:29:55;error;Erro ao enviar ramo: {
+  codigoCliente: 1040341,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: '4742300'
+} => Resultado do cadastro Erro na chamada do serviço incluirAtividadeCliente, com a seguinte mensagem: Atividade já cadastrada.;{"service":"IntegracaoBancos"}
+2024-07-18 12:29:55;error;Erro ao enviar endereço: {
+  codigoCliente: 1040341,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Itiquira',
+  nomeBairro: 'OURO BRANCO DO SUL',
+  codigoCep: '78790000',
+  nomeLogradouro: 'AV JOSE AVELINO BURITI DOS SANTOS LOTE 03 QUADRA 24',
+  numeroEndereco: '03',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65999436165',
+  codigoTipoImovel: 1
+} => Resultado do cadastro { status: 400, message: 'Endereço já existe na base de dados.' };{"service":"IntegracaoBancos"}
+2024-07-18 12:29:55;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial informados já existem na tabela t400soci.'
+};{"service":"IntegracaoBancos"}

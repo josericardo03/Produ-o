@@ -10,7 +10,12 @@ const SociosController = {
   sociosDados: async (req: Request, res: Response) => {
     const loggers = CreateLoggers();
 
-    const { loggerErros, loggerClientes, loggerBanco } = loggers;
+    const {
+      loggerErros,
+      loggerClientes,
+      loggerBanco,
+      loggerClientesAtualizados,
+    } = loggers;
 
     try {
       await AuthController.obterToken(res);
@@ -63,11 +68,12 @@ INNER JOIN (
     INNER JOIN 
         proposta AS p ON c.id = p.clientId 
     WHERE 
-        p.status = 'deferido'  AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+        p.status = 'deferido'  AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 3 DAY)
     ORDER BY 
         p.createdAt DESC 
     
 ) AS ids ON s.clientId = ids.id 
+
 
 
 
@@ -143,7 +149,7 @@ WHERE
 
         for (let i = 0; i < resultadoContatos.length; i++) {
           const contact = resultadoContatos[i];
-          console.log(contact);
+
           let camposPreenchidos = 0;
           if (contact.cliente_email) {
             camposPreenchidos++;
@@ -234,7 +240,6 @@ WHERE
 
           contatosEnvio.push(contatosArray);
         }
-        console.log(contatosEnvio);
 
         function mapearCodigoPorte(n: any) {
           switch (n) {
@@ -462,7 +467,7 @@ WHERE
           siglaUf: cliente.estadoUf,
         };
         enderecoParaEnviar.push(enderecoCliente);
-        console.log(enderecoParaEnviar);
+
         const mae = {
           codigoCliente: "",
 
@@ -510,7 +515,6 @@ WHERE
           siglaUf: cliente.estadoUf,
         };
         enderecoPessoal.push(endereco);
-        console.log(enderecoPessoal);
 
         if ((cliente.tipoCliente = "juridica")) {
           const ramo = {
@@ -534,6 +538,8 @@ WHERE
       }
 
       let indicesParaRemover = [];
+      let indicesParaAtualizar = [];
+      let flag;
       for (let i = 0; i < dadosParaEnviar.length; i++) {
         const cliente = dadosParaEnviar[i];
         try {
@@ -551,6 +557,7 @@ WHERE
             }
           );
           codigoCliente = response.data.codigoCliente;
+          flag = 1;
           codCli.push(codigoCliente);
           console.log("Dados enviados:", cliente);
           console.log("Resposta do servidor:", response.data);
@@ -565,7 +572,128 @@ WHERE
             cliente ? cliente.nomePessoa : "Cliente não encontrado",
             error.response.data
           );
-          indicesParaRemover.push(i);
+          flag = 0;
+          if (error) {
+            try {
+              const responsecnpj = await axios.get(
+                `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
+
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              let codtemporario = "";
+              codtemporario = responsecnpj.data.body.codigoCliente;
+
+              if (codtemporario) {
+                try {
+                  const responsecodtemporario = await axios.get(
+                    `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
+
+                    {
+                      headers: {
+                        Accept: "*/*",
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${access_token}`,
+                      },
+                    }
+                  );
+                  let cadastral: Date;
+                  function diffInMonths(date1: Date, date2: Date): number {
+                    const diffYears = date2.getFullYear() - date1.getFullYear();
+                    const diffMonths = date2.getMonth() - date1.getMonth();
+                    return diffYears * 12 + diffMonths;
+                  }
+                  cadastral = new Date(
+                    responsecodtemporario.data.body.dataRenovacaoCadastral
+                  );
+                  console.log(cadastral);
+                  let teste = new Date();
+                  // teste.setMonth(teste.getMonth() - 5);
+                  const diferencaMeses = diffInMonths(teste, cadastral);
+                  console.log(diferencaMeses);
+                  // console.log(cadastral);
+                  // console.log(teste);
+                  // console.log(diferencaMeses);
+                  if (cadastral && diferencaMeses < -4) {
+                    // console.log("deu certo");
+                    codCli.push(codtemporario);
+                    console.log(codtemporario);
+                    indicesParaAtualizar.push(i);
+                    flag = 1;
+                  }
+                } catch (error: any) {
+                  console.log(error.response.data);
+                }
+              }
+            } catch (error: any) {
+              console.error(error.responsecnpj);
+            }
+          }
+          if (flag === 0) {
+            indicesParaRemover.push(i);
+          }
+
+          if (error.response && error.response.status === 400) {
+            console.error(
+              "Erro 400 - Bad Request. Pulando para o próximo cliente.",
+              cliente,
+              error.response.data
+            );
+          } else {
+            console.error("Erro durante a solicitação:", error.response.data);
+          }
+        }
+      }
+      for (let i = 0; i < indicesParaAtualizar.length; i++) {
+        let count = 0;
+        const valorAtualizar = indicesParaAtualizar[i];
+
+        for (let j = 0; j < indicesParaRemover.length; j++) {
+          if (indicesParaRemover[j] < valorAtualizar) {
+            count++;
+          }
+        }
+
+        indicesParaAtualizar[i] -= count;
+      }
+      console.log("começa aqui");
+      for (let i = 0; i < dadosParaEnviar.length; i++) {
+        let cliente = dadosParaEnviar[i];
+        try {
+          if (indicesParaAtualizar.includes(i)) {
+            cliente = Object.assign({}, cliente, { codigoCliente: codCli[i] });
+            const response = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+              cliente,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            loggerClientesAtualizados.info(
+              "Dados enviados: %s => Resultado do cadastro %s",
+              cliente,
+              response.data
+            );
+            console.log("Dados atualizados:", cliente);
+            console.log("Resposta do servidor:", response.data);
+          }
+        } catch (error: any) {
+          loggerErros.error(
+            "Erro ao atualizar cliente: %s com o cnpj %s => Resultado do cadastro %s",
+            cliente ? cliente.nomePessoa : "Cliente não encontrado",
+            cliente ? cliente.numeroCic : "cnpj nao escontrado",
+            error.response.data
+          );
+
           if (error.response && error.response.status === 400) {
             console.error(
               "Erro 400 - Bad Request. Pulando para o próximo cliente.",
@@ -609,20 +737,35 @@ WHERE
           try {
             const dadosContacts = contatosEnvio[i][j];
             dadosContacts.codigoCliente = codigoCliente;
-
-            const responseContatos = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
-              dadosContacts,
-              {
-                headers: {
-                  Accept: "*/*",
-                  "Content-Type": "application/json",
-                  Authorization: `Bearer ${access_token}`,
-                },
-              }
-            );
-            console.log("Contato enviado com sucesso:", dadosContacts);
-            console.log("Resposta do servidor:", responseContatos.data);
+            if (indicesParaAtualizar.includes(i)) {
+              const responseContatos = await axios.put(
+                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                dadosContacts,
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              console.log("Contato atualizado com sucesso:", dadosContacts);
+              console.log("Resposta do servidor:", responseContatos.data);
+            } else {
+              const responseContatos = await axios.post(
+                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                dadosContacts,
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              console.log("Contato enviado com sucesso:", dadosContacts);
+              console.log("Resposta do servidor:", responseContatos.data);
+            }
           } catch (error: any) {
             loggerErros.error(
               "Erro ao enviar Contato: => Resultado do cadastro %s",
@@ -641,21 +784,37 @@ WHERE
           const codigoCliente = codCli[i];
 
           ramo.codigoCliente = codigoCliente;
+          if (indicesParaAtualizar.includes(i)) {
+            const responseRamo = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              ramo,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
 
-          const responseRamo = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
-            ramo,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
+            console.log("Ramo atualizado com sucesso:", ramo);
+            console.log("Resposta do servidor:", responseRamo.data);
+          } else {
+            const responseRamo = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              ramo,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
 
-          console.log("Ramo enviado com sucesso:", ramo);
-          console.log("Resposta do servidor:", responseRamo.data);
+            console.log("Ramo enviado com sucesso:", ramo);
+            console.log("Resposta do servidor:", responseRamo.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar ramo: %s => Resultado do cadastro %s",
@@ -670,20 +829,35 @@ WHERE
         try {
           const codigoCliente = codCli[i];
           maes.codigoCliente = codigoCliente;
-
-          const responseMae = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
-            maes,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
-          console.log("Mae enviada com sucesso:", maes);
-          console.log("Resposta do servidor:", responseMae.data);
+          if (indicesParaAtualizar.includes(i)) {
+            const responseMae = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              maes,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Mae atualizada com sucesso:", maes);
+            console.log("Resposta do servidor:", responseMae.data);
+          } else {
+            const responseMae = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              maes,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Mae enviada com sucesso:", maes);
+            console.log("Resposta do servidor:", responseMae.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar mãe: %s => Resultado do cadastro %s",
@@ -698,20 +872,35 @@ WHERE
         try {
           const codigoCliente = codCli[i];
           pais.codigoCliente = codigoCliente;
-
-          const responsePai = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
-            pais,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
-          console.log("Pai enviado com sucesso:", pais);
-          console.log("Resposta do servidor:", responsePai.data);
+          if (indicesParaAtualizar.includes(i)) {
+            const responsePai = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              pais,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Pai atualizado com sucesso:", pais);
+            console.log("Resposta do servidor:", responsePai.data);
+          } else {
+            const responsePai = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              pais,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Pai enviado com sucesso:", pais);
+            console.log("Resposta do servidor:", responsePai.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar Pai: %s => Resultado do cadastro %s",
@@ -726,20 +915,35 @@ WHERE
         try {
           const codigoCliente = codCli[i];
           conjug.codigoCliente = codigoCliente;
-
-          const responseConjuge = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
-            conjug,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
-          console.log("Conjuge enviado com sucesso:", conjug);
-          console.log("Resposta do servidor:", responseConjuge.data);
+          if (indicesParaAtualizar.includes(i)) {
+            const responseConjuge = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              conjug,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Conjuge atualizado com sucesso:", conjug);
+            console.log("Resposta do servidor:", responseConjuge.data);
+          } else {
+            const responseConjuge = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              conjug,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            console.log("Conjuge enviado com sucesso:", conjug);
+            console.log("Resposta do servidor:", responseConjuge.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar Pai: %s => Resultado do cadastro %s",
@@ -812,21 +1016,38 @@ WHERE
         try {
           const codigoCliente = codCli[i];
           endereco.codigoCliente = codigoCliente;
-          console.log(codigoCliente);
-          const responseEndereco = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
-            endereco,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
 
-          console.log("Endereço enviado com sucesso:", endereco);
-          console.log("Resposta do servidor:", responseEndereco.data);
+          if (indicesParaAtualizar.includes(i)) {
+            const responseEndereco = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              endereco,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+
+            console.log("Endereço atualizado com sucesso:", endereco);
+            console.log("Resposta do servidor:", responseEndereco.data);
+          } else {
+            const responseEndereco = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              endereco,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+
+            console.log("Endereço enviado com sucesso:", endereco);
+            console.log("Resposta do servidor:", responseEndereco.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar endereço pessoal: %s => Resultado do cadastro %s",

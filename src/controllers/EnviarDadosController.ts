@@ -57,7 +57,12 @@ const EnviarDadosController = {
   enviarDados: async (req: Request, res: Response) => {
     const loggers = CreateLoggers();
 
-    const { loggerErros, loggerClientes, loggerBanco } = loggers;
+    const {
+      loggerErros,
+      loggerClientes,
+      loggerBanco,
+      loggerClientesAtualizados,
+    } = loggers;
 
     try {
       await AuthController.obterToken(res);
@@ -90,7 +95,7 @@ Left join
 Left join
 		estados as est on c.estado = est.id
 WHERE 
-    p.status = 'deferido' and c.tipoCliente="juridica"AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+    p.status = 'deferido' and c.tipoCliente="juridica"AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 2 DAY)
 ORDER BY 
     p.createdAt DESC 
 
@@ -444,8 +449,10 @@ WHERE
 
         dadosParaEnviar.push(dadosCliente);
       }
-      // let problems: any[] = [];
+
       let indicesParaRemover = [];
+      let indicesParaAtualizar = [];
+      let flag;
       for (let i = 0; i < dadosParaEnviar.length; i++) {
         const cliente = dadosParaEnviar[i];
         try {
@@ -463,6 +470,7 @@ WHERE
             }
           );
           codigoCliente = response.data.codigoCliente;
+          flag = 1;
           codCli.push(codigoCliente);
           console.log("Dados enviados:", cliente);
           console.log("Resposta do servidor:", response.data);
@@ -473,12 +481,91 @@ WHERE
           );
         } catch (error: any) {
           loggerErros.error(
-            "Erro ao cadastrar cliente: %s com o cnpj %s => Resultado do cadastro %s",
+            "Erro ao cadastrar cliente: %s => Resultado do cadastro %s",
             cliente ? cliente.nomePessoa : "Cliente não encontrado",
-            cliente ? cliente.numeroCic : "cnpj nao escontrado",
             error.response.data
           );
-          indicesParaRemover.push(i);
+          flag = 0;
+          if (error) {
+            try {
+              const responsecnpj = await axios.get(
+                `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
+
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              let codtemporario = "";
+              codtemporario = responsecnpj.data.body.codigoCliente;
+
+              if (codtemporario) {
+                try {
+                  const responsecodtemporario = await axios.get(
+                    `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
+
+                    {
+                      headers: {
+                        Accept: "*/*",
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${access_token}`,
+                      },
+                    }
+                  );
+                  let cadastral;
+                  let clienteDesde: Date;
+                  function diffInMonths(date1: Date, date2: Date): number {
+                    const diffYears = date2.getFullYear() - date1.getFullYear();
+                    const diffMonths = date2.getMonth() - date1.getMonth();
+                    return diffYears * 12 + diffMonths;
+                  }
+                  cadastral = new Date(
+                    responsecodtemporario.data.body.dataRenovacaoCadastral
+                  );
+                  if (isNaN(cadastral.getTime())) {
+                    cadastral = null;
+                  }
+                  clienteDesde = new Date(
+                    responsecodtemporario.data.body.dataClienteDesde
+                  );
+                  console.log(cadastral);
+                  console.log(clienteDesde);
+                  let teste = new Date();
+                  // teste.setMonth(teste.getMonth() - 5);
+                  let diferencaMeses;
+                  if (cadastral) {
+                    diferencaMeses = diffInMonths(teste, cadastral);
+                    console.log(diferencaMeses);
+                  } else {
+                    diferencaMeses = diffInMonths(teste, clienteDesde);
+                    console.log(diferencaMeses);
+                  }
+
+                  // console.log(cadastral);
+                  // console.log(teste);
+                  // console.log(diferencaMeses);
+                  if (diferencaMeses < -4) {
+                    // console.log("deu certo");
+                    codCli.push(codtemporario);
+                    console.log(codtemporario);
+                    indicesParaAtualizar.push(i);
+                    flag = 1;
+                  }
+                } catch (error: any) {
+                  console.log(error.responsecodtemporario.data);
+                }
+              }
+            } catch (error: any) {
+              console.log(error.responsecnpj);
+            }
+          }
+          if (flag === 0) {
+            indicesParaRemover.push(i);
+          }
+
           if (error.response && error.response.status === 400) {
             console.error(
               "Erro 400 - Bad Request. Pulando para o próximo cliente.",
@@ -490,7 +577,62 @@ WHERE
           }
         }
       }
+      for (let i = 0; i < indicesParaAtualizar.length; i++) {
+        let count = 0;
+        const valorAtualizar = indicesParaAtualizar[i];
 
+        for (let j = 0; j < indicesParaRemover.length; j++) {
+          if (indicesParaRemover[j] < valorAtualizar) {
+            count++;
+          }
+        }
+
+        indicesParaAtualizar[i] -= count;
+      }
+      console.log("começa aqui");
+      for (let i = 0; i < dadosParaEnviar.length; i++) {
+        let cliente = dadosParaEnviar[i];
+        try {
+          if (indicesParaAtualizar.includes(i)) {
+            cliente = Object.assign({}, cliente, { codigoCliente: codCli[i] });
+            const response = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+              cliente,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+            loggerClientesAtualizados.info(
+              "Dados enviados: %s => Resultado do cadastro %s",
+              cliente,
+              response.data
+            );
+            console.log("Dados atualizados:", cliente);
+            console.log("Resposta do servidor:", response.data);
+          }
+        } catch (error: any) {
+          loggerErros.error(
+            "Erro ao atualizar cliente: %s com o cnpj %s => Resultado do cadastro %s",
+            cliente ? cliente.nomePessoa : "Cliente não encontrado",
+            cliente ? cliente.numeroCic : "cnpj nao escontrado",
+            error.response.data
+          );
+
+          if (error.response && error.response.status === 400) {
+            console.error(
+              "Erro 400 - Bad Request. Pulando para o próximo cliente.",
+              cliente,
+              error.response.data
+            );
+          } else {
+            console.error("Erro durante a solicitação:", error.response.data);
+          }
+        }
+      }
       contatosEnvio = contatosEnvio.filter(
         (_, index) => !indicesParaRemover.includes(index)
       );
@@ -507,6 +649,7 @@ WHERE
       enderecoPessoal = enderecoPessoal.filter(
         (_, index) => !indicesParaRemover.includes(index)
       );
+
       for (let i = 0; i < contatosEnvio.length; i++) {
         const codigoCliente = codCli[i];
         for (let j = 0; j < contatosEnvio[i].length; j++) {
@@ -514,19 +657,35 @@ WHERE
             const dadosContacts = contatosEnvio[i][j];
             dadosContacts.codigoCliente = codigoCliente;
 
-            const responseContatos = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
-              dadosContacts,
-              {
-                headers: {
-                  Accept: "*/*",
-                  "Content-Type": "application/json",
-                  Authorization: `Bearer ${access_token}`,
-                },
-              }
-            );
-            console.log("Contato enviado com sucesso:", dadosContacts);
-            console.log("Resposta do servidor:", responseContatos.data);
+            if (indicesParaAtualizar.includes(i)) {
+              const responseContatos = await axios.put(
+                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                dadosContacts,
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              console.log("Contato atualizado com sucesso:", dadosContacts);
+              console.log("Resposta do servidor:", responseContatos.data);
+            } else {
+              const responseContatos = await axios.post(
+                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                dadosContacts,
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              console.log("Contato enviado com sucesso:", dadosContacts);
+              console.log("Resposta do servidor:", responseContatos.data);
+            }
           } catch (error: any) {
             loggerErros.error(
               "Erro ao enviar Contato: => Resultado do cadastro %s",
@@ -545,21 +704,37 @@ WHERE
           const codigoCliente = codCli[i];
 
           ramo.codigoCliente = codigoCliente;
+          if (indicesParaAtualizar.includes(i)) {
+            const responseRamo = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              ramo,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
 
-          const responseRamo = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
-            ramo,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
+            console.log("Ramo enviado com sucesso:", ramo);
+            console.log("Resposta do servidor:", responseRamo.data);
+          } else {
+            const responseRamo = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              ramo,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
 
-          console.log("Ramo enviado com sucesso:", ramo);
-          console.log("Resposta do servidor:", responseRamo.data);
+            console.log("Ramo enviado com sucesso:", ramo);
+            console.log("Resposta do servidor:", responseRamo.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar ramo: %s => Resultado do cadastro %s",
@@ -575,20 +750,37 @@ WHERE
         try {
           const codigoCliente = codCli[i];
           enderecoCliente.codigoCliente = codigoCliente;
-          const responseEndereco = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
-            enderecoCliente,
-            {
-              headers: {
-                Accept: "*/*",
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${access_token}`,
-              },
-            }
-          );
+          if (indicesParaAtualizar.includes(i)) {
+            const responseEndereco = await axios.put(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              enderecoCliente,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
 
-          console.log("Endereço enviado com sucesso:", enderecoCliente);
-          console.log("Resposta do servidor:", responseEndereco.data);
+            console.log("Endereço enviado com sucesso:", enderecoCliente);
+            console.log("Resposta do servidor:", responseEndereco.data);
+          } else {
+            const responseEndereco = await axios.post(
+              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              enderecoCliente,
+              {
+                headers: {
+                  Accept: "*/*",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${access_token}`,
+                },
+              }
+            );
+
+            console.log("Endereço enviado com sucesso:", enderecoCliente);
+            console.log("Resposta do servidor:", responseEndereco.data);
+          }
         } catch (error: any) {
           loggerErros.error(
             "Erro ao enviar endereço: %s => Resultado do cadastro %s",
@@ -605,19 +797,35 @@ WHERE
             const dadosSocio = sociosArray[i][j];
             dadosSocio.codigoCliente = codigoCliente;
             console.log(dadosSocio);
-            const responseSocios = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
-              dadosSocio,
-              {
-                headers: {
-                  Accept: "*/*",
-                  "Content-Type": "application/json",
-                  Authorization: `Bearer ${access_token}`,
-                },
-              }
-            );
-            console.log("Socios enviado com sucesso:", dadosSocio);
-            console.log("Resposta do servidor:", responseSocios.data);
+            if (indicesParaAtualizar.includes(i)) {
+              const responseSocios = await axios.put(
+                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+                dadosSocio,
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              console.log("Socios atualizado com sucesso:", dadosSocio);
+              console.log("Resposta do servidor:", responseSocios.data);
+            } else {
+              const responseSocios = await axios.post(
+                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+                dadosSocio,
+                {
+                  headers: {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${access_token}`,
+                  },
+                }
+              );
+              console.log("Socios enviado com sucesso:", dadosSocio);
+              console.log("Resposta do servidor:", responseSocios.data);
+            }
           } catch (error: any) {
             loggerErros.error(
               "Erro ao enviar socios: => Resultado do cadastro %s",
@@ -691,11 +899,12 @@ WHERE
         throw error;
       }
     };
-    await enviarEmailComAnexo(caminhoArquivoZIP);
+    // await enviarEmailComAnexo(caminhoArquivoZIP);
   },
 };
 
 export default EnviarDadosController;
+
 //   siglaTipoLogradouro: cliente.logradouro,
 //   descricaoComplementoEndereco:
 //     cliente.complementoEnderecoComercial.replace(/[./ -]/g, " "),
