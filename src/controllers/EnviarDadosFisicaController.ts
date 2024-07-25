@@ -416,7 +416,7 @@ WHERE
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -437,16 +437,16 @@ WHERE
             response.data
           );
         } catch (error: any) {
-          flag = 0;
           loggerErros.error(
             "Erro ao cadastrar cliente: %s => Resultado do cadastro %s",
             cliente ? cliente.nomePessoa : "Cliente não encontrado",
             error.response.data
           );
+          flag = 0;
           if (error) {
             try {
               const responsecnpj = await axios.get(
-                `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
+                `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
 
                 {
                   headers: {
@@ -462,7 +462,7 @@ WHERE
               if (codtemporario) {
                 try {
                   const responsecodtemporario = await axios.get(
-                    `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
+                    `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
 
                     {
                       headers: {
@@ -472,7 +472,8 @@ WHERE
                       },
                     }
                   );
-                  let cadastral: Date;
+                  let cadastral;
+                  let clienteDesde: Date;
                   function diffInMonths(date1: Date, date2: Date): number {
                     const diffYears = date2.getFullYear() - date1.getFullYear();
                     const diffMonths = date2.getMonth() - date1.getMonth();
@@ -481,25 +482,41 @@ WHERE
                   cadastral = new Date(
                     responsecodtemporario.data.body.dataRenovacaoCadastral
                   );
+                  if (isNaN(cadastral.getTime())) {
+                    cadastral = null;
+                  }
+                  clienteDesde = new Date(
+                    responsecodtemporario.data.body.dataClienteDesde
+                  );
+                  console.log(cadastral);
+                  console.log(clienteDesde);
                   let teste = new Date();
                   // teste.setMonth(teste.getMonth() - 5);
+                  let diferencaMeses;
+                  if (cadastral) {
+                    diferencaMeses = diffInMonths(teste, cadastral);
+                    console.log(diferencaMeses);
+                  } else {
+                    diferencaMeses = diffInMonths(teste, clienteDesde);
+                    console.log(diferencaMeses);
+                  }
 
-                  const diferencaMeses = diffInMonths(teste, cadastral);
                   // console.log(cadastral);
                   // console.log(teste);
                   // console.log(diferencaMeses);
-                  if (cadastral && diferencaMeses > 4) {
+                  if (diferencaMeses < -4) {
                     // console.log("deu certo");
                     codCli.push(codtemporario);
+                    console.log(codtemporario);
                     indicesParaAtualizar.push(i);
                     flag = 1;
                   }
                 } catch (error: any) {
-                  console.log(error.response.data);
+                  console.log(error.responsecodtemporario.data);
                 }
               }
             } catch (error: any) {
-              console.error(error.responsecnpj.data);
+              console.log(error.responsecnpj);
             }
           }
           if (flag === 0) {

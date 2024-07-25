@@ -1,0 +1,54 @@
+2024-07-24 08:09:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:10:11;error;Erro ao cadastrar cliente: BRUNO OLIVEIRA PEREIRA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-24 08:10:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:10:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:10:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:10:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:10:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:10:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:11:14;error;Erro ao cadastrar cliente: CRISTOFFER PABLO MOTA MAGALHAES 05399455102 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-24 08:11:14;error;Erro ao cadastrar cliente: LUCAS MENDES DOS SANTOS 06351267102 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-24 08:11:14;error;Erro ao cadastrar cliente: JOSE DOMINGOS DA SILVA 15816565800 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-24 08:11:15;error;Erro ao cadastrar cliente: 54.967.558 CIBELLE CRISTINA COUTINHO LERMEN MIROWSKI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-24 08:11:15;error;Erro ao cadastrar cliente: JOELMA RODRIGUES DOS SANTOS 01233406167 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-24 08:11:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:11:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:11:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:11:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-24 08:11:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}

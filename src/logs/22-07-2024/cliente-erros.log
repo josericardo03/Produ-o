@@ -1,0 +1,1119 @@
+2024-07-22 07:44:27;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Juara',
+  codigoCep: '78575000',
+  numeroEndereco: '825',
+  nomeLogradouro: ' RUA CURITIBA',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:44:27;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Nova Mutum',
+  codigoCep: '78454611',
+  numeroEndereco: '1202W',
+  nomeLogradouro: ' RUA DAS ACUCENAS W',
+  nomeBairro: 'EDELMINA QUERUBIM MARCHETTI',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:44:27;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Sinop',
+  codigoCep: '78556676',
+  numeroEndereco: '960',
+  nomeLogradouro: ' AV DAS ITAUBAS',
+  nomeBairro: 'JARDIM CELESTE',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:44:28;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78065165',
+  numeroEndereco: '2759',
+  nomeLogradouro: 'Avenida General Melo',
+  nomeBairro: 'Jardim Tropical',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:44:28;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Várzea Grande',
+  codigoCep: '78120648',
+  numeroEndereco: '0',
+  nomeLogradouro: 'R PARIS',
+  nomeBairro: 'PRQ DO LAGO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:44:28;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Gaúcha do Norte',
+  codigoCep: '78875000',
+  numeroEndereco: 'S/N',
+  nomeLogradouro: ' AV BRASIL',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:44:56;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Juara',
+  codigoCep: '78575000',
+  numeroEndereco: '825',
+  nomeLogradouro: ' RUA CURITIBA',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 07:47:52;error;Erro ao cadastrar cliente: 53.659.874 MIRIAN CLEYZE MARTIMIANO LOPES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:53:40;error;Erro ao cadastrar cliente: RG NAUTICA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:53:51;error;Erro ao cadastrar cliente: ONICE MARTINS RIBEIRO DA SILVA 60392541149 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:33;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:33;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:33;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:34;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:34;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:35;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:35;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:35;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:36;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:36;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:36;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:37;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:37;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 07:54:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:09:50;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:50;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:50;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:50;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:09:51;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-22 08:10:23;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Barra do Garças',
+  codigoCep: '78600408',
+  numeroEndereco: '0',
+  nomeLogradouro: 'R UM ',
+  nomeBairro: 'JARDIM TOLEDO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:23;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Alto Araguaia',
+  codigoCep: '78780000',
+  numeroEndereco: '613',
+  nomeLogradouro: 'Rua Marechal Floriano Peixoto ',
+  nomeBairro: 'Gabiroba ',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:23;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Rondonópolis',
+  codigoCep: '78717610',
+  numeroEndereco: 'S/N',
+  nomeLogradouro: 'Rua José Aparecido dos Santos',
+  nomeBairro: 'Jardim Progresso',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:24;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78058346',
+  numeroEndereco: '5',
+  nomeLogradouro: ' ALAM DOIS',
+  nomeBairro: 'CPA III',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:24;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cáceres',
+  codigoCep: '78210408',
+  numeroEndereco: '1393',
+  nomeLogradouro: 'Avenida Talhamares',
+  nomeBairro: 'Vila Mariana',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:24;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78052350',
+  numeroEndereco: '01',
+  nomeLogradouro: ' RUA ENGENHEIRO OLICIO QUINTILHANO DE OLIVEIRA',
+  nomeBairro: 'ALTOS DA SERRA I',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:24;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78050243',
+  numeroEndereco: '04',
+  nomeLogradouro: 'Rua V',
+  nomeBairro: 'Jardim Aclimação',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:24;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Várzea Grande',
+  codigoCep: '78145480',
+  numeroEndereco: '23',
+  nomeLogradouro: 'Rua Amâncio Ferreira da Silva',
+  nomeBairro: 'São Simão',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:25;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78068625',
+  numeroEndereco: '85',
+  nomeLogradouro: ' R VINTE E QUATRO',
+  nomeBairro: 'BOA ESPERANCA',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:25;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Jaciara',
+  codigoCep: '78820000',
+  numeroEndereco: '72',
+  nomeLogradouro: ' R UMBURANA',
+  nomeBairro: 'FLORAIS PLANALTO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:25;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Sorriso',
+  codigoCep: '78898152',
+  numeroEndereco: '980',
+  nomeLogradouro: 'Rua Lions Clube',
+  nomeBairro: 'Novos Campos',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:25;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Novo São Joaquim',
+  codigoCep: '78625000',
+  numeroEndereco: '983',
+  nomeLogradouro: ' AVEN OSCAR ZAIDEN DE MENEZES 983',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:10:25;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  nomeCidade: 'Confresa',
+  codigoCep: '78652000',
+  numeroEndereco: '8',
+  nomeLogradouro: ' R 13 DE MAIO',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:12:22;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:23;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:23;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:24;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:24;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:24;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:25;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:25;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:25;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:26;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:26;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:26;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:26;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:37;error;Erro ao atualizar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA com o cnpj 25342248000161 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-22 08:12:37;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:34:10;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:10;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:11;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:11;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:11;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:12;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:14;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:15;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:15;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:15;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:15;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:16;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:34:17;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:36:01;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:01;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:01;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:01;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:02;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:02;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:02;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:03;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:03;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:03;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:03;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:04;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:04;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:54;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:54;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:54;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:54;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:55;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:55;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:55;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:55;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:56;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:56;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:56;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:56;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:36:57;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:37:00;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:00;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:05;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:05;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:05;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:05;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:37:06;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:19;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:19;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:19;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:19;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:20;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:20;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:20;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:21;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:21;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:21;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:21;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:22;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:22;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:40:25;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:25;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:40:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:16;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:17;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:17;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:17;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:17;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:18;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:18;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:18;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:18;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:19;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:19;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:20;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:20;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 08:43:24;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:24;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:29;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:29;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 08:43:31;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:27;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:27;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:28;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:28;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:28;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:29;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:29;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:29;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:29;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:30;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:30;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:30;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:31;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:00:34;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:34;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:39;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:39;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:39;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:00:40;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:16;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:16;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:16;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:17;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:17;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:17;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:17;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:18;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:18;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:18;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:19;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:19;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:19;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 09:07:22;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:23;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:27;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:27;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 09:07:28;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 11:58:36;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 11:58:36;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 11:58:37;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:02:41;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:02:42;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:02:42;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:02:42;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:02:44;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:02:45;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:02:45;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:05:17;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:05:17;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:05:17;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:05:18;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:05:20;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:05:20;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:05:20;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:06:05;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:06:05;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:06:06;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:06:06;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:06:08;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:06:08;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:06:08;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:26;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:26;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:27;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:27;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:29;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:29;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:30;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:44;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:44;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:44;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:45;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:45;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:45;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:46;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:46;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:46;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:46;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:47;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:47;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:47;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:25:50;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:51;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:25:57;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:01;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:01;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:02;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:02;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:02;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:02;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:03;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:03;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:03;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:04;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:04;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:04;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:04;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:31:07;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:08;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:12;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:31:13;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:20;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:21;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:21;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:21;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:22;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:22;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:22;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:22;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:23;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:23;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:23;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:24;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:24;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:35:27;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:28;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:32;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:32;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:32;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:35:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:57:19;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:19;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:19;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:19;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:20;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:20;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:21;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:57:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:57:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:57:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:57:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:57:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:57:25;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:59:45;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:46;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:46;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:46;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:46;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:47;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:47;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:47;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:47;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:48;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:48;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:48;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:48;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 12:59:52;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 12:59:52;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:47;error;Erro ao cadastrar cliente: 25.342.248 FERNANDA TEIXEIRA FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:47;error;Erro ao cadastrar cliente: M. O. DOS SANTOS FERNANDES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:48;error;Erro ao cadastrar cliente: 49.056.231 TALARICE MIRIELLE SERAFIM DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:48;error;Erro ao cadastrar cliente: MICHELE REZENDE SOUZA 03486986155 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:48;error;Erro ao cadastrar cliente: CASAMIX DISTRIBUIDORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:49;error;Erro ao cadastrar cliente: 51.429.574 MARCOS AUGUSTO MACHADO DOS SANTOS PARAIZO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:49;error;Erro ao cadastrar cliente: 16.747.070 CAMILA DA SILVA BELTRAME => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:49;error;Erro ao cadastrar cliente: 51.793.072 GEORGE MAIDANA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:50;error;Erro ao cadastrar cliente: TECTONIKA CONSTRUTORA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:50;error;Erro ao cadastrar cliente: MARILENE CAETANO CARVALHO DOURADO 50386573115 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:50;error;Erro ao cadastrar cliente: 49.742.917 FABIANE SILVA RODRIGUES MELO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:50;error;Erro ao cadastrar cliente: LUANNA THAYS FERNANDES CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:51;error;Erro ao cadastrar cliente: NEUBIA BARREIRA CAMPOS 70309108187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-22 13:19:54;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:54;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:55;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:55;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:55;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:55;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-22 13:19:56;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.'
+};{"service":"IntegracaoBancos"}

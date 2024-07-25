@@ -95,12 +95,14 @@ Left join
 Left join
 		estados as est on c.estado = est.id
 WHERE 
-    p.status = 'deferido' and c.tipoCliente="juridica"AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 2 DAY)
+    p.status = 'deferido' and c.tipoCliente="juridica"AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
 ORDER BY 
     p.createdAt DESC 
+    
 
 
       `;
+      // limit 1 offset 6
 
       if (resultado.length === 0) {
         loggerBanco.info(
@@ -114,7 +116,7 @@ ORDER BY
 
       const hoje = new Date().toISOString().slice(0, 10);
 
-      const dadosParaEnviar = [];
+      let dadosParaEnviar = [];
       let enderecoParaEnviar = [];
       let enderecoPessoal = [];
       let ramoAtividade = [];
@@ -136,6 +138,7 @@ ORDER BY
           const socios = resultadoSocios[i];
 
           dadosSocios = {
+            identificadorSituacao: "A",
             codigoCliente: "",
             numeroSequencial: i + 1,
 
@@ -151,18 +154,27 @@ ORDER BY
 
             numeroDocumento: socios.numeroIdentificacao,
             codigoEstadoCivil: mapearEstadoCivil(socios.estadoCivil),
+            todasContas: true,
             dataAdministrativaDesdobramento: hoje,
             dataHoraAtualizacao: hoje,
             dataEmissao: formatarData(socios.dataEmissaoDocumento),
             siglaOrgaoEmissorOutroDocumento: socios.orgaoExpeditor,
             enderecoPrincipal: {
               nomeLogradouro: socios.endereco,
+              siglaUf: socios.enderecoUf,
               nomeBairro: socios.enderecoBairro,
-              // descricaoComplementoEndereco: socios.enderecoComplemento,
+              numeroEndereco: "SEM NUMERO",
+              descricaoComplementoEndereco: "null",
               nomeCidade: socios.enderecoCidade,
               codigoCep: socios.enderecoCep
                 ? socios.enderecoCep.replace(/[./ -]/g, "")
                 : "",
+              siglaTipoEndereco: {
+                name: "CA",
+              },
+              idEnderecoSocio: i + 1,
+              numeroSequencial: i + 1,
+              codigoClienteUnico: "",
             },
           };
           sociosCliente.push(dadosSocios);
@@ -459,7 +471,7 @@ WHERE
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -489,7 +501,7 @@ WHERE
           if (error) {
             try {
               const responsecnpj = await axios.get(
-                `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
+                `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
 
                 {
                   headers: {
@@ -505,7 +517,7 @@ WHERE
               if (codtemporario) {
                 try {
                   const responsecodtemporario = await axios.get(
-                    `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
+                    `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
 
                     {
                       headers: {
@@ -534,7 +546,7 @@ WHERE
                   console.log(cadastral);
                   console.log(clienteDesde);
                   let teste = new Date();
-                  // teste.setMonth(teste.getMonth() - 5);
+                  teste.setMonth(teste.getMonth() + 5);
                   let diferencaMeses;
                   if (cadastral) {
                     diferencaMeses = diffInMonths(teste, cadastral);
@@ -577,26 +589,45 @@ WHERE
           }
         }
       }
-      for (let i = 0; i < indicesParaAtualizar.length; i++) {
+      let c = indicesParaAtualizar;
+      indicesParaAtualizar = indicesParaAtualizar.map((indice) => {
         let count = 0;
-        const valorAtualizar = indicesParaAtualizar[i];
-
         for (let j = 0; j < indicesParaRemover.length; j++) {
-          if (indicesParaRemover[j] < valorAtualizar) {
+          if (indicesParaRemover[j] < indice) {
             count++;
           }
         }
+        return indice - count;
+      });
+      console.log(indicesParaAtualizar);
+      dadosParaEnviar = dadosParaEnviar.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      contatosEnvio = contatosEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
 
-        indicesParaAtualizar[i] -= count;
-      }
+      ramoAtividade = ramoAtividade.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      enderecoParaEnviar = enderecoParaEnviar.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      sociosArray = sociosArray.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      enderecoPessoal = enderecoPessoal.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
       console.log("começa aqui");
+
       for (let i = 0; i < dadosParaEnviar.length; i++) {
         let cliente = dadosParaEnviar[i];
         try {
           if (indicesParaAtualizar.includes(i)) {
             cliente = Object.assign({}, cliente, { codigoCliente: codCli[i] });
             const response = await axios.put(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
               cliente,
               {
                 headers: {
@@ -633,23 +664,6 @@ WHERE
           }
         }
       }
-      contatosEnvio = contatosEnvio.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-
-      ramoAtividade = ramoAtividade.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      enderecoParaEnviar = enderecoParaEnviar.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      sociosArray = sociosArray.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      enderecoPessoal = enderecoPessoal.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-
       for (let i = 0; i < contatosEnvio.length; i++) {
         const codigoCliente = codCli[i];
         for (let j = 0; j < contatosEnvio[i].length; j++) {
@@ -659,7 +673,7 @@ WHERE
 
             if (indicesParaAtualizar.includes(i)) {
               const responseContatos = await axios.put(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
                 dadosContacts,
                 {
                   headers: {
@@ -673,7 +687,7 @@ WHERE
               console.log("Resposta do servidor:", responseContatos.data);
             } else {
               const responseContatos = await axios.post(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
                 dadosContacts,
                 {
                   headers: {
@@ -706,7 +720,7 @@ WHERE
           ramo.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseRamo = await axios.put(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
               ramo,
               {
                 headers: {
@@ -721,7 +735,7 @@ WHERE
             console.log("Resposta do servidor:", responseRamo.data);
           } else {
             const responseRamo = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
               ramo,
               {
                 headers: {
@@ -752,7 +766,7 @@ WHERE
           enderecoCliente.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseEndereco = await axios.put(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
               enderecoCliente,
               {
                 headers: {
@@ -767,7 +781,7 @@ WHERE
             console.log("Resposta do servidor:", responseEndereco.data);
           } else {
             const responseEndereco = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
               enderecoCliente,
               {
                 headers: {
@@ -794,12 +808,13 @@ WHERE
         const codigoCliente = codCli[i];
         for (let j = 0; j < sociosArray[i].length; j++) {
           try {
-            const dadosSocio = sociosArray[i][j];
+            let dadosSocio = sociosArray[i][j];
             dadosSocio.codigoCliente = codigoCliente;
+            dadosSocio.enderecoPrincipal.codigoClienteUnico = codigoCliente;
             console.log(dadosSocio);
             if (indicesParaAtualizar.includes(i)) {
               const responseSocios = await axios.put(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
                 dadosSocio,
                 {
                   headers: {
@@ -813,7 +828,7 @@ WHERE
               console.log("Resposta do servidor:", responseSocios.data);
             } else {
               const responseSocios = await axios.post(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
                 dadosSocio,
                 {
                   headers: {
@@ -836,6 +851,8 @@ WHERE
           }
         }
       }
+      console.log(c);
+      console.log(indicesParaAtualizar);
 
       for (let i = 0; i < enderecoPessoal.length; i++) {
         const endereco = enderecoPessoal[i];
@@ -843,9 +860,9 @@ WHERE
         try {
           const codigoCliente = codCli[i];
           endereco.codigoCliente = codigoCliente;
-          console.log(codigoCliente);
+
           const responseEndereco = await axios.put(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             endereco,
             {
               headers: {
@@ -873,6 +890,7 @@ WHERE
       console.error("Erro ao enviar dados:", error);
       res.status(500).send("Erro ao enviar dados");
     }
+
     const caminhoArquivoZIP = await enviarPastaLogs();
     const enviarEmailComAnexo = async (caminhoArquivoZIP: string) => {
       try {

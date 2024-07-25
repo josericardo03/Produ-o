@@ -602,7 +602,8 @@ WHERE
                       },
                     }
                   );
-                  let cadastral: Date;
+                  let cadastral;
+                  let clienteDesde: Date;
                   function diffInMonths(date1: Date, date2: Date): number {
                     const diffYears = date2.getFullYear() - date1.getFullYear();
                     const diffMonths = date2.getMonth() - date1.getMonth();
@@ -611,15 +612,29 @@ WHERE
                   cadastral = new Date(
                     responsecodtemporario.data.body.dataRenovacaoCadastral
                   );
+                  if (isNaN(cadastral.getTime())) {
+                    cadastral = null;
+                  }
+                  clienteDesde = new Date(
+                    responsecodtemporario.data.body.dataClienteDesde
+                  );
                   console.log(cadastral);
+                  console.log(clienteDesde);
                   let teste = new Date();
                   // teste.setMonth(teste.getMonth() - 5);
-                  const diferencaMeses = diffInMonths(teste, cadastral);
-                  console.log(diferencaMeses);
+                  let diferencaMeses;
+                  if (cadastral) {
+                    diferencaMeses = diffInMonths(teste, cadastral);
+                    console.log(diferencaMeses);
+                  } else {
+                    diferencaMeses = diffInMonths(teste, clienteDesde);
+                    console.log(diferencaMeses);
+                  }
+
                   // console.log(cadastral);
                   // console.log(teste);
                   // console.log(diferencaMeses);
-                  if (cadastral && diferencaMeses < -4) {
+                  if (diferencaMeses < -4) {
                     // console.log("deu certo");
                     codCli.push(codtemporario);
                     console.log(codtemporario);
@@ -627,11 +642,11 @@ WHERE
                     flag = 1;
                   }
                 } catch (error: any) {
-                  console.log(error.response.data);
+                  console.log(error.responsecodtemporario.data);
                 }
               }
             } catch (error: any) {
-              console.error(error.responsecnpj);
+              console.log(error.responsecnpj);
             }
           }
           if (flag === 0) {
