@@ -68,7 +68,7 @@ INNER JOIN (
     INNER JOIN 
         proposta AS p ON c.id = p.clientId 
     WHERE 
-        p.status = 'deferido'  AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 3 DAY)
+        p.status = 'deferido'  AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
     ORDER BY 
         p.createdAt DESC 
     
@@ -92,7 +92,7 @@ INNER JOIN (
 
       const hoje = new Date().toISOString().slice(0, 10);
 
-      const dadosParaEnviar = [];
+      let dadosParaEnviar = [];
       let enderecoParaEnviar = [];
       let enderecoPessoal = [];
       let enderecoEmpresa = [];
@@ -540,8 +540,10 @@ WHERE
       let indicesParaRemover = [];
       let indicesParaAtualizar = [];
       let flag;
+      let cnpjEnvio = [];
       for (let i = 0; i < dadosParaEnviar.length; i++) {
         const cliente = dadosParaEnviar[i];
+
         try {
           let codigoCliente = "";
 
@@ -560,6 +562,7 @@ WHERE
           flag = 1;
           codCli.push(codigoCliente);
           console.log("Dados enviados:", cliente);
+          cnpjEnvio.push(cliente.numeroCic);
           console.log("Resposta do servidor:", response.data);
           loggerClientes.info(
             "Dados enviados: %s => Resultado do cadastro %s",
@@ -621,7 +624,7 @@ WHERE
                   console.log(cadastral);
                   console.log(clienteDesde);
                   let teste = new Date();
-                  // teste.setMonth(teste.getMonth() - 5);
+                  // teste.setMonth(teste.getMonth() + 5);
                   let diferencaMeses;
                   if (cadastral) {
                     diferencaMeses = diffInMonths(teste, cadastral);
@@ -664,21 +667,52 @@ WHERE
           }
         }
       }
-      for (let i = 0; i < indicesParaAtualizar.length; i++) {
+      let c = indicesParaAtualizar;
+      indicesParaAtualizar = indicesParaAtualizar.map((indice) => {
         let count = 0;
-        const valorAtualizar = indicesParaAtualizar[i];
-
         for (let j = 0; j < indicesParaRemover.length; j++) {
-          if (indicesParaRemover[j] < valorAtualizar) {
+          if (indicesParaRemover[j] < indice) {
             count++;
           }
         }
+        return indice - count;
+      });
+      console.log(indicesParaAtualizar);
+      dadosParaEnviar = dadosParaEnviar.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      contatosEnvio = contatosEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
 
-        indicesParaAtualizar[i] -= count;
-      }
+      ramoAtividade = ramoAtividade.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      enderecoParaEnviar = enderecoParaEnviar.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      enderecoEmpresa = enderecoEmpresa.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+
+      enderecoPessoal = enderecoPessoal.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      maeEnvio = maeEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      paiEnvio = paiEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
+      conjugeEnvio = conjugeEnvio.filter(
+        (_, index) => !indicesParaRemover.includes(index)
+      );
       console.log("começa aqui");
+
+      let cnpjAtualizados = [];
       for (let i = 0; i < dadosParaEnviar.length; i++) {
         let cliente = dadosParaEnviar[i];
+        cnpjAtualizados.push(cliente.numeroCic);
         try {
           if (indicesParaAtualizar.includes(i)) {
             cliente = Object.assign({}, cliente, { codigoCliente: codCli[i] });
@@ -720,32 +754,6 @@ WHERE
           }
         }
       }
-      contatosEnvio = contatosEnvio.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-
-      ramoAtividade = ramoAtividade.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      enderecoParaEnviar = enderecoParaEnviar.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      enderecoEmpresa = enderecoEmpresa.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-
-      enderecoPessoal = enderecoPessoal.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      maeEnvio = maeEnvio.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      paiEnvio = paiEnvio.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
-      conjugeEnvio = conjugeEnvio.filter(
-        (_, index) => !indicesParaRemover.includes(index)
-      );
       for (let i = 0; i < contatosEnvio.length; i++) {
         const codigoCliente = codCli[i];
         for (let j = 0; j < contatosEnvio[i].length; j++) {
@@ -1072,6 +1080,8 @@ WHERE
           console.error("Erro ao enviar endereço:", error.response.data);
         }
       }
+      loggerClientes.info("Clientes enviados %s", cnpjEnvio);
+      loggerClientesAtualizados.info("Clientes enviados %s", cnpjAtualizados);
 
       res.json({ message: "Dados enviados com sucesso" });
     } catch (error) {

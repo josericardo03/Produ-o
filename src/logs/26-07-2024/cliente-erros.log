@@ -1,0 +1,216 @@
+2024-07-26 07:41:18;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65992654232',
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78040600',
+  numeroEndereco: '160',
+  nomeLogradouro: 'RUA ALFENAS',
+  nomeBairro: 'JD MARIANA',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-26 07:41:18;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'JD MARIANA',
+  codigoCep: '78040600',
+  nomeLogradouro: 'ALFENAS',
+  numeroEndereco: '233',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65992654232',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-26 07:42:06;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65992654232',
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78040600',
+  numeroEndereco: '160',
+  nomeLogradouro: 'RUA ALFENAS',
+  nomeBairro: 'JD MARIANA',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-26 07:42:06;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'JD MARIANA',
+  codigoCep: '78040600',
+  nomeLogradouro: 'ALFENAS',
+  numeroEndereco: '233',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65992654232',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar Contato: => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar Contato: => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar Contato: => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar ramo: {
+  codigoCliente: 1040786,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar mãe: {
+  codigoCliente: 1040786,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'EDIVANGELA APARECIDA SILVA DE OLIVEIRA',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar Pai: {
+  codigoCliente: 1040786,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MANOEL DONIZETE PEREIRA',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar Pai: {
+  codigoCliente: 1040786,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: 1040786,
+  codigoUnidade: 1,
+  telefoneCompleto: '65992654232',
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78040600',
+  numeroEndereco: '160',
+  nomeLogradouro: 'RUA ALFENAS',
+  nomeBairro: 'JD MARIANA',
+  siglaUf: 'MT'
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: 1040786,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'JD MARIANA',
+  codigoCep: '78040600',
+  nomeLogradouro: 'ALFENAS',
+  numeroEndereco: '233',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65992654232',
+  codigoTipoImovel: 1
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:42:32;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: 1040786,
+  telefoneCompleto: '65992654232',
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78040600',
+  numeroEndereco: '160',
+  nomeLogradouro: 'RUA ALFENAS',
+  nomeBairro: 'JD MARIANA',
+  siglaUf: 'MT'
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:24;error;Erro ao cadastrar cliente: BRUNO OLIVEIRA PEREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:36;error;Erro ao cadastrar cliente: BRUNO OLIVEIRA PEREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:47;error;Erro ao cadastrar cliente: BRUNO OLIVEIRA PEREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar Contato: => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar Contato: => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar Contato: => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar ramo: {
+  codigoCliente: 1040786,
+  codigoRamoAtividade: 3002,
+  atividadePrincipal: true,
+  siglaAtividade: null
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar mãe: {
+  codigoCliente: 1040786,
+  siglaRelacionamento: 'MAE',
+  nomeParente: 'EDIVANGELA APARECIDA SILVA DE OLIVEIRA',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar Pai: {
+  codigoCliente: 1040786,
+  siglaRelacionamento: 'PAI',
+  nomeParente: 'MANOEL DONIZETE PEREIRA',
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar Pai: {
+  codigoCliente: 1040786,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: 1040786,
+  codigoUnidade: 1,
+  telefoneCompleto: '65992654232',
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78040600',
+  numeroEndereco: '160',
+  nomeLogradouro: 'RUA ALFENAS',
+  nomeBairro: 'JD MARIANA',
+  siglaUf: 'MT'
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: 1040786,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'JD MARIANA',
+  codigoCep: '78040600',
+  nomeLogradouro: 'ALFENAS',
+  numeroEndereco: '233',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65992654232',
+  codigoTipoImovel: 1
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:44:48;error;Erro ao enviar endereço pessoal: {
+  siglaTipoEndereco: 'CORRESPONDENCIA',
+  codigoCliente: 1040786,
+  telefoneCompleto: '65992654232',
+  codigoUnidade: 1,
+  nomeCidade: 'Cuiabá',
+  codigoCep: '78040600',
+  numeroEndereco: '160',
+  nomeLogradouro: 'RUA ALFENAS',
+  nomeBairro: 'JD MARIANA',
+  siglaUf: 'MT'
+} => Resultado do cadastro <html><head><title>Error</title></head><body>Unauthorized</body></html>;{"service":"IntegracaoBancos"}
+2024-07-26 07:52:11;error;Erro ao cadastrar cliente: GERSON CONCEICAO DENIZ => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-26 07:52:21;error;Erro ao atualizar cliente: GERSON CONCEICAO DENIZ com o cnpj 55755569134 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-26 07:52:23;error;Erro ao enviar Pai: {
+  codigoCliente: 1029786,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-07-26 07:53:20;error;Erro ao cadastrar cliente: GERSON CONCEICAO DENIZ 55755569134 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-26 07:53:21;error;Erro ao atualizar cliente: GERSON CONCEICAO DENIZ 55755569134 com o cnpj 24907142000103 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-26 07:53:23;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-26 08:08:57;error;Erro ao cadastrar cliente: ERIKA ALYNE RODRIGUES DUARTE => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-26 08:09:07;error;Erro ao atualizar cliente: ERIKA ALYNE RODRIGUES DUARTE com o cnpj 04809703193 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-26 08:09:08;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}

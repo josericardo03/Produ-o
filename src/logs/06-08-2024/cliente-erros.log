@@ -1,0 +1,263 @@
+2024-08-06 08:40:55;error;Erro ao cadastrar cliente: ADRIANA DA SILVA PEREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 08:40:57;error;Erro ao cadastrar cliente: IRACY PEREIRA PALOMINO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 08:40:58;error;Erro ao cadastrar cliente: ROGERIO APARECIDO DO NASCIMENTO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 08:40:58;error;Erro ao cadastrar cliente: LAIS VIEIRA WEBBER RONSONI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:06:14;error;Erro ao cadastrar cliente: TANIA FERNANDES ALVES DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:06:27;error;Erro ao atualizar cliente: TANIA FERNANDES ALVES DA SILVA com o cnpj 18026843878 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:06:28;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:08:53;error;Erro ao cadastrar cliente: TANIA FERNANDES ALVES DA SILVA 18026843878 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:08:58;error;Erro ao atualizar cliente: TANIA FERNANDES ALVES DA SILVA 18026843878 com o cnpj 43596438000197 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:09:00;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:22:06;error;Erro ao cadastrar cliente: LORENNA CRISTHIAN BEZERRA DE PAULA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:06;error;Erro ao cadastrar cliente: DEOCLECIANO FERREIRA VIEIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:07;error;Erro ao cadastrar cliente: VINICIUS GOMES CAFISSO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:07;error;Erro ao cadastrar cliente: OSEIAS ALVES FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:08;error;Erro ao cadastrar cliente: EDSON MORBACH => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:08;error;Erro ao cadastrar cliente: ARIVANI ZENI TREVISAN => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:09;error;Erro ao cadastrar cliente: HERCULES SANTANA PIRES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:09;error;Erro ao cadastrar cliente: ISADORA ARTMANN BORTOLINI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:09;error;Erro ao cadastrar cliente: ELISANGELA ARTMANN BORTOLINI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:10;error;Erro ao cadastrar cliente: MARIA APARECIDA RIBEIRO DA CUNHA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:10;error;Erro ao cadastrar cliente: SANDRA MARTINS DA ROSA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:10;error;Erro ao atualizar cliente: LORENNA CRISTHIAN BEZERRA DE PAULA com o cnpj 70450943100 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:11;error;Erro ao atualizar cliente: MARIA APARECIDA RIBEIRO DA CUNHA com o cnpj 85457604187 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:22:11;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:26:32;error;Erro ao enviar mãe: {
+  codigoCliente: 1040941,
+  siglaRelacionamento: 'MAE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:26:33;error;Erro ao enviar Pai: {
+  codigoCliente: 1040941,
+  siglaRelacionamento: 'PAI',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:26:33;error;Erro ao enviar Pai: {
+  codigoCliente: 1040941,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:01;error;Erro ao cadastrar cliente: MARINES OLIVEIRA DE PAULA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:02;error;Erro ao cadastrar cliente: VERA LUCIA DE SOUZA CANAVARROS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:02;error;Erro ao cadastrar cliente: ANDRESSA PAOLA GUERRA LEMOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:02;error;Erro ao cadastrar cliente: ANTONIO CARLOS DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:03;error;Erro ao cadastrar cliente: LUSDIVAN DA SILVA BOTELHO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:03;error;Erro ao cadastrar cliente: DENNYS MARCOS FREITAS NUNES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:03;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:04;error;Erro ao cadastrar cliente: ANA CAROLINA VITORIA DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:04;error;Erro ao cadastrar cliente: JOHN CHARLES DE CAMPOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:04;error;Erro ao cadastrar cliente: RUBENS ALVES DE ABREU => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:05;error;Erro ao cadastrar cliente: RAFAEL MARTINS DE TOLEDO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:05;error;Erro ao atualizar cliente: VERA LUCIA DE SOUZA CANAVARROS com o cnpj 94575452149 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:27:06;error;Erro ao enviar Pai: {
+  codigoCliente: 1020855,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:12;error;Erro ao cadastrar cliente: EMERSON ETORE MORAES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:13;error;Erro ao cadastrar cliente: PAULO CESAR SANTOS RUHLING => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:13;error;Erro ao cadastrar cliente: CRISTIANO PEREIRA DE JESUS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:23;error;Erro ao cadastrar cliente: CARLEISI HINERASKI SCHMIDT => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:25;error;Erro ao cadastrar cliente: EDSON MORBACH => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:30;error;Erro ao atualizar cliente: CARLEISI HINERASKI SCHMIDT com o cnpj 02008093182 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:29:32;error;Erro ao enviar Pai: {
+  codigoCliente: 1032622,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:11;error;Erro ao cadastrar cliente: CARLEISI HINERASKI SCHMIDT => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:11;error;Erro ao cadastrar cliente: MARCELO NILTON FERREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:12;error;Erro ao cadastrar cliente: EDSON MORBACH => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:12;error;Erro ao cadastrar cliente: GABRIEL STEVAN BIBERG DE OLIVEIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:12;error;Erro ao cadastrar cliente: MIRIAN CLEYZE MARTIMIANO LOPES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:13;error;Erro ao atualizar cliente: CARLEISI HINERASKI SCHMIDT com o cnpj 02008093182 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:31:14;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:31:16;error;Erro ao enviar Pai: {
+  codigoCliente: 1032622,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-06 09:32:56;error;Erro ao cadastrar cliente: CIBELLE CRISTINA COUTINHO LERMEN MIROWSKI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:33:03;error;Erro ao atualizar cliente: CIBELLE CRISTINA COUTINHO LERMEN MIROWSKI com o cnpj 05275596103 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-06 09:38:53;error;Erro ao cadastrar cliente: CRISTOFFER PABLO MOTA MAGALHAES 05399455102 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:38:54;error;Erro ao cadastrar cliente: LUCAS MENDES DOS SANTOS 06351267102 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:38:54;error;Erro ao cadastrar cliente: JOSE DOMINGOS DA SILVA 15816565800 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:38:54;error;Erro ao cadastrar cliente: 54.967.558 CIBELLE CRISTINA COUTINHO LERMEN MIROWSKI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:38:55;error;Erro ao cadastrar cliente: JOELMA RODRIGUES DOS SANTOS 01233406167 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:43:51;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '65993530509',
+  nomeCidade: 'Várzea Grande',
+  codigoCep: '78152076',
+  numeroEndereco: '137',
+  nomeLogradouro: 'Rua c',
+  nomeBairro: 'São Matheus',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:51;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '66996773995',
+  nomeCidade: 'Alto Taquari',
+  codigoCep: '78785000',
+  numeroEndereco: '787850',
+  nomeLogradouro: 'AV MACARIO SUBTIL DE OLIVEIRA',
+  nomeBairro: 'CENTRO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:51;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '',
+  nomeCidade: 'Alto Araguaia',
+  codigoCep: '78780000',
+  numeroEndereco: '30',
+  nomeLogradouro: 'A',
+  nomeBairro: 'MORADA DO SOL',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:52;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '66996197478',
+  nomeCidade: 'Feliz Natal',
+  codigoCep: '78885000',
+  numeroEndereco: '1701',
+  nomeLogradouro: 'RUA MILTON DOS REIS',
+  nomeBairro: 'VL ESPERANCA',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:52;error;Erro ao enviar endereço: {
+  siglaTipoEndereco: 'RESIDENCIAL',
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  telefoneCompleto: '66997147549',
+  nomeCidade: 'Jaciara',
+  codigoCep: '78820000',
+  numeroEndereco: '258',
+  nomeLogradouro: 'RUA IRENEU BATISTA CAMILO',
+  nomeBairro: 'VALE FORMOSO',
+  siglaUf: 'MT'
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:52;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Cuiabá',
+  nomeBairro: 'PLANALTO',
+  codigoCep: '78058789',
+  nomeLogradouro: 'MONTE AZUL',
+  numeroEndereco: '17',
+  idenTipoEndereco: true,
+  telefoneCompleto: '65993530509',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:52;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Alto Taquari',
+  nomeBairro: 'PRQ ALTO TAQUARI',
+  codigoCep: '78785000',
+  nomeLogradouro: 'FIRMINA PASSOS DE SOUZA',
+  numeroEndereco: '67',
+  idenTipoEndereco: true,
+  telefoneCompleto: '66996773995',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:52;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Alto Araguaia',
+  nomeBairro: 'MORADA DO SOL',
+  codigoCep: '78780000',
+  nomeLogradouro: 'A',
+  numeroEndereco: '103',
+  idenTipoEndereco: true,
+  telefoneCompleto: '',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:53;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Feliz Natal',
+  nomeBairro: 'VL ESPERANCA',
+  codigoCep: '78885000',
+  nomeLogradouro: 'ESPERANCA',
+  numeroEndereco: '23',
+  idenTipoEndereco: true,
+  telefoneCompleto: '66996197478',
+  codigoTipoImovel: 2
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:43:53;error;Erro ao enviar Endereço da empresa: {
+  codigoCliente: undefined,
+  codigoUnidade: 1,
+  siglaTipoEndereco: 'EMPRESA',
+  siglaUf: 'MT',
+  nomeCidade: 'Jaciara',
+  nomeBairro: 'COHAB S LOURENCO',
+  codigoCep: '78820000',
+  nomeLogradouro: 'SEIS',
+  numeroEndereco: '151',
+  idenTipoEndereco: true,
+  telefoneCompleto: '66997147549',
+  codigoTipoImovel: 1
+} => Resultado do cadastro {
+  error: 'RESTEASY003650: No resource method found for PUT, return 405 with Allow header'
+};{"service":"IntegracaoBancos"}
+2024-08-06 09:44:42;error;Erro ao cadastrar cliente: JOELMA RODRIGUES DOS SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:44:42;error;Erro ao cadastrar cliente: CIBELLE CRISTINA COUTINHO LERMEN MIROWSKI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:44:43;error;Erro ao cadastrar cliente: JOSE DOMINGOS DA SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:44:43;error;Erro ao cadastrar cliente: LUCAS MENDES DOS SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-06 09:44:44;error;Erro ao cadastrar cliente: CRISTOFFER PABLO MOTA MAGALHAES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}

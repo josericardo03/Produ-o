@@ -1,0 +1,32 @@
+2024-07-31 09:35:15;error;Erro ao cadastrar cliente: CEZAR LUIZ REGAUER => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:35:33;error;Erro ao atualizar cliente: CEZAR LUIZ REGAUER com o cnpj 02553048114 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-31 09:35:36;error;Erro ao enviar Pai: {
+  codigoCliente: 1032991,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:01;error;Erro ao cadastrar cliente: ALINE SEMIJOIAS E ACESSORIOS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:03;error;Erro ao atualizar cliente: ALINE SEMIJOIAS E ACESSORIOS LTDA com o cnpj 35872962000115 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:07;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-31 09:36:40;error;Erro ao cadastrar cliente: CRYSTINE TRENTIN TURRA 04935962160 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:41;error;Erro ao cadastrar cliente: DANIEL GONCALVES DIAS 70316902187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:41;error;Erro ao cadastrar cliente: 54.274.722 ELIANE GONCALVES SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:41;error;Erro ao cadastrar cliente: 52 299 556 MARIA EDUARDA COUTINHO DO PRADO SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:36:41;error;Erro ao cadastrar cliente: ALINE SEMIJOIAS E ACESSORIOS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:00;error;Erro ao cadastrar cliente: CRYSTINE TRENTIN TURRA 04935962160 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:00;error;Erro ao cadastrar cliente: DANIEL GONCALVES DIAS 70316902187 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:00;error;Erro ao cadastrar cliente: 54.274.722 ELIANE GONCALVES SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:01;error;Erro ao cadastrar cliente: 52 299 556 MARIA EDUARDA COUTINHO DO PRADO SILVA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:01;error;Erro ao cadastrar cliente: ALINE SEMIJOIAS E ACESSORIOS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:02;error;Erro ao atualizar cliente: ALINE SEMIJOIAS E ACESSORIOS LTDA com o cnpj 35872962000115 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-07-31 09:37:05;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-07-31 09:47:47;error;Erro ao cadastrar cliente: DEISE NARA ZANTEDESCHI CANTONI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-07-31 09:47:47;error;Erro ao cadastrar cliente: FERREIRA E FERREIRAS LIMPEZA E EMBALAGENS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}

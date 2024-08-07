@@ -1,0 +1,109 @@
+2024-08-02 08:39:59;error;Erro ao cadastrar cliente: MARIA FABIANA DA SILVA SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 08:58:48;error;Erro ao cadastrar cliente: BRUNO OLIVEIRA PEREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 08:59:07;error;Erro ao cadastrar cliente: ADRIANA DA SILVA PEREIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 08:59:08;error;Erro ao cadastrar cliente: IRACY PEREIRA PALOMINO => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 08:59:12;error;Erro ao atualizar cliente: ADRIANA DA SILVA PEREIRA com o cnpj 01481535188 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-02 08:59:12;error;Erro ao atualizar cliente: IRACY PEREIRA PALOMINO com o cnpj 75980177191 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-02 08:59:12;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-02 08:59:12;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-02 08:59:14;error;Erro ao enviar Pai: {
+  codigoCliente: 1035706,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-02 09:00:24;error;Erro ao cadastrar cliente: CRISTIANE BERTONI => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:00:35;error;Erro ao atualizar cliente: CRISTIANE BERTONI com o cnpj 96736216915 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-02 09:00:36;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-02 09:00:39;error;Erro ao enviar Pai: {
+  codigoCliente: 1030126,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:31;error;Erro ao cadastrar cliente: ZATT ASSISTENCIA TECNICA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:31;error;Erro ao cadastrar cliente: JOSE RICARDO RODRIGUES DE OLIVEIRA 57070334168 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:31;error;Erro ao cadastrar cliente: 55 338 559 CLEBIA LUCIA DA SILVA GUIMARAES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:32;error;Erro ao cadastrar cliente: COLLETI COMERCIO VAREJISTA DE POLPAS DE FRUTAS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:32;error;Erro ao cadastrar cliente: 53 763 172 EDSON LOPES BEZERRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:32;error;Erro ao cadastrar cliente: LA VILLE CAFETERIA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:33;error;Erro ao cadastrar cliente: 55.483.049 MILENE DOURADO DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:33;error;Erro ao cadastrar cliente: 51.634.394 LUCIETE ALENCAR ARAIZ SIQUEIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:33;error;Erro ao cadastrar cliente: ORVANIA CASTRO DA CUNHA 64993841191 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:34;error;Erro ao cadastrar cliente: HAILTON PEREIRA MARTINS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:34;error;Erro ao cadastrar cliente: CF COM DE VINHOS REST LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:34;error;Erro ao cadastrar cliente: 50.285.878 ARIANNY DE OLIVEIRA SANZIONE => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:35;error;Erro ao cadastrar cliente: BARRACAO COMERCIO DE BEBIDAS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:35;error;Erro ao cadastrar cliente: DENNIS VINICIUS DE SIQUEIRA SILVA SANTOS 02082672123 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 09:05:35;error;Erro ao cadastrar cliente: 29.775.840 MARIA FABIANA DA SILVA SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:13;error;Erro ao cadastrar cliente: ZATT ASSISTENCIA TECNICA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:13;error;Erro ao cadastrar cliente: JOSE RICARDO RODRIGUES DE OLIVEIRA 57070334168 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:13;error;Erro ao cadastrar cliente: 55 338 559 CLEBIA LUCIA DA SILVA GUIMARAES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:14;error;Erro ao cadastrar cliente: COLLETI COMERCIO VAREJISTA DE POLPAS DE FRUTAS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:14;error;Erro ao cadastrar cliente: 53 763 172 EDSON LOPES BEZERRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:14;error;Erro ao cadastrar cliente: LA VILLE CAFETERIA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:15;error;Erro ao cadastrar cliente: 55.483.049 MILENE DOURADO DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:15;error;Erro ao cadastrar cliente: 51.634.394 LUCIETE ALENCAR ARAIZ SIQUEIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:15;error;Erro ao cadastrar cliente: ORVANIA CASTRO DA CUNHA 64993841191 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:15;error;Erro ao cadastrar cliente: HAILTON PEREIRA MARTINS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:16;error;Erro ao cadastrar cliente: CF COM DE VINHOS REST LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:16;error;Erro ao cadastrar cliente: 50.285.878 ARIANNY DE OLIVEIRA SANZIONE => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:16;error;Erro ao cadastrar cliente: BARRACAO COMERCIO DE BEBIDAS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:17;error;Erro ao cadastrar cliente: DENNIS VINICIUS DE SIQUEIRA SILVA SANTOS 02082672123 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:18:17;error;Erro ao cadastrar cliente: 29.775.840 MARIA FABIANA DA SILVA SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:57;error;Erro ao cadastrar cliente: ZATT ASSISTENCIA TECNICA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:57;error;Erro ao cadastrar cliente: JOSE RICARDO RODRIGUES DE OLIVEIRA 57070334168 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:57;error;Erro ao cadastrar cliente: 55 338 559 CLEBIA LUCIA DA SILVA GUIMARAES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:57;error;Erro ao cadastrar cliente: COLLETI COMERCIO VAREJISTA DE POLPAS DE FRUTAS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:58;error;Erro ao cadastrar cliente: 53 763 172 EDSON LOPES BEZERRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:58;error;Erro ao cadastrar cliente: LA VILLE CAFETERIA LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:58;error;Erro ao cadastrar cliente: 55.483.049 MILENE DOURADO DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:59;error;Erro ao cadastrar cliente: 51.634.394 LUCIETE ALENCAR ARAIZ SIQUEIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:59;error;Erro ao cadastrar cliente: ORVANIA CASTRO DA CUNHA 64993841191 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:59;error;Erro ao cadastrar cliente: HAILTON PEREIRA MARTINS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:20:59;error;Erro ao cadastrar cliente: CF COM DE VINHOS REST LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:21:00;error;Erro ao cadastrar cliente: 50.285.878 ARIANNY DE OLIVEIRA SANZIONE => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:21:00;error;Erro ao cadastrar cliente: BARRACAO COMERCIO DE BEBIDAS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:21:00;error;Erro ao cadastrar cliente: DENNIS VINICIUS DE SIQUEIRA SILVA SANTOS 02082672123 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:21:01;error;Erro ao cadastrar cliente: 29.775.840 MARIA FABIANA DA SILVA SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:22:33;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-08-02 13:23:12;error;Erro ao cadastrar cliente: ELITE HOME TECH LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:23:13;error;Erro ao cadastrar cliente: ESPACO FIVE BUFFET SERVICOS DE EVENTOS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:25:10;error;Erro ao cadastrar cliente: ELITE HOME TECH LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:25:11;error;Erro ao cadastrar cliente: ESPACO FIVE BUFFET SERVICOS DE EVENTOS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:26:43;error;Erro ao cadastrar cliente: RODRIGO LOURENCO ROCHA 01295734184 => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-02 13:26:50;error;Erro ao atualizar cliente: RODRIGO LOURENCO ROCHA 01295734184 com o cnpj 17974443000186 => Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-02 13:26:50;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-02 13:26:52;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400soci.'
+};{"service":"IntegracaoBancos"}
+2024-08-02 13:26:52;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-08-02 13:26:52;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
+2024-08-02 13:26:52;error;Erro ao enviar socios: => Resultado do cadastro {
+  status: 500,
+  message: 'javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement'
+};{"service":"IntegracaoBancos"}
