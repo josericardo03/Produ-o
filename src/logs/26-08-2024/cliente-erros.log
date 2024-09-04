@@ -1,0 +1,73 @@
+2024-08-26 10:26:53;error;Erro ao cadastrar cliente: ADRIANA DA SILVA COELHO => Resultado do cadastro undefined;{"service":"IntegracaoBancos"}
+2024-08-26 10:27:43;error;Erro ao cadastrar cliente: ADRIANA DA SILVA COELHO => Resultado do cadastro undefined;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:03;error;Erro ao atualizar cliente: ADRIANA DA SILVA COELHO com o cnpj 01980477116 SS=> Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:04;error;Erro ao atualizar cliente: PIERRE LOT DIEUJUSTE com o cnpj 70162070217 SS=> Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-26 10:32:04;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-26 10:32:12;error;Erro ao enviar mãe: {
+  codigoCliente: 1040991,
+  siglaRelacionamento: 'MAE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:14;error;Erro ao enviar Pai: {
+  codigoCliente: 1040991,
+  siglaRelacionamento: 'PAI',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:14;error;Erro ao enviar Pai: {
+  codigoCliente: 1030728,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:14;error;Erro ao enviar Pai: {
+  codigoCliente: 1027238,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-26 10:32:15;error;Erro ao enviar Pai: {
+  codigoCliente: 1040991,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Incluir Parentesco, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:36:12;error;Erro ao atualizar cliente: MATHEUS MARQUES FERREIRA com o cnpj 06173444186 SS=> Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:36:13;error;Erro ao enviar Pai: {
+  codigoCliente: 1037915,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-26 10:39:06;error;Erro ao atualizar cliente: MANOEL VILELA DE OLIVEIRA com o cnpj 32919875191 SS=> Resultado do cadastro Erro na chamada do serviço alterarPessoa, com a seguinte mensagem: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.;{"service":"IntegracaoBancos"}
+2024-08-26 10:39:06;error;Erro ao enviar Contato: => Resultado do cadastro {
+  status: 500,
+  message: 'java.lang.IllegalArgumentException: Código do cliente e número sequencial não foram localizados na tabela t400fcon.'
+};{"service":"IntegracaoBancos"}
+2024-08-26 10:39:08;error;Erro ao enviar Pai: {
+  codigoCliente: 1032852,
+  cpfParente: '',
+  siglaRelacionamento: 'CONJUGE',
+  nomeParente: null,
+  parentePoliticamenteExposto: false
+} => Resultado do cadastro Erro na chamada do serviço Alterar Parentesco, com a seguinte mensagem: java.lang.IllegalArgumentException: Código do cliente e sigla do relacionamento informados não foram localizados na tabela t400pare.;{"service":"IntegracaoBancos"}
+2024-08-26 10:47:21;error;Erro ao cadastrar cliente: MANOEL VILELA DE OLIVEIRA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:47:22;error;Erro ao cadastrar cliente: HILVANY MELO DE SOUZA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:47:22;error;Erro ao cadastrar cliente: LUCAS CAMPOS NEVES => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:48:08;error;Erro ao cadastrar cliente: NADIR RODRIGUES DE LIMA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CPF informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:52:16;error;Erro ao cadastrar cliente: 45.257.355 NADIR RODRIGUES DOS SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:57:30;error;Erro ao cadastrar cliente: 45.257.355 NADIR RODRIGUES DOS SANTOS => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:57:30;error;Erro ao cadastrar cliente: J K MODA FITNESS LTDA => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}
+2024-08-26 10:57:30;error;Erro ao cadastrar cliente: 55.011.108 SILVIA REGINA COUTINHO LERMEN => Resultado do cadastro Erro na chamada do serviço incluirPessoa, com a seguinte mensagem: O CNPJ informado já existe na base de dados.;{"service":"IntegracaoBancos"}

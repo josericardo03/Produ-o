@@ -16,8 +16,27 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASSWORD,
   },
 });
-let cnpjEnvio = [];
-let cnpjAtualizados = [];
+
+let cnpjEnvio: any[] = [];
+let cnpjAtualizados: any[] = [];
+let caracteres: any[] = [];
+let dadosarray: any[] = [];
+function lerDadosDoArquivoParaArray(caminhoDoArquivo: string) {
+  try {
+    const data = fs.readFileSync(caminhoDoArquivo, "utf8");
+
+    const arrayDeDados = data.split("\n").filter(Boolean);
+
+    return arrayDeDados;
+  } catch (err) {
+    console.error("Erro ao ler o arquivo:");
+    return [];
+  }
+}
+
+dadosarray = lerDadosDoArquivoParaArray("dadosenviados.txt");
+console.log(dadosarray);
+
 const enviarPastaLogs = async () => {
   try {
     const hoje = new Date()
@@ -53,6 +72,10 @@ const enviarPastaLogs = async () => {
 };
 
 const prisma = new PrismaClient();
+
+cnpjEnvio = [];
+cnpjAtualizados = [];
+caracteres = [];
 
 const EnviarDadosController = {
   enviarDados: async (req: Request, res: Response) => {
@@ -99,11 +122,9 @@ WHERE
     p.status = 'deferido' and c.tipoCliente="juridica"AND DATE(p.finalizadaEm) = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
 ORDER BY 
     p.createdAt DESC 
-    
 
 
       `;
-      // limit 1 offset 6
 
       if (resultado.length === 0) {
         loggerBanco.info(
@@ -116,7 +137,9 @@ ORDER BY
       }
 
       const hoje = new Date().toISOString().slice(0, 10);
-
+      cnpjEnvio = [];
+      cnpjAtualizados = [];
+      caracteres = [];
       let dadosParaEnviar = [];
       let enderecoParaEnviar = [];
       let enderecoPessoal = [];
@@ -401,7 +424,7 @@ WHERE
               codigoPortaBnds: cliente.portabnds
                 ? v
                 : mapearCodigoPorte(cliente.porte),
-              valorFaturamentoAnual: cliente.faturamentoTotalUltimosMeses,
+
               identificadorTipoBalanco: "REAL",
               identificadorControleAcionista: "PN",
               codigoNaturezaBndes: cliente.naturezaJuridicaId,
@@ -462,7 +485,7 @@ WHERE
 
         dadosParaEnviar.push(dadosCliente);
       }
-
+      // let problems: any[] = [];
       let indicesParaRemover = [];
       let indicesParaAtualizar = [];
       let flag;
@@ -474,7 +497,7 @@ WHERE
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -496,16 +519,14 @@ WHERE
             response.data
           );
         } catch (error: any) {
-          loggerErros.error(
-            "Erro ao cadastrar cliente: %s => Resultado do cadastro %s",
-            cliente ? cliente.nomePessoa : "Cliente não encontrado",
-            error.response.data
-          );
+          if (cliente?.nomePessoa.length > 55) {
+            caracteres.push(cliente?.numeroCic);
+          }
           flag = 0;
           if (error) {
             try {
               const responsecnpj = await axios.get(
-                `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
+                `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
 
                 {
                   headers: {
@@ -521,7 +542,7 @@ WHERE
               if (codtemporario) {
                 try {
                   const responsecodtemporario = await axios.get(
-                    `https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
+                    `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
 
                     {
                       headers: {
@@ -569,6 +590,13 @@ WHERE
                     console.log(codtemporario);
                     indicesParaAtualizar.push(i);
                     flag = 1;
+                  } else {
+                    loggerErros.error(
+                      "Erro ao cadastrar cliente: %s => Resultado do cadastro %s",
+                      cliente ? cliente.nomePessoa : "Cliente não encontrado",
+                      error.response.data,
+                      caracteres
+                    );
                   }
                 } catch (error: any) {
                   console.log(error.responsecodtemporario.data);
@@ -593,6 +621,7 @@ WHERE
           }
         }
       }
+
       let c = indicesParaAtualizar;
       indicesParaAtualizar = indicesParaAtualizar.map((indice) => {
         let count = 0;
@@ -633,7 +662,7 @@ WHERE
             cnpjAtualizados.push(cliente?.numeroCic);
             cliente = Object.assign({}, cliente, { codigoCliente: codCli[i] });
             const response = await axios.put(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
               cliente,
               {
                 headers: {
@@ -679,7 +708,7 @@ WHERE
 
             if (indicesParaAtualizar.includes(i)) {
               const responseContatos = await axios.put(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
                 dadosContacts,
                 {
                   headers: {
@@ -693,7 +722,7 @@ WHERE
               console.log("Resposta do servidor:", responseContatos.data);
             } else {
               const responseContatos = await axios.post(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
                 dadosContacts,
                 {
                   headers: {
@@ -726,7 +755,7 @@ WHERE
           ramo.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseRamo = await axios.put(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
               ramo,
               {
                 headers: {
@@ -741,7 +770,7 @@ WHERE
             console.log("Resposta do servidor:", responseRamo.data);
           } else {
             const responseRamo = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
               ramo,
               {
                 headers: {
@@ -772,7 +801,7 @@ WHERE
           enderecoCliente.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseEndereco = await axios.put(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
               enderecoCliente,
               {
                 headers: {
@@ -787,7 +816,7 @@ WHERE
             console.log("Resposta do servidor:", responseEndereco.data);
           } else {
             const responseEndereco = await axios.post(
-              "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
               enderecoCliente,
               {
                 headers: {
@@ -820,7 +849,7 @@ WHERE
             console.log(dadosSocio);
             if (indicesParaAtualizar.includes(i)) {
               const responseSocios = await axios.put(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
                 dadosSocio,
                 {
                   headers: {
@@ -834,7 +863,7 @@ WHERE
               console.log("Resposta do servidor:", responseSocios.data);
             } else {
               const responseSocios = await axios.post(
-                "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
+                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/socio",
                 dadosSocio,
                 {
                   headers: {
@@ -849,8 +878,9 @@ WHERE
             }
           } catch (error: any) {
             loggerErros.error(
-              "Erro ao enviar socios: => Resultado do cadastro %s",
+              "Erro ao enviar o socio com codigo %s: => Resultado do cadastro %s",
 
+              codigoCliente,
               error.response.data
             );
             console.error("Erro ao enviar dados:", error.response.data);
@@ -866,7 +896,7 @@ WHERE
           endereco.codigoCliente = codigoCliente;
 
           const responseEndereco = await axios.put(
-            "https://amtf.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             endereco,
             {
               headers: {
@@ -889,14 +919,13 @@ WHERE
         }
       }
       loggerClientes.info("Clientes enviados %s", cnpjEnvio);
-      loggerClientesAtualizados.info("Clientes enviados %s", cnpjAtualizados);
 
       res.json({ message: "Dados enviados com sucesso" });
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
       res.status(500).send("Erro ao enviar dados");
     }
-
+    console.log(dadosarray);
     const caminhoArquivoZIP = await enviarPastaLogs();
     const enviarEmailComAnexo = async (caminhoArquivoZIP: string) => {
       try {
@@ -904,7 +933,13 @@ WHERE
           from: "ti@desenvolve.mt.gov.br",
           to: "josesilva@desenvolve.mt.gov.br",
           subject: "Arquivo ZIP com logs",
-          text: `Segue anexo o arquivo ZIP com os logs.Cnpjs atualizados:${cnpjAtualizados}.----------Cnpjs enviados:${cnpjEnvio}.`,
+          html: `
+          <p>Segue anexo o arquivo ZIP com os logs.</p>
+          <p><strong>CNPJs atualizados:</strong> ${cnpjAtualizados}</p>
+          <p><strong>CNPJs enviados:</strong> ${cnpjEnvio}</p>
+          <p><strong>CNPJs com erro de nome:</strong> ${caracteres}</p>
+          <p><strong>CPFs e CJPJs enviados por outras rotas:</strong> ${dadosarray}</p>
+        `,
           attachments: [
             {
               filename: "logs.zip",
@@ -923,12 +958,18 @@ WHERE
         throw error;
       }
     };
-    // await enviarEmailComAnexo(caminhoArquivoZIP);
+
+    await enviarEmailComAnexo(caminhoArquivoZIP);
+    const filePath = "dadosenviados.txt";
+
+    if (fs.existsSync(filePath)) {
+      fs.writeFileSync(filePath, "");
+      console.log("O arquivo foi sobrescrito com 'null'.");
+    }
   },
 };
 
 export default EnviarDadosController;
-
 //   siglaTipoLogradouro: cliente.logradouro,
 //   descricaoComplementoEndereco:
 //     cliente.complementoEnderecoComercial.replace(/[./ -]/g, " "),

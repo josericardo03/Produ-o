@@ -423,7 +423,7 @@ WHERE
           let codigoCliente = "";
 
           const response = await axios.post(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+            "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
             cliente,
             {
               headers: {
@@ -454,7 +454,7 @@ WHERE
           if (error) {
             try {
               const responsecnpj = await axios.get(
-                `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
+                `https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscarpessoaviacnpj/${cliente?.numeroCic}`,
 
                 {
                   headers: {
@@ -470,7 +470,7 @@ WHERE
               if (codtemporario) {
                 try {
                   const responsecodtemporario = await axios.get(
-                    `https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
+                    `https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/buscapessoa/${codtemporario}`,
 
                     {
                       headers: {
@@ -542,7 +542,19 @@ WHERE
           }
         }
       }
-      let c = indicesParaAtualizar;
+      const fs = require("fs");
+      fs.appendFileSync(
+        "dadosenviados.txt",
+        cnpjEnvio.join("\n") + "\n",
+        (err: any) => {
+          if (err) {
+            console.error("Erro ao salvar o arquivo:", err);
+          } else {
+            console.log("Dados adicionados ao arquivo com sucesso.");
+          }
+        }
+      );
+
       indicesParaAtualizar = indicesParaAtualizar.map((indice) => {
         let count = 0;
         for (let j = 0; j < indicesParaRemover.length; j++) {
@@ -588,7 +600,7 @@ WHERE
           if (indicesParaAtualizar.includes(i)) {
             cliente = Object.assign({}, cliente, { codigoCliente: codCli[i] });
             const response = await axios.put(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/pessoa",
               cliente,
               {
                 headers: {
@@ -633,7 +645,7 @@ WHERE
             dadosContacts.codigoCliente = codigoCliente;
             if (indicesParaAtualizar.includes(i)) {
               const responseContatos = await axios.put(
-                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
                 dadosContacts,
                 {
                   headers: {
@@ -647,7 +659,7 @@ WHERE
               console.log("Resposta do servidor:", responseContatos.data);
             } else {
               const responseContatos = await axios.post(
-                "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
+                "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/formaContato",
                 dadosContacts,
                 {
                   headers: {
@@ -680,7 +692,7 @@ WHERE
           ramo.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseRamo = await axios.put(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
               ramo,
               {
                 headers: {
@@ -695,7 +707,7 @@ WHERE
             console.log("Resposta do servidor:", responseRamo.data);
           } else {
             const responseRamo = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/atividadeCliente",
               ramo,
               {
                 headers: {
@@ -725,7 +737,7 @@ WHERE
           maes.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseMae = await axios.put(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
               maes,
               {
                 headers: {
@@ -739,7 +751,7 @@ WHERE
             console.log("Resposta do servidor:", responseMae.data);
           } else {
             const responseMae = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
               maes,
               {
                 headers: {
@@ -768,7 +780,7 @@ WHERE
           pais.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responsePai = await axios.put(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
               pais,
               {
                 headers: {
@@ -782,7 +794,7 @@ WHERE
             console.log("Resposta do servidor:", responsePai.data);
           } else {
             const responsePai = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
               pais,
               {
                 headers: {
@@ -811,7 +823,7 @@ WHERE
           conjug.codigoCliente = codigoCliente;
           if (indicesParaAtualizar.includes(i)) {
             const responseConjuge = await axios.put(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
               conjug,
               {
                 headers: {
@@ -825,7 +837,7 @@ WHERE
             console.log("Resposta do servidor:", responseConjuge.data);
           } else {
             const responseConjuge = await axios.post(
-              "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
+              "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/parentesco",
               conjug,
               {
                 headers: {
@@ -854,7 +866,7 @@ WHERE
           const codigoCliente = codCli[i];
           enderecoCliente.codigoCliente = codigoCliente;
           const responseEndereco = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             enderecoCliente,
             {
               headers: {
@@ -884,7 +896,7 @@ WHERE
           endereco.codigoCliente = codigoCliente;
           console.log(codigoCliente);
           const responseEndereco = await axios.put(
-            "https://amtf-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
+            "https://amt-pp-pp.app.dimensa.com.br/tfsbasicoservice/rest/cadastro/endereco",
             endereco,
             {
               headers: {
